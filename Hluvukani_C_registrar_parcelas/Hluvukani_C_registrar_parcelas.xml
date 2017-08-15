@@ -1,0 +1,2047 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hluvukani C Registrar Parcelas</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="static_instance-usos-2">
+            <value>Comércio/Industria/Serviços</value>
+          </text>
+          <text id="static_instance-usos-3">
+            <value>Culturas Permanentes</value>
+          </text>
+          <text id="static_instance-usos-0">
+            <value>Agricultura</value>
+          </text>
+          <text id="static_instance-usos-1">
+            <value>Agropecuária</value>
+          </text>
+          <text id="static_instance-usos-6">
+            <value>Habitação Propria</value>
+          </text>
+          <text id="static_instance-usos-7">
+            <value>Habitação Veraneio</value>
+          </text>
+          <text id="static_instance-usos-4">
+            <value>Fins Comunitários</value>
+          </text>
+          <text id="static_instance-usos-5">
+            <value>Fins Sociais/Religiosos</value>
+          </text>
+          <text id="static_instance-usos-8">
+            <value>Habitação e Comercio</value>
+          </text>
+          <text id="static_instance-usos-9">
+            <value>Pecuária Gado Bovino</value>
+          </text>
+          <text id="static_instance-excluded-0">
+            <value>parcialmente dentro</value>
+          </text>
+          <text id="static_instance-excluded-1">
+            <value>totalmente dentro</value>
+          </text>
+          <text id="static_instance-provinces-8">
+            <value>Tete</value>
+          </text>
+          <text id="static_instance-provinces-9">
+            <value>Zambezia</value>
+          </text>
+          <text id="static_instance-provinces-4">
+            <value>Maputo</value>
+          </text>
+          <text id="static_instance-provinces-5">
+            <value>Nampula</value>
+          </text>
+          <text id="static_instance-provinces-6">
+            <value>Niassa</value>
+          </text>
+          <text id="static_instance-provinces-7">
+            <value>Sofala</value>
+          </text>
+          <text id="static_instance-provinces-0">
+            <value>Cabo Delgado</value>
+          </text>
+          <text id="static_instance-provinces-1">
+            <value>Gaza</value>
+          </text>
+          <text id="static_instance-provinces-2">
+            <value>Inhambane</value>
+          </text>
+          <text id="static_instance-provinces-3">
+            <value>Manica</value>
+          </text>
+          <text id="static_instance-civil-4">
+            <value>Viúvo (a)</value>
+          </text>
+          <text id="static_instance-civil-2">
+            <value>Casado (a)</value>
+          </text>
+          <text id="static_instance-civil-3">
+            <value>Divorciado (a)</value>
+          </text>
+          <text id="static_instance-civil-0">
+            <value>Solteiro (a)</value>
+          </text>
+          <text id="static_instance-civil-1">
+            <value>União de Facto</value>
+          </text>
+          <text id="static_instance-accesso-0">
+            <value>Via de acesso publico</value>
+          </text>
+          <text id="static_instance-accesso-1">
+            <value>Sem acesso</value>
+          </text>
+          <text id="static_instance-accesso-2">
+            <value>Pela parcela do vizinho</value>
+          </text>
+          <text id="static_instance-accesso-3">
+            <value>Via acesso comunitário</value>
+          </text>
+          <text id="static_instance-names-7">
+            <value>Julio Fernando Manheia</value>
+          </text>
+          <text id="static_instance-names-6">
+            <value>Helena Benjamim Mondlane</value>
+          </text>
+          <text id="static_instance-names-5">
+            <value>Elton Salomao Munguambe</value>
+          </text>
+          <text id="static_instance-names-4">
+            <value>Efigencia Alberto Mavondza</value>
+          </text>
+          <text id="static_instance-names-3">
+            <value>Coronel Gelsio Timana</value>
+          </text>
+          <text id="static_instance-names-2">
+            <value>Carlos Eduardo Mujovo</value>
+          </text>
+          <text id="static_instance-y_n-1">
+            <value>Não</value>
+          </text>
+          <text id="static_instance-y_n-0">
+            <value>Sim</value>
+          </text>
+          <text id="static_instance-regions-2">
+            <value>Sul</value>
+          </text>
+          <text id="static_instance-regions-0">
+            <value>Norte</value>
+          </text>
+          <text id="static_instance-names-0">
+            <value>Armando Junior Zuana</value>
+          </text>
+          <text id="static_instance-names-9">
+            <value>Noniua Paudelina Luis</value>
+          </text>
+          <text id="static_instance-names-8">
+            <value>Nomisse Eugenio Sitoe</value>
+          </text>
+          <text id="static_instance-blocos-8">
+            <value>Munguine</value>
+          </text>
+          <text id="static_instance-blocos-9">
+            <value>Munguine South</value>
+          </text>
+          <text id="static_instance-party_type-1">
+            <value>Cotitular</value>
+          </text>
+          <text id="static_instance-party_type-0">
+            <value>Singular</value>
+          </text>
+          <text id="static_instance-party_type-3">
+            <value>Associação</value>
+          </text>
+          <text id="static_instance-party_type-2">
+            <value>Pessoa menor</value>
+          </text>
+          <text id="static_instance-party_type-5">
+            <value>Instituição do Estado</value>
+          </text>
+          <text id="static_instance-party_type-4">
+            <value>Cooperativa</value>
+          </text>
+          <text id="static_instance-blocos-6">
+            <value>Martins</value>
+          </text>
+          <text id="static_instance-party_type-6">
+            <value>Empresa Privada</value>
+          </text>
+          <text id="static_instance-regions-1">
+            <value>Central</value>
+          </text>
+          <text id="static_instance-genders-1">
+            <value>Feminino</value>
+          </text>
+          <text id="static_instance-conflict-3">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-explor_tipo-0">
+            <value>Exploração Familiar</value>
+          </text>
+          <text id="static_instance-explor_tipo-1">
+            <value>Exploração Comercial</value>
+          </text>
+          <text id="static_instance-explor_tipo-2">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-names-1">
+            <value>Cacilda Mothasse Jocicaze Xerinda</value>
+          </text>
+          <text id="static_instance-searchoption-3">
+            <value>Termina com</value>
+          </text>
+          <text id="static_instance-searchoption-2">
+            <value>Começa com</value>
+          </text>
+          <text id="static_instance-searchoption-1">
+            <value>Igual</value>
+          </text>
+          <text id="static_instance-searchoption-0">
+            <value>Contém</value>
+          </text>
+          <text id="static_instance-party-1">
+            <value>Outro nome (não está na lista)</value>
+          </text>
+          <text id="static_instance-party-0">
+            <value>party_name</value>
+          </text>
+          <text id="static_instance-conflict-2">
+            <value>Limites</value>
+          </text>
+          <text id="static_instance-extype-1">
+            <value>Protecção Total</value>
+          </text>
+          <text id="static_instance-extype-0">
+            <value>Protecção Parcial</value>
+          </text>
+          <text id="static_instance-extype-3">
+            <value>Zona de Erosão</value>
+          </text>
+          <text id="static_instance-extype-2">
+            <value>Zona de Inundação</value>
+          </text>
+          <text id="static_instance-blocos-0">
+            <value>Taninga North</value>
+          </text>
+          <text id="static_instance-conflict-0">
+            <value>Trespasse</value>
+          </text>
+          <text id="static_instance-conflict-1">
+            <value>Titularidade</value>
+          </text>
+          <text id="static_instance-blocos-4">
+            <value>Palmeira 3</value>
+          </text>
+          <text id="static_instance-blocos-5">
+            <value>Manhiça Municipality</value>
+          </text>
+          <text id="static_instance-blocos-1">
+            <value>Taninga South</value>
+          </text>
+          <text id="static_instance-blocos-7">
+            <value>Cambeve</value>
+          </text>
+          <text id="static_instance-documents-9">
+            <value>Cartão de pagamento de imposto</value>
+          </text>
+          <text id="static_instance-documents-8">
+            <value>Carta de Condução</value>
+          </text>
+          <text id="static_instance-documents-1">
+            <value>Talão do BI</value>
+          </text>
+          <text id="static_instance-documents-0">
+            <value>Bilhete de Identidade</value>
+          </text>
+          <text id="static_instance-documents-3">
+            <value>Certidão de Nascimento</value>
+          </text>
+          <text id="static_instance-documents-2">
+            <value>Cartão de Eleitor</value>
+          </text>
+          <text id="static_instance-documents-5">
+            <value>Declaração</value>
+          </text>
+          <text id="static_instance-documents-4">
+            <value>Cédula Pessoal</value>
+          </text>
+          <text id="static_instance-documents-7">
+            <value>Passaporte</value>
+          </text>
+          <text id="static_instance-documents-6">
+            <value>Cartão de Desmobilização</value>
+          </text>
+          <text id="static_instance-blocos-2">
+            <value>Palmeira 1</value>
+          </text>
+          <text id="static_instance-documents-20">
+            <value>Cartão de pagamento de imposto</value>
+          </text>
+          <text id="static_instance-documents-21">
+            <value>NUIT</value>
+          </text>
+          <text id="static_instance-genders-0">
+            <value>Masculino</value>
+          </text>
+          <text id="static_instance-blocos-3">
+            <value>Palmeira 2</value>
+          </text>
+          <text id="static_instance-occup-5">
+            <value>Cedencia do titulo do DUAT pelo estado</value>
+          </text>
+          <text id="static_instance-occup-4">
+            <value>Reassentamento</value>
+          </text>
+          <text id="static_instance-blocos-10">
+            <value>Pateque Bobole</value>
+          </text>
+          <text id="static_instance-occup-6">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-occup-1">
+            <value>Normas e práticas costumeiras</value>
+          </text>
+          <text id="static_instance-occup-0">
+            <value>Ocupação de boa fé</value>
+          </text>
+          <text id="static_instance-occup-3">
+            <value>Herança</value>
+          </text>
+          <text id="static_instance-occup-2">
+            <value>Doação</value>
+          </text>
+          <text id="static_instance-ages-0">
+            <value>Entre 18 - 30</value>
+          </text>
+          <text id="static_instance-ages-1">
+            <value>Entre 30 - 50</value>
+          </text>
+          <text id="static_instance-ages-2">
+            <value>50+</value>
+          </text>
+          <text id="static_instance-prof-1">
+            <value>Camponese</value>
+          </text>
+          <text id="static_instance-prof-0">
+            <value>Agricultor</value>
+          </text>
+          <text id="static_instance-prof-3">
+            <value>Comerciante</value>
+          </text>
+          <text id="static_instance-prof-2">
+            <value>Carpinteiro(a)</value>
+          </text>
+          <text id="static_instance-prof-5">
+            <value>Enfirmeiro(a)</value>
+          </text>
+          <text id="static_instance-prof-4">
+            <value>Curandeiro(a)</value>
+          </text>
+          <text id="static_instance-prof-7">
+            <value>Funcionario Publico</value>
+          </text>
+          <text id="static_instance-prof-6">
+            <value>Estudante</value>
+          </text>
+          <text id="static_instance-prof-9">
+            <value>Parteira Tradicional</value>
+          </text>
+          <text id="static_instance-prof-8">
+            <value>Motorista</value>
+          </text>
+          <text id="static_instance-prof-15">
+            <value>Transportador(a)</value>
+          </text>
+          <text id="static_instance-prof-14">
+            <value>Serrador(a)</value>
+          </text>
+          <text id="static_instance-prof-16">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-prof-11">
+            <value>Pedreiro(a)</value>
+          </text>
+          <text id="static_instance-prof-10">
+            <value>Pastor de Igreja</value>
+          </text>
+          <text id="static_instance-prof-13">
+            <value>Professor(a)</value>
+          </text>
+          <text id="static_instance-prof-12">
+            <value>Produtor(a)</value>
+          </text>
+          <text id="static_instance-names-12">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-names-11">
+            <value>Valdemiro Luis Mondlane</value>
+          </text>
+          <text id="static_instance-names-10">
+            <value>Raquel Xavier Ambasse</value>
+          </text>
+          <text id="static_instance-zonas_excl-0">
+            <value>Protecção Parcial</value>
+          </text>
+          <text id="static_instance-zonas_excl-1">
+            <value>Protecção Total</value>
+          </text>
+          <text id="static_instance-zonas_excl-2">
+            <value>Zona de Inundação</value>
+          </text>
+          <text id="static_instance-zonas_excl-3">
+            <value>Zona de Erosão</value>
+          </text>
+          <text id="static_instance-documents-15">
+            <value>Cédula Pessoal</value>
+          </text>
+          <text id="static_instance-documents-14">
+            <value>Certidão de Nascimento</value>
+          </text>
+          <text id="static_instance-documents-17">
+            <value>Cartão de Desmobilização</value>
+          </text>
+          <text id="static_instance-documents-16">
+            <value>Declaração</value>
+          </text>
+          <text id="static_instance-documents-11">
+            <value>Bilhete de Identidade</value>
+          </text>
+          <text id="static_instance-documents-10">
+            <value>NUIT</value>
+          </text>
+          <text id="static_instance-documents-13">
+            <value>Cartão de Eleitor</value>
+          </text>
+          <text id="static_instance-documents-12">
+            <value>Talão do BI</value>
+          </text>
+          <text id="static_instance-documents-19">
+            <value>Carta de Condução</value>
+          </text>
+          <text id="static_instance-documents-18">
+            <value>Passaporte</value>
+          </text>
+          <text id="static_instance-testam_type-0">
+            <value>Chefe da Zona ou Povoado</value>
+          </text>
+          <text id="static_instance-testam_type-1">
+            <value>Representante duma Associação</value>
+          </text>
+          <text id="static_instance-testam_type-2">
+            <value>Representante da Cooperativa Hluvukani</value>
+          </text>
+          <text id="static_instance-testam_type-3">
+            <value>Vizinho directo</value>
+          </text>
+          <text id="static_instance-testam_type-4">
+            <value>Vizinho perto</value>
+          </text>
+          <text id="static_instance-usos-10">
+            <value>Pecuária Outro</value>
+          </text>
+          <text id="static_instance-usos-11">
+            <value>Outro</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201708041">
+          <start/>
+          <my_form_name/>
+          <intronote/>
+          <tec_nome/>
+          <data/>
+          <region_id/>
+          <bloco_id/>
+          <parcel_id/>
+          <ocup/>
+          <ocup_outro/>
+          <z_excl/>
+          <part_excl/>
+          <tipo_excl/>
+          <conf/>
+          <tipo_conf/>
+          <desc_conf/>
+          <use_cat/>
+          <use_tipo/>
+          <use_prin/>
+          <use_other/>
+          <party_type/>
+          <rep_menor/>
+          <add_party_number/>
+          <Titulares_count/>
+          <Titulares jr:template="">
+            <searchtext/>
+            <found_party/>
+          </Titulares>
+          <reg_party_yn/>
+          <reg_newparty_number/>
+          <Novas_pessoas_count/>
+          <Novas_pessoas jr:template="">
+            <Cg1>
+              <pessoa_app/>
+              <pessoa_nom/>
+              <pessoa_gen/>
+              <pessoa_civil/>
+            </Cg1>
+            <pessoa_prof/>
+            <pessoa_prof_other/>
+            <Cg2>
+              <pessoa_nacion>Moçambicana</pessoa_nacion>
+              <pessoa_natural/>
+            </Cg2>
+            <nasc_y_n/>
+            <pessoa_nasc/>
+            <pessoa_ida/>
+            <Cg3>
+              <pessoa_doc/>
+              <pessoa_id/>
+              <doc_local/>
+              <doc_emi/>
+              <doc_val/>
+              <doc_vital/>
+            </Cg3>
+            <pessoa_foto/>
+            <id_foto/>
+            <pessoa_assin/>
+            <contacto/>
+          </Novas_pessoas>
+          <testem_num/>
+          <Testemunhas_count/>
+          <Testemunhas jr:template="">
+            <Cg4>
+              <testem_nome/>
+              <testem_type/>
+            </Cg4>
+            <testem_assin/>
+          </Testemunhas>
+          <auto_gps/>
+          <limites_yn/>
+          <Pontos jr:template="">
+            <auto_gps_limit/>
+            <upn_gps_limit/>
+          </Pontos>
+          <endnote/>
+          <recibo_image/>
+          <end/>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Hluvukani_C_registrar_parcelas>
+      </instance>
+      <instance id="zonas_excl">
+        <root>
+          <item>
+            <itextId>static_instance-zonas_excl-0</itextId>
+            <name>prot_par</name>
+          </item>
+          <item>
+            <itextId>static_instance-zonas_excl-1</itextId>
+            <name>prot_tot</name>
+          </item>
+          <item>
+            <itextId>static_instance-zonas_excl-2</itextId>
+            <name>zona_inund</name>
+          </item>
+          <item>
+            <itextId>static_instance-zonas_excl-3</itextId>
+            <name>zona_erosa</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="civil">
+        <root>
+          <item>
+            <itextId>static_instance-civil-0</itextId>
+            <name>solt</name>
+          </item>
+          <item>
+            <itextId>static_instance-civil-1</itextId>
+            <name>defacto</name>
+          </item>
+          <item>
+            <itextId>static_instance-civil-2</itextId>
+            <name>casado</name>
+          </item>
+          <item>
+            <itextId>static_instance-civil-3</itextId>
+            <name>div</name>
+          </item>
+          <item>
+            <itextId>static_instance-civil-4</itextId>
+            <name>viu</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="extype">
+        <root>
+          <item>
+            <itextId>static_instance-extype-0</itextId>
+            <name>parcial</name>
+          </item>
+          <item>
+            <itextId>static_instance-extype-1</itextId>
+            <name>total</name>
+          </item>
+          <item>
+            <itextId>static_instance-extype-2</itextId>
+            <name>inund</name>
+          </item>
+          <item>
+            <itextId>static_instance-extype-3</itextId>
+            <name>eros</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ages">
+        <root>
+          <item>
+            <itextId>static_instance-ages-0</itextId>
+            <name>jov</name>
+          </item>
+          <item>
+            <itextId>static_instance-ages-1</itextId>
+            <name>adu</name>
+          </item>
+          <item>
+            <itextId>static_instance-ages-2</itextId>
+            <name>idos</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="names">
+        <root>
+          <item>
+            <itextId>static_instance-names-0</itextId>
+            <name>Armando_Zuana</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-1</itextId>
+            <name>Cacilda_Xerinda</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-2</itextId>
+            <name>Carlos_Mujovo</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-3</itextId>
+            <name>Coronel_Timana</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-4</itextId>
+            <name>Efigencia_Mavondza</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-5</itextId>
+            <name>Elton_Munguambe</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-6</itextId>
+            <name>Helena_Mondlane</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-7</itextId>
+            <name>Julio_Manheia</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-8</itextId>
+            <name>Nomisse_Sitoe</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-9</itextId>
+            <name>Noniua_Luis</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-10</itextId>
+            <name>Raquel_Ambasse</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-11</itextId>
+            <name>Valdemiro_Mondlane</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-12</itextId>
+            <name>Outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="occup">
+        <root>
+          <item>
+            <itextId>static_instance-occup-0</itextId>
+            <name>boa</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-1</itextId>
+            <name>norms</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-2</itextId>
+            <name>doa</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-3</itextId>
+            <name>hera</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-4</itextId>
+            <name>reass</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-5</itextId>
+            <name>titulo</name>
+          </item>
+          <item>
+            <itextId>static_instance-occup-6</itextId>
+            <name>outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="provinces">
+        <root>
+          <item>
+            <itextId>static_instance-provinces-0</itextId>
+            <name>P02</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-1</itextId>
+            <name>P09</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-2</itextId>
+            <name>P08</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-3</itextId>
+            <name>P06</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-4</itextId>
+            <name>P10</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-5</itextId>
+            <name>P03</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-6</itextId>
+            <name>P01</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-7</itextId>
+            <name>P07</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-8</itextId>
+            <name>P05</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-9</itextId>
+            <name>P04</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="documents">
+        <root>
+          <item>
+            <itextId>static_instance-documents-0</itextId>
+            <name>bi</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-1</itextId>
+            <name>talao</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-2</itextId>
+            <name>c_eleit</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-3</itextId>
+            <name>c_nasc</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-4</itextId>
+            <name>ced</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-5</itextId>
+            <name>decl</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-6</itextId>
+            <name>c_desmob</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-7</itextId>
+            <name>p_port</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-8</itextId>
+            <name>c_cond</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-9</itextId>
+            <name>c_impost</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-10</itextId>
+            <name>nuit</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-11</itextId>
+            <name>bi</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-12</itextId>
+            <name>talao</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-13</itextId>
+            <name>c_eleit</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-14</itextId>
+            <name>c_nasc</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-15</itextId>
+            <name>ced</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-16</itextId>
+            <name>decl</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-17</itextId>
+            <name>c_desmob</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-18</itextId>
+            <name>p_port</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-19</itextId>
+            <name>c_cond</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-20</itextId>
+            <name>c_impost</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-21</itextId>
+            <name>nuit</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="party_type">
+        <root>
+          <item>
+            <itextId>static_instance-party_type-0</itextId>
+            <name>sing</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-1</itextId>
+            <name>cotitular</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-2</itextId>
+            <name>menor</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-3</itextId>
+            <name>assoc</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-4</itextId>
+            <name>coop</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-5</itextId>
+            <name>estado</name>
+          </item>
+          <item>
+            <itextId>static_instance-party_type-6</itextId>
+            <name>privada</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="regions">
+        <root>
+          <item>
+            <itextId>static_instance-regions-0</itextId>
+            <name>Norte</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-1</itextId>
+            <name>Central</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-2</itextId>
+            <name>Sul</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="y_n">
+        <root>
+          <item>
+            <itextId>static_instance-y_n-0</itextId>
+            <name>sim</name>
+          </item>
+          <item>
+            <itextId>static_instance-y_n-1</itextId>
+            <name>nao</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="excluded">
+        <root>
+          <item>
+            <itextId>static_instance-excluded-0</itextId>
+            <name>parc</name>
+          </item>
+          <item>
+            <itextId>static_instance-excluded-1</itextId>
+            <name>tot</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="prof">
+        <root>
+          <item>
+            <itextId>static_instance-prof-0</itextId>
+            <name>agri</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-1</itextId>
+            <name>camp</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-2</itextId>
+            <name>carp</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-3</itextId>
+            <name>come</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-4</itextId>
+            <name>cura</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-5</itextId>
+            <name>enfi</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-6</itextId>
+            <name>estu</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-7</itextId>
+            <name>func</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-8</itextId>
+            <name>moto</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-9</itextId>
+            <name>part</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-10</itextId>
+            <name>past</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-11</itextId>
+            <name>pedr</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-12</itextId>
+            <name>prod</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-13</itextId>
+            <name>prof</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-14</itextId>
+            <name>serr</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-15</itextId>
+            <name>tran</name>
+          </item>
+          <item>
+            <itextId>static_instance-prof-16</itextId>
+            <name>outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="testam_type">
+        <root>
+          <item>
+            <itextId>static_instance-testam_type-0</itextId>
+            <name>chefe</name>
+          </item>
+          <item>
+            <itextId>static_instance-testam_type-1</itextId>
+            <name>rep_assoc</name>
+          </item>
+          <item>
+            <itextId>static_instance-testam_type-2</itextId>
+            <name>rep_coop</name>
+          </item>
+          <item>
+            <itextId>static_instance-testam_type-3</itextId>
+            <name>viz_d</name>
+          </item>
+          <item>
+            <itextId>static_instance-testam_type-4</itextId>
+            <name>viz_p</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="conflict">
+        <root>
+          <item>
+            <itextId>static_instance-conflict-0</itextId>
+            <name>tres</name>
+          </item>
+          <item>
+            <itextId>static_instance-conflict-1</itextId>
+            <name>titu</name>
+          </item>
+          <item>
+            <itextId>static_instance-conflict-2</itextId>
+            <name>lim</name>
+          </item>
+          <item>
+            <itextId>static_instance-conflict-3</itextId>
+            <name>outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="usos">
+        <root>
+          <item>
+            <itextId>static_instance-usos-0</itextId>
+            <name>agric</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-1</itextId>
+            <name>agro_pec</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-2</itextId>
+            <name>com_indus_serv</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-3</itextId>
+            <name>cult_perm</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-4</itextId>
+            <name>fins_comun</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-5</itextId>
+            <name>soc_relig</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-6</itextId>
+            <name>habit</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-7</itextId>
+            <name>habit_ver</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-8</itextId>
+            <name>habit_com</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-9</itextId>
+            <name>pec_outro</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-10</itextId>
+            <name>pec_bovino</name>
+          </item>
+          <item>
+            <itextId>static_instance-usos-11</itextId>
+            <name>outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="explor_tipo">
+        <root>
+          <item>
+            <itextId>static_instance-explor_tipo-0</itextId>
+            <name>expl_fam</name>
+          </item>
+          <item>
+            <itextId>static_instance-explor_tipo-1</itextId>
+            <name>expl_com</name>
+          </item>
+          <item>
+            <itextId>static_instance-explor_tipo-2</itextId>
+            <name>outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="blocos">
+        <root>
+          <item>
+            <itextId>static_instance-blocos-0</itextId>
+            <region_id>Norte</region_id>
+            <name>A_Taninga_North</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-1</itextId>
+            <region_id>Norte</region_id>
+            <name>B_Taninga_South</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-2</itextId>
+            <region_id>Norte</region_id>
+            <name>C_Palmeira_1</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-3</itextId>
+            <region_id>Norte</region_id>
+            <name>D_Palmeira_2</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-4</itextId>
+            <region_id>Norte</region_id>
+            <name>E_Palmeira_3</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-5</itextId>
+            <region_id>Central</region_id>
+            <name>F_Manhica_Municipality</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-6</itextId>
+            <region_id>Central</region_id>
+            <name>G_Martins</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-7</itextId>
+            <region_id>Central</region_id>
+            <name>H_Cambeve</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-8</itextId>
+            <region_id>Sul</region_id>
+            <name>I_Munguine</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-9</itextId>
+            <region_id>Sul</region_id>
+            <name>J_Munguine_South</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-10</itextId>
+            <region_id>Sul</region_id>
+            <name>K_Pateque_Bobole</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="accesso">
+        <root>
+          <item>
+            <itextId>static_instance-accesso-0</itextId>
+            <name>access_pub</name>
+          </item>
+          <item>
+            <itextId>static_instance-accesso-1</itextId>
+            <name>access_sem</name>
+          </item>
+          <item>
+            <itextId>static_instance-accesso-2</itextId>
+            <name>access_vizin</name>
+          </item>
+          <item>
+            <itextId>static_instance-accesso-3</itextId>
+            <name>access_com</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="party">
+        <root>
+          <item>
+            <itextId>static_instance-party-0</itextId>
+            <name>party_id_key</name>
+          </item>
+          <item>
+            <itextId>static_instance-party-1</itextId>
+            <name>1</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="genders">
+        <root>
+          <item>
+            <itextId>static_instance-genders-0</itextId>
+            <name>mas</name>
+          </item>
+          <item>
+            <itextId>static_instance-genders-1</itextId>
+            <name>fem</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="searchoption">
+        <root>
+          <item>
+            <itextId>static_instance-searchoption-0</itextId>
+            <name>contains</name>
+          </item>
+          <item>
+            <itextId>static_instance-searchoption-1</itextId>
+            <name>matches</name>
+          </item>
+          <item>
+            <itextId>static_instance-searchoption-2</itextId>
+            <name>startswith</name>
+          </item>
+          <item>
+            <itextId>static_instance-searchoption-3</itextId>
+            <name>endswith</name>
+          </item>
+        </root>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_C_registrar_parcelas/start" type="dateTime"/>
+      <bind calculate="&quot;Registo de Parcelas - RDUATs&quot;" nodeset="/Hluvukani_C_registrar_parcelas/my_form_name" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/intronote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/tec_nome" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/data" required="true()" type="date"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/region_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/bloco_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/parcel_id" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/ocup" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" nodeset="/Hluvukani_C_registrar_parcelas/ocup_outro" relevant=" /Hluvukani_C_registrar_parcelas/ocup ='outro'" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/z_excl" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/part_excl" relevant=" /Hluvukani_C_registrar_parcelas/z_excl ='sim'" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/tipo_excl" relevant=" /Hluvukani_C_registrar_parcelas/z_excl ='sim'" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/conf" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/tipo_conf" relevant=" /Hluvukani_C_registrar_parcelas/conf ='sim'" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_C_registrar_parcelas/desc_conf" relevant=" /Hluvukani_C_registrar_parcelas/conf ='sim'" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/use_cat" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/use_tipo" required="true()" type="select"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/use_prin" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" nodeset="/Hluvukani_C_registrar_parcelas/use_other" relevant="selected( /Hluvukani_C_registrar_parcelas/use_tipo , 'outro')" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/party_type" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - O campo de nome não pode incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/rep_menor" relevant=" /Hluvukani_C_registrar_parcelas/party_type = 'menor'" required="true()" type="string"/>
+      <bind constraint=".&gt;0" nodeset="/Hluvukani_C_registrar_parcelas/add_party_number" type="int"/>
+      <bind calculate=" /Hluvukani_C_registrar_parcelas/add_party_number " nodeset="/Hluvukani_C_registrar_parcelas/Titulares_count" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Titulares/searchtext" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Titulares/found_party" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/reg_party_yn" required="true()" type="select1"/>
+      <bind constraint=".&gt;0" nodeset="/Hluvukani_C_registrar_parcelas/reg_newparty_number" relevant=" /Hluvukani_C_registrar_parcelas/reg_party_yn = 'sim'" type="int"/>
+      <bind calculate=" /Hluvukani_C_registrar_parcelas/reg_newparty_number " nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas_count" readonly="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_app" required="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_nom" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_gen" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_civil" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_prof" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_prof_other" relevant=" /Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_prof  = 'outro'" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg2/pessoa_nacion" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg2/pessoa_natural" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/nasc_y_n" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_nasc" relevant=" /Hluvukani_C_registrar_parcelas/Novas_pessoas/nasc_y_n  = 'sim'" type="date"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_ida" relevant=" /Hluvukani_C_registrar_parcelas/Novas_pessoas/nasc_y_n  = 'nao'" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/pessoa_doc" required="true()" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de numero ou local de emissão do documento não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/pessoa_id" required="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de numero ou local de emissão do documento não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_local" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_emi" type="date"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_val" type="date"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_vital" relevant=" /Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/pessoa_doc  = 'bi'" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_foto" type="binary"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/id_foto" type="binary"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_assin" required="true()" type="binary"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-]{1,9}$&quot;)" nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas/contacto" type="string"/>
+      <bind constraint=".&gt;=1" jr:constraintMsg="Tem que ter pelos menos uma testamunha" nodeset="/Hluvukani_C_registrar_parcelas/testem_num" required="true()" type="int"/>
+      <bind calculate=" /Hluvukani_C_registrar_parcelas/testem_num " nodeset="/Hluvukani_C_registrar_parcelas/Testemunhas_count" readonly="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_C_registrar_parcelas/Testemunhas/Cg4/testem_nome" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Testemunhas/Cg4/testem_type" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Testemunhas/testem_assin" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/auto_gps" required="true()" type="geopoint"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/limites_yn" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Pontos" relevant=" /Hluvukani_C_registrar_parcelas/limites_yn = 'sim'"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/Pontos/auto_gps_limit" type="geopoint"/>
+      <bind calculate="concat( /Hluvukani_C_registrar_parcelas/parcel_id ,'point')" nodeset="/Hluvukani_C_registrar_parcelas/Pontos/upn_gps_limit" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/endnote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C_registrar_parcelas/recibo_image" required="true()" type="binary"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_C_registrar_parcelas/end" type="dateTime"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_C_registrar_parcelas/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat('parcelas','_', /Hluvukani_C_registrar_parcelas/region_id ,'_', /Hluvukani_C_registrar_parcelas/bloco_id ,'_', /Hluvukani_C_registrar_parcelas/parcel_id )" nodeset="/Hluvukani_C_registrar_parcelas/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Hluvukani_C_registrar_parcelas/intronote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_C_registrar_parcelas/my_form_name "/>&lt;/span&gt; &lt;br/&gt; 
+
+Este formulário é utilizado para gravar informação sobre as parcelas das terras familiares ou individuais.
+
+O técnico deve usar o formulário no campo, junto com os mapas de delimitacao e o livro de recibos, para capturar informação sobre cada parcela. 
+
+Será posivel seleccionar o nome do titular duma lista, ou fazer registo duma nova pessoa.
+
+Os limites das parcelas podem ser lancados nos mapas, ou quando nao ficam bem visiveis, utilizando o GPS para marcar pontos.
+
+Cada parcela requer pelo menos um ponto no centro da parcela. 
+
+Por favor deslizar para a frente para continuar.</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/tec_nome">
+      <label>Nome do(a) técnico(a):</label>
+      <item>
+        <label>Armando Junior Zuana</label>
+        <value>Armando_Zuana</value>
+      </item>
+      <item>
+        <label>Cacilda Mothasse Jocicaze Xerinda</label>
+        <value>Cacilda_Xerinda</value>
+      </item>
+      <item>
+        <label>Carlos Eduardo Mujovo</label>
+        <value>Carlos_Mujovo</value>
+      </item>
+      <item>
+        <label>Coronel Gelsio Timana</label>
+        <value>Coronel_Timana</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavondza</label>
+        <value>Efigencia_Mavondza</value>
+      </item>
+      <item>
+        <label>Elton Salomao Munguambe</label>
+        <value>Elton_Munguambe</value>
+      </item>
+      <item>
+        <label>Helena Benjamim Mondlane</label>
+        <value>Helena_Mondlane</value>
+      </item>
+      <item>
+        <label>Julio Fernando Manheia</label>
+        <value>Julio_Manheia</value>
+      </item>
+      <item>
+        <label>Nomisse Eugenio Sitoe</label>
+        <value>Nomisse_Sitoe</value>
+      </item>
+      <item>
+        <label>Noniua Paudelina Luis</label>
+        <value>Noniua_Luis</value>
+      </item>
+      <item>
+        <label>Raquel Xavier Ambasse</label>
+        <value>Raquel_Ambasse</value>
+      </item>
+      <item>
+        <label>Valdemiro Luis Mondlane</label>
+        <value>Valdemiro_Mondlane</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_C_registrar_parcelas/data">
+      <label>Data do registo de parcela:</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/region_id">
+      <label>Selecionar a região (Norte, Central ou Sul)</label>
+      <item>
+        <label>Norte</label>
+        <value>Norte</value>
+      </item>
+      <item>
+        <label>Central</label>
+        <value>Central</value>
+      </item>
+      <item>
+        <label>Sul</label>
+        <value>Sul</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/bloco_id">
+      <label>Selecionar o bloco</label>
+      <itemset nodeset="instance('blocos')/root/item[region_id= /Hluvukani_C_registrar_parcelas/region_id ]">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <input appearance="numbers" ref="/Hluvukani_C_registrar_parcelas/parcel_id">
+      <label>Qual é o numero do recibo?</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/ocup">
+      <label>Qual foi a forma de obtenção da parcela?</label>
+      <item>
+        <label>Ocupação de boa fé</label>
+        <value>boa</value>
+      </item>
+      <item>
+        <label>Normas e práticas costumeiras</label>
+        <value>norms</value>
+      </item>
+      <item>
+        <label>Doação</label>
+        <value>doa</value>
+      </item>
+      <item>
+        <label>Herança</label>
+        <value>hera</value>
+      </item>
+      <item>
+        <label>Reassentamento</label>
+        <value>reass</value>
+      </item>
+      <item>
+        <label>Cedencia do titulo do DUAT pelo estado</label>
+        <value>titulo</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>outro</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_C_registrar_parcelas/ocup_outro">
+      <label>Qual foi a outra forma de obtenção da parcela?</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/z_excl">
+      <label>A parcela está localizada numa zona de exclusão?</label>
+      <item>
+        <label>Sim</label>
+        <value>sim</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>nao</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/part_excl">
+      <label>É apenas uma parte da parcela dentro da zona de exclusão ou toda a parcela?</label>
+      <item>
+        <label>parcialmente dentro</label>
+        <value>parc</value>
+      </item>
+      <item>
+        <label>totalmente dentro</label>
+        <value>tot</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/tipo_excl">
+      <label>Que tipo de zona de exclusão?</label>
+      <item>
+        <label>Protecção Parcial</label>
+        <value>parcial</value>
+      </item>
+      <item>
+        <label>Protecção Total</label>
+        <value>total</value>
+      </item>
+      <item>
+        <label>Zona de Inundação</label>
+        <value>inund</value>
+      </item>
+      <item>
+        <label>Zona de Erosão</label>
+        <value>eros</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/conf">
+      <label>Existe um conflito sobre a parcela?</label>
+      <item>
+        <label>Sim</label>
+        <value>sim</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>nao</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/tipo_conf">
+      <label>Que tipo de conflito?</label>
+      <item>
+        <label>Trespasse</label>
+        <value>tres</value>
+      </item>
+      <item>
+        <label>Titularidade</label>
+        <value>titu</value>
+      </item>
+      <item>
+        <label>Limites</label>
+        <value>lim</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>outro</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_C_registrar_parcelas/desc_conf">
+      <label>Descrição de conflito:</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/use_cat">
+      <label>Forma de uso</label>
+      <item>
+        <label>Exploração Familiar</label>
+        <value>expl_fam</value>
+      </item>
+      <item>
+        <label>Exploração Comercial</label>
+        <value>expl_com</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>outro</value>
+      </item>
+    </select1>
+    <select appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/use_tipo">
+      <label>Usos:</label>
+      <item>
+        <label>Agricultura</label>
+        <value>agric</value>
+      </item>
+      <item>
+        <label>Agropecuária</label>
+        <value>agro_pec</value>
+      </item>
+      <item>
+        <label>Comércio/Industria/Serviços</label>
+        <value>com_indus_serv</value>
+      </item>
+      <item>
+        <label>Culturas Permanentes</label>
+        <value>cult_perm</value>
+      </item>
+      <item>
+        <label>Fins Comunitários</label>
+        <value>fins_comun</value>
+      </item>
+      <item>
+        <label>Fins Sociais/Religiosos</label>
+        <value>soc_relig</value>
+      </item>
+      <item>
+        <label>Habitação Propria</label>
+        <value>habit</value>
+      </item>
+      <item>
+        <label>Habitação Veraneio</label>
+        <value>habit_ver</value>
+      </item>
+      <item>
+        <label>Habitação e Comercio</label>
+        <value>habit_com</value>
+      </item>
+      <item>
+        <label>Pecuária Gado Bovino</label>
+        <value>pec_outro</value>
+      </item>
+      <item>
+        <label>Pecuária Outro</label>
+        <value>pec_bovino</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>outro</value>
+      </item>
+    </select>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/use_prin">
+      <label>Qual é o uso principal?</label>
+      <item>
+        <label>Agricultura</label>
+        <value>agric</value>
+      </item>
+      <item>
+        <label>Agropecuária</label>
+        <value>agro_pec</value>
+      </item>
+      <item>
+        <label>Comércio/Industria/Serviços</label>
+        <value>com_indus_serv</value>
+      </item>
+      <item>
+        <label>Culturas Permanentes</label>
+        <value>cult_perm</value>
+      </item>
+      <item>
+        <label>Fins Comunitários</label>
+        <value>fins_comun</value>
+      </item>
+      <item>
+        <label>Fins Sociais/Religiosos</label>
+        <value>soc_relig</value>
+      </item>
+      <item>
+        <label>Habitação Propria</label>
+        <value>habit</value>
+      </item>
+      <item>
+        <label>Habitação Veraneio</label>
+        <value>habit_ver</value>
+      </item>
+      <item>
+        <label>Habitação e Comercio</label>
+        <value>habit_com</value>
+      </item>
+      <item>
+        <label>Pecuária Gado Bovino</label>
+        <value>pec_outro</value>
+      </item>
+      <item>
+        <label>Pecuária Outro</label>
+        <value>pec_bovino</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>outro</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_C_registrar_parcelas/use_other">
+      <label>Qual é o outro uso?</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/party_type">
+      <label>Tipo do detentor do DUAT</label>
+      <item>
+        <label>Singular</label>
+        <value>sing</value>
+      </item>
+      <item>
+        <label>Cotitular</label>
+        <value>cotitular</value>
+      </item>
+      <item>
+        <label>Pessoa menor</label>
+        <value>menor</value>
+      </item>
+      <item>
+        <label>Associação</label>
+        <value>assoc</value>
+      </item>
+      <item>
+        <label>Cooperativa</label>
+        <value>coop</value>
+      </item>
+      <item>
+        <label>Instituição do Estado</label>
+        <value>estado</value>
+      </item>
+      <item>
+        <label>Empresa Privada</label>
+        <value>privada</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_C_registrar_parcelas/rep_menor">
+      <label>Nome de pessoa que representa a pessoa menor</label>
+    </input>
+    <input ref="/Hluvukani_C_registrar_parcelas/add_party_number">
+      <label>Quantos titulares são? Se for apenas uma pessoa, digite '1'</label>
+    </input>
+    <group ref="/Hluvukani_C_registrar_parcelas/Titulares">
+      <label>Titulares da parcela</label>
+      <repeat jr:count=" /Hluvukani_C_registrar_parcelas/Titulares_count " nodeset="/Hluvukani_C_registrar_parcelas/Titulares">
+        <input ref="/Hluvukani_C_registrar_parcelas/Titulares/searchtext">
+          <label>Digite as primeiras letras do nome a ser pesquisada da lista das pessoas já registadas:</label>
+        </input>
+        <select1 appearance="search( /Hluvukani_C_registrar_parcelas/region_id , 'startswith', 'party_name',  /Hluvukani_C_registrar_parcelas/Titulares/searchtext , 'bloco_id_key',  /Hluvukani_C_registrar_parcelas/bloco_id )" ref="/Hluvukani_C_registrar_parcelas/Titulares/found_party">
+          <label>Selecionar o nome da pessoa</label>
+          <item>
+            <label>party_name</label>
+            <value>party_id_key</value>
+          </item>
+          <item>
+            <label>Outro nome (não está na lista)</label>
+            <value>1</value>
+          </item>
+        </select1>
+      </repeat>
+    </group>
+    <select1 ref="/Hluvukani_C_registrar_parcelas/reg_party_yn">
+      <label>Quer fazer registo dum(a) titular da parcela cujo nome não apareceu na lista?</label>
+      <item>
+        <label>Sim</label>
+        <value>sim</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>nao</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_C_registrar_parcelas/reg_newparty_number">
+      <label>Quantos pessoas não registadas são? Se for apenas uma pessoa, digite '1'</label>
+    </input>
+    <group ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas">
+      <label>Titulares da parcela</label>
+      <repeat jr:count=" /Hluvukani_C_registrar_parcelas/Novas_pessoas_count " nodeset="/Hluvukani_C_registrar_parcelas/Novas_pessoas">
+        <group appearance="field-list" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1">
+          <label>Detalhes de pessoa não registada</label>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_app">
+            <label>Qual é o apelido da pessoa?</label>
+          </input>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_nom">
+            <label>Qual é o nome da pessoa?</label>
+          </input>
+          <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_gen">
+            <label>Escolhe o género da pessoa:</label>
+            <item>
+              <label>Masculino</label>
+              <value>mas</value>
+            </item>
+            <item>
+              <label>Feminino</label>
+              <value>fem</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg1/pessoa_civil">
+            <label>Escolhe o estado civil da pessoa:</label>
+            <item>
+              <label>Solteiro (a)</label>
+              <value>solt</value>
+            </item>
+            <item>
+              <label>União de Facto</label>
+              <value>defacto</value>
+            </item>
+            <item>
+              <label>Casado (a)</label>
+              <value>casado</value>
+            </item>
+            <item>
+              <label>Divorciado (a)</label>
+              <value>div</value>
+            </item>
+            <item>
+              <label>Viúvo (a)</label>
+              <value>viu</value>
+            </item>
+          </select1>
+        </group>
+        <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_prof">
+          <label>Escolhe a profissão da pessoa:</label>
+          <item>
+            <label>Agricultor</label>
+            <value>agri</value>
+          </item>
+          <item>
+            <label>Camponese</label>
+            <value>camp</value>
+          </item>
+          <item>
+            <label>Carpinteiro(a)</label>
+            <value>carp</value>
+          </item>
+          <item>
+            <label>Comerciante</label>
+            <value>come</value>
+          </item>
+          <item>
+            <label>Curandeiro(a)</label>
+            <value>cura</value>
+          </item>
+          <item>
+            <label>Enfirmeiro(a)</label>
+            <value>enfi</value>
+          </item>
+          <item>
+            <label>Estudante</label>
+            <value>estu</value>
+          </item>
+          <item>
+            <label>Funcionario Publico</label>
+            <value>func</value>
+          </item>
+          <item>
+            <label>Motorista</label>
+            <value>moto</value>
+          </item>
+          <item>
+            <label>Parteira Tradicional</label>
+            <value>part</value>
+          </item>
+          <item>
+            <label>Pastor de Igreja</label>
+            <value>past</value>
+          </item>
+          <item>
+            <label>Pedreiro(a)</label>
+            <value>pedr</value>
+          </item>
+          <item>
+            <label>Produtor(a)</label>
+            <value>prod</value>
+          </item>
+          <item>
+            <label>Professor(a)</label>
+            <value>prof</value>
+          </item>
+          <item>
+            <label>Serrador(a)</label>
+            <value>serr</value>
+          </item>
+          <item>
+            <label>Transportador(a)</label>
+            <value>tran</value>
+          </item>
+          <item>
+            <label>Outro</label>
+            <value>outro</value>
+          </item>
+        </select1>
+        <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_prof_other">
+          <label>Qual é a outra profissão da pessoa?</label>
+        </input>
+        <group appearance="field-list" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg2">
+          <label>Detalhes de pessoa (cont)</label>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg2/pessoa_nacion">
+            <label>Qual é a nacionalidade da pessoa?</label>
+          </input>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg2/pessoa_natural">
+            <label>Qual é a naturalidade da pessoa?</label>
+          </input>
+        </group>
+        <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/nasc_y_n">
+          <label>A pessoa conhece a data de nascimento?</label>
+          <item>
+            <label>Sim</label>
+            <value>sim</value>
+          </item>
+          <item>
+            <label>Não</label>
+            <value>nao</value>
+          </item>
+        </select1>
+        <input appearance="no-calendar" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_nasc">
+          <label>Data de nascimento</label>
+        </input>
+        <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_ida">
+          <label>Qual é a idade da pessoa?</label>
+          <item>
+            <label>Entre 18 - 30</label>
+            <value>jov</value>
+          </item>
+          <item>
+            <label>Entre 30 - 50</label>
+            <value>adu</value>
+          </item>
+          <item>
+            <label>50+</label>
+            <value>idos</value>
+          </item>
+        </select1>
+        <group appearance="field-list" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3">
+          <label>Detalhes de documentos</label>
+          <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/pessoa_doc">
+            <label>Tipo de documento de identificação</label>
+            <item>
+              <label>Bilhete de Identidade</label>
+              <value>bi</value>
+            </item>
+            <item>
+              <label>Talão do BI</label>
+              <value>talao</value>
+            </item>
+            <item>
+              <label>Cartão de Eleitor</label>
+              <value>c_eleit</value>
+            </item>
+            <item>
+              <label>Certidão de Nascimento</label>
+              <value>c_nasc</value>
+            </item>
+            <item>
+              <label>Cédula Pessoal</label>
+              <value>ced</value>
+            </item>
+            <item>
+              <label>Declaração</label>
+              <value>decl</value>
+            </item>
+            <item>
+              <label>Cartão de Desmobilização</label>
+              <value>c_desmob</value>
+            </item>
+            <item>
+              <label>Passaporte</label>
+              <value>p_port</value>
+            </item>
+            <item>
+              <label>Carta de Condução</label>
+              <value>c_cond</value>
+            </item>
+            <item>
+              <label>Cartão de pagamento de imposto</label>
+              <value>c_impost</value>
+            </item>
+            <item>
+              <label>NUIT</label>
+              <value>nuit</value>
+            </item>
+            <item>
+              <label>Bilhete de Identidade</label>
+              <value>bi</value>
+            </item>
+            <item>
+              <label>Talão do BI</label>
+              <value>talao</value>
+            </item>
+            <item>
+              <label>Cartão de Eleitor</label>
+              <value>c_eleit</value>
+            </item>
+            <item>
+              <label>Certidão de Nascimento</label>
+              <value>c_nasc</value>
+            </item>
+            <item>
+              <label>Cédula Pessoal</label>
+              <value>ced</value>
+            </item>
+            <item>
+              <label>Declaração</label>
+              <value>decl</value>
+            </item>
+            <item>
+              <label>Cartão de Desmobilização</label>
+              <value>c_desmob</value>
+            </item>
+            <item>
+              <label>Passaporte</label>
+              <value>p_port</value>
+            </item>
+            <item>
+              <label>Carta de Condução</label>
+              <value>c_cond</value>
+            </item>
+            <item>
+              <label>Cartão de pagamento de imposto</label>
+              <value>c_impost</value>
+            </item>
+            <item>
+              <label>NUIT</label>
+              <value>nuit</value>
+            </item>
+          </select1>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/pessoa_id">
+            <label>Numero de documento</label>
+          </input>
+          <input ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_local">
+            <label>Local de Emissão</label>
+          </input>
+          <input appearance="no-calendar" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_emi">
+            <label>Emissão</label>
+          </input>
+          <input appearance="no-calendar" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_val">
+            <label>Validade</label>
+          </input>
+          <select1 ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/Cg3/doc_vital">
+            <label>Será que o BI é vitalício</label>
+            <item>
+              <label>Sim</label>
+              <value>sim</value>
+            </item>
+            <item>
+              <label>Não</label>
+              <value>nao</value>
+            </item>
+          </select1>
+        </group>
+        <upload mediatype="image/*" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_foto">
+          <label>Tire uma fotografia da pessoa</label>
+        </upload>
+        <upload mediatype="image/*" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/id_foto">
+          <label>Tire uma fotografia do documento de identificação</label>
+        </upload>
+        <upload appearance="signature" mediatype="image/*" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/pessoa_assin">
+          <label>Assinatura da pessoa</label>
+        </upload>
+        <input appearance="numbers" ref="/Hluvukani_C_registrar_parcelas/Novas_pessoas/contacto">
+          <label>Numero de telemóvel da pessoa</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/Hluvukani_C_registrar_parcelas/testem_num">
+      <label>Quantas testemunhas estão presentes?</label>
+    </input>
+    <group ref="/Hluvukani_C_registrar_parcelas/Testemunhas">
+      <label>Testemunhas</label>
+      <repeat jr:count=" /Hluvukani_C_registrar_parcelas/Testemunhas_count " nodeset="/Hluvukani_C_registrar_parcelas/Testemunhas">
+        <group appearance="field-list" ref="/Hluvukani_C_registrar_parcelas/Testemunhas/Cg4">
+          <label>Detalhes de testemunhas</label>
+          <input ref="/Hluvukani_C_registrar_parcelas/Testemunhas/Cg4/testem_nome">
+            <label>Nome completo da testemunha</label>
+          </input>
+          <select1 appearance="minimal" ref="/Hluvukani_C_registrar_parcelas/Testemunhas/Cg4/testem_type">
+            <label>Categoria da testemunha</label>
+            <item>
+              <label>Chefe da Zona ou Povoado</label>
+              <value>chefe</value>
+            </item>
+            <item>
+              <label>Representante duma Associação</label>
+              <value>rep_assoc</value>
+            </item>
+            <item>
+              <label>Representante da Cooperativa Hluvukani</label>
+              <value>rep_coop</value>
+            </item>
+            <item>
+              <label>Vizinho directo</label>
+              <value>viz_d</value>
+            </item>
+            <item>
+              <label>Vizinho perto</label>
+              <value>viz_p</value>
+            </item>
+          </select1>
+        </group>
+        <upload appearance="signature" mediatype="image/*" ref="/Hluvukani_C_registrar_parcelas/Testemunhas/testem_assin">
+          <label>Assinatura da testemunha</label>
+        </upload>
+      </repeat>
+    </group>
+    <input ref="/Hluvukani_C_registrar_parcelas/auto_gps">
+      <label>É obrigatorio gravar um ponto dentro da parcela, no centro.</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <select1 ref="/Hluvukani_C_registrar_parcelas/limites_yn">
+      <label>Será que é necessário gravar pontos de limites da parcela (porque não estão claros no mapa)?</label>
+      <item>
+        <label>Sim</label>
+        <value>sim</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>nao</value>
+      </item>
+    </select1>
+    <group ref="/Hluvukani_C_registrar_parcelas/Pontos">
+      <label>Pontos de limites</label>
+      <repeat nodeset="/Hluvukani_C_registrar_parcelas/Pontos">
+        <input ref="/Hluvukani_C_registrar_parcelas/Pontos/auto_gps_limit">
+          <label>Gravar um ponto</label>
+          <hint>Gravar um ponto a qualquer mudança de direcção, e pelo menos uma vez a cada dez metros. Lembrete: se a 'localização record' está levando algum tempo, por favor, verifique se a luz azul do seu Glo</hint>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/Hluvukani_C_registrar_parcelas/endnote">
+      <label>Está quase no fim do formulário. 
+
+Agora pode preencher o recibo, tirar uma foto do recibo e entregar o original ao requerente. 
+
+A primeira copia do original vai para a Cooperativa Hluvukani.
+
+A segunda copia do original fica no livro de recibos.</label>
+    </input>
+    <upload mediatype="image/*" ref="/Hluvukani_C_registrar_parcelas/recibo_image">
+      <label>Tire uma fotografia do recibo</label>
+    </upload>
+  </h:body>
+</h:html>

@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hluvukani A Registrar Encontros Sensibilizacao</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="static_instance-institutions-1">
+            <value>Autoridade Comunitária</value>
+          </text>
+          <text id="static_instance-institutions-0">
+            <value>Administração Distrital</value>
+          </text>
+          <text id="static_instance-institutions-3">
+            <value>Presidente da Localidade</value>
+          </text>
+          <text id="static_instance-institutions-2">
+            <value>Chefe do Posto</value>
+          </text>
+          <text id="static_instance-institutions-5">
+            <value>SDPI</value>
+          </text>
+          <text id="static_instance-institutions-4">
+            <value>SDAE</value>
+          </text>
+          <text id="static_instance-institutions-7">
+            <value>SPFFB</value>
+          </text>
+          <text id="static_instance-institutions-6">
+            <value>Secretario do Bairro</value>
+          </text>
+          <text id="static_instance-institutions-9">
+            <value>Outra</value>
+          </text>
+          <text id="static_instance-institutions-8">
+            <value>SPGC</value>
+          </text>
+          <text id="static_instance-participation-2">
+            <value>Medio</value>
+          </text>
+          <text id="static_instance-participation-3">
+            <value>Fraco</value>
+          </text>
+          <text id="static_instance-names-10">
+            <value>Raquel Xavier Ambasse</value>
+          </text>
+          <text id="static_instance-contents-6">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-contents-4">
+            <value>Recolha ou confirmação de dados da comunidade/povoado/beneficiários</value>
+          </text>
+          <text id="static_instance-names-0">
+            <value>Armando Junior Zuana</value>
+          </text>
+          <text id="static_instance-contents-2">
+            <value>Quadro legal de Terras</value>
+          </text>
+          <text id="static_instance-contents-3">
+            <value>Illovo e investimentos</value>
+          </text>
+          <text id="static_instance-contents-0">
+            <value>Apresentação do Projecto da Hluvukani e programa das actividades</value>
+          </text>
+          <text id="static_instance-contents-1">
+            <value>Género e vulnerabilidade</value>
+          </text>
+          <text id="static_instance-meetings-8">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-meetings-6">
+            <value>Encontro com Município</value>
+          </text>
+          <text id="static_instance-meetings-7">
+            <value>Encontro com Indivíduos</value>
+          </text>
+          <text id="static_instance-meetings-4">
+            <value>Encontro com Administração do Distrito</value>
+          </text>
+          <text id="static_instance-meetings-5">
+            <value>Encontro com Associações</value>
+          </text>
+          <text id="static_instance-meetings-2">
+            <value>Encontro com Liderança Tradicional</value>
+          </text>
+          <text id="static_instance-meetings-3">
+            <value>Encontro no Posto Administrativo</value>
+          </text>
+          <text id="static_instance-meetings-0">
+            <value>Encontro ao nível Comunitário/Região</value>
+          </text>
+          <text id="static_instance-meetings-1">
+            <value>Encontro ao nível de Bloco</value>
+          </text>
+          <text id="static_instance-participation-4">
+            <value>Muito fraco</value>
+          </text>
+          <text id="static_instance-blocos-10">
+            <value>Pateque Bobole</value>
+          </text>
+          <text id="static_instance-names-12">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-contents-5">
+            <value>Informação sobre o registo de pessoas e identificação de ocupação (RDUATs)</value>
+          </text>
+          <text id="static_instance-names-11">
+            <value>Valdemiro Luis Mondlane</value>
+          </text>
+          <text id="static_instance-names-2">
+            <value>Carlos Eduardo Mujovo</value>
+          </text>
+          <text id="static_instance-names-7">
+            <value>Julio Fernando Manheia</value>
+          </text>
+          <text id="static_instance-names-6">
+            <value>Helena Benjamim Mondlane</value>
+          </text>
+          <text id="static_instance-names-5">
+            <value>Elton Salomao Munguambe</value>
+          </text>
+          <text id="static_instance-names-4">
+            <value>Efigencia Alberto Mavondza</value>
+          </text>
+          <text id="static_instance-names-3">
+            <value>Coronel Gelsio Timana</value>
+          </text>
+          <text id="static_instance-names-1">
+            <value>Cacilda Mothasse Jocicaze Xerinda</value>
+          </text>
+          <text id="static_instance-y_n-1">
+            <value>Não</value>
+          </text>
+          <text id="static_instance-y_n-0">
+            <value>Sim</value>
+          </text>
+          <text id="static_instance-regions-2">
+            <value>Sul</value>
+          </text>
+          <text id="static_instance-regions-0">
+            <value>Norte</value>
+          </text>
+          <text id="static_instance-regions-1">
+            <value>Central</value>
+          </text>
+          <text id="static_instance-participation-0">
+            <value>Muito alto</value>
+          </text>
+          <text id="static_instance-participation-1">
+            <value>Alto</value>
+          </text>
+          <text id="static_instance-names-9">
+            <value>Noniua Paudelina Luis</value>
+          </text>
+          <text id="static_instance-names-8">
+            <value>Nomisse Eugenio Sitoe</value>
+          </text>
+          <text id="static_instance-blocos-8">
+            <value>Munguine</value>
+          </text>
+          <text id="static_instance-blocos-9">
+            <value>Munguine South</value>
+          </text>
+          <text id="static_instance-blocos-0">
+            <value>Taninga North</value>
+          </text>
+          <text id="static_instance-blocos-1">
+            <value>Taninga South</value>
+          </text>
+          <text id="static_instance-blocos-2">
+            <value>Palmeira 1</value>
+          </text>
+          <text id="static_instance-blocos-3">
+            <value>Palmeira 2</value>
+          </text>
+          <text id="static_instance-blocos-4">
+            <value>Palmeira 3</value>
+          </text>
+          <text id="static_instance-blocos-5">
+            <value>Manhiça Municipality</value>
+          </text>
+          <text id="static_instance-blocos-6">
+            <value>Martins</value>
+          </text>
+          <text id="static_instance-blocos-7">
+            <value>Cambeve</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <Hluvukani_A_encontros_sensibilizacao id="Hluvukani_A_V1" version="201704271">
+          <start/>
+          <my_form_name/>
+          <intronote/>
+          <tec_nome/>
+          <data/>
+          <region_id/>
+          <bloco_id/>
+          <A_g1>
+            <num_m/>
+            <num_h/>
+          </A_g1>
+          <gov_p/>
+          <gov_n/>
+          <gov_o/>
+          <encont/>
+          <encont_alt/>
+          <tema/>
+          <tema_alt/>
+          <A_g2>
+            <part_h/>
+            <part_m/>
+            <part_j/>
+          </A_g2>
+          <encont_foto/>
+          <auto_gps/>
+          <obs/>
+          <end/>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Hluvukani_A_encontros_sensibilizacao>
+      </instance>
+      <instance id="blocos">
+        <root>
+          <item>
+            <itextId>static_instance-blocos-0</itextId>
+            <region_id>RN</region_id>
+            <name>A</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-1</itextId>
+            <region_id>RN</region_id>
+            <name>B</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-2</itextId>
+            <region_id>RN</region_id>
+            <name>C</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-3</itextId>
+            <region_id>RN</region_id>
+            <name>D</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-4</itextId>
+            <region_id>RN</region_id>
+            <name>E</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-5</itextId>
+            <region_id>RC</region_id>
+            <name>F</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-6</itextId>
+            <region_id>RC</region_id>
+            <name>G</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-7</itextId>
+            <region_id>RC</region_id>
+            <name>H</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-8</itextId>
+            <region_id>RS</region_id>
+            <name>I</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-9</itextId>
+            <region_id>RS</region_id>
+            <name>J</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-10</itextId>
+            <region_id>RS</region_id>
+            <name>K</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="meetings">
+        <root>
+          <item>
+            <itextId>static_instance-meetings-0</itextId>
+            <name>Encontro_ao_nível_Comunitário/Região</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-1</itextId>
+            <name>Encontro_ao_nível_de_Bloco</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-2</itextId>
+            <name>Encontro_com_Liderança_Tradicional</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-3</itextId>
+            <name>Encontro_no_Posto_Administrativo</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-4</itextId>
+            <name>Encontro_com_Administração_do_Distrito</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-5</itextId>
+            <name>Encontro_com_Associações</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-6</itextId>
+            <name>Encontro_com_Município</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-7</itextId>
+            <name>Encontro_com_Indivíduos</name>
+          </item>
+          <item>
+            <itextId>static_instance-meetings-8</itextId>
+            <name>Outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="regions">
+        <root>
+          <item>
+            <itextId>static_instance-regions-0</itextId>
+            <name>RN</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-1</itextId>
+            <name>RC</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-2</itextId>
+            <name>RS</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="y_n">
+        <root>
+          <item>
+            <itextId>static_instance-y_n-0</itextId>
+            <name>sim</name>
+          </item>
+          <item>
+            <itextId>static_instance-y_n-1</itextId>
+            <name>nao</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="names">
+        <root>
+          <item>
+            <itextId>static_instance-names-0</itextId>
+            <name>AJZ</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-1</itextId>
+            <name>CMJX</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-2</itextId>
+            <name>CEM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-3</itextId>
+            <name>CGT</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-4</itextId>
+            <name>EAM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-5</itextId>
+            <name>ESM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-6</itextId>
+            <name>HBM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-7</itextId>
+            <name>JFM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-8</itextId>
+            <name>NES</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-9</itextId>
+            <name>NPL</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-10</itextId>
+            <name>RXA</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-11</itextId>
+            <name>VLM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-12</itextId>
+            <name>Outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="institutions">
+        <root>
+          <item>
+            <itextId>static_instance-institutions-0</itextId>
+            <name>Administração_Distrital</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-1</itextId>
+            <name>Autoridade_Comunitária</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-2</itextId>
+            <name>Chefe_do_Posto</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-3</itextId>
+            <name>Presidente_da_Localidade</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-4</itextId>
+            <name>SDAE</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-5</itextId>
+            <name>SDPI</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-6</itextId>
+            <name>Secretario_do_Bairro</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-7</itextId>
+            <name>SPFFB</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-8</itextId>
+            <name>SPGC</name>
+          </item>
+          <item>
+            <itextId>static_instance-institutions-9</itextId>
+            <name>Outra</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="contents">
+        <root>
+          <item>
+            <itextId>static_instance-contents-0</itextId>
+            <name>Apresentação_do_Projecto</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-1</itextId>
+            <name>Género_e_vulnerabilidade</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-2</itextId>
+            <name>Quadro_legal_de_Terras</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-3</itextId>
+            <name>Illovo_e_investimentos</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-4</itextId>
+            <name>Recolha_de_dados</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-5</itextId>
+            <name>Informação_sobre_RDUATs</name>
+          </item>
+          <item>
+            <itextId>static_instance-contents-6</itextId>
+            <name>Outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="participation">
+        <root>
+          <item>
+            <itextId>static_instance-participation-0</itextId>
+            <name>Muito_alto</name>
+          </item>
+          <item>
+            <itextId>static_instance-participation-1</itextId>
+            <name>Alto</name>
+          </item>
+          <item>
+            <itextId>static_instance-participation-2</itextId>
+            <name>Medio</name>
+          </item>
+          <item>
+            <itextId>static_instance-participation-3</itextId>
+            <name>Fraco</name>
+          </item>
+          <item>
+            <itextId>static_instance-participation-4</itextId>
+            <name>Muito_fraco</name>
+          </item>
+        </root>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_A_encontros_sensibilizacao/start" type="dateTime"/>
+      <bind calculate="&quot;Registo de Encontros de Sensibilização&quot;" nodeset="/Hluvukani_A_encontros_sensibilizacao/my_form_name" type="string"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/intronote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/tec_nome" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/data" required="true()" type="date"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/region_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/bloco_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/A_g1/num_m" required="true()" type="int"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/A_g1/num_h" required="true()" type="int"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/gov_p" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/gov_n" relevant=" /Hluvukani_A_encontros_sensibilizacao/gov_p  = 'sim'" required="true()" type="select"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos separados no texto não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_A_encontros_sensibilizacao/gov_o" relevant="selected( /Hluvukani_A_encontros_sensibilizacao/gov_n , 'Outra')" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/encont" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos separados no texto não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_A_encontros_sensibilizacao/encont_alt" relevant=" /Hluvukani_A_encontros_sensibilizacao/encont  = 'Outro'" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/tema" required="true()" type="select"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos separados no texto não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_A_encontros_sensibilizacao/tema_alt" relevant="selected( /Hluvukani_A_encontros_sensibilizacao/tema , 'Outro')" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_h" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_m" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_j" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/encont_foto" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_A_encontros_sensibilizacao/auto_gps" required="true()" type="geopoint"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" jr:constraintMsg="Parágrafos separados no texto não são permitidos. Por favor, eliminar quaisquer linhas extras." nodeset="/Hluvukani_A_encontros_sensibilizacao/obs" required="true()" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_A_encontros_sensibilizacao/end" type="dateTime"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_A_encontros_sensibilizacao/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat('Encontros_Sen','_', /Hluvukani_A_encontros_sensibilizacao/region_id ,'_', /Hluvukani_A_encontros_sensibilizacao/bloco_id )" nodeset="/Hluvukani_A_encontros_sensibilizacao/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/intronote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_A_encontros_sensibilizacao/my_form_name "/>&lt;/span&gt; &lt;br/&gt; Este formulário é utilizado para capturar informação sobre os encontros iniciais com as autoridades e beneficiários.
+
+Estes encontros podem ser com a liderança tradicional ou governamental, ou com membros da comunidade.
+
+Podem ser também encontros ao nível do posto administrativo ou distrito. 
+
+O formulário deve ser preenchido cada vez que haja um encontro. 
+Os encontros podem envolver actividades de: 
+- divulgação das legislações 
+- descrição das actividades do Projecto de Hluvukani 
+- recolha de dados básicos 
+- sensibilização sobre o processo de identificação e certificação dos RDUATs 
+- discussão sobre Illovo e outros investimentos 
+
+O técnico pode usar o formulário para gravar informação sobre a data e lugar do encontro, o numero de participantes e os temas abordados. 
+
+Por favor deslizar para a frente para continuar.</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/tec_nome">
+      <label>Nome do(s) técnico(s):</label>
+      <item>
+        <label>Armando Junior Zuana</label>
+        <value>AJZ</value>
+      </item>
+      <item>
+        <label>Cacilda Mothasse Jocicaze Xerinda</label>
+        <value>CMJX</value>
+      </item>
+      <item>
+        <label>Carlos Eduardo Mujovo</label>
+        <value>CEM</value>
+      </item>
+      <item>
+        <label>Coronel Gelsio Timana</label>
+        <value>CGT</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavondza</label>
+        <value>EAM</value>
+      </item>
+      <item>
+        <label>Elton Salomao Munguambe</label>
+        <value>ESM</value>
+      </item>
+      <item>
+        <label>Helena Benjamim Mondlane</label>
+        <value>HBM</value>
+      </item>
+      <item>
+        <label>Julio Fernando Manheia</label>
+        <value>JFM</value>
+      </item>
+      <item>
+        <label>Nomisse Eugenio Sitoe</label>
+        <value>NES</value>
+      </item>
+      <item>
+        <label>Noniua Paudelina Luis</label>
+        <value>NPL</value>
+      </item>
+      <item>
+        <label>Raquel Xavier Ambasse</label>
+        <value>RXA</value>
+      </item>
+      <item>
+        <label>Valdemiro Luis Mondlane</label>
+        <value>VLM</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_A_encontros_sensibilizacao/data">
+      <label>Data do encontro:</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/region_id">
+      <label>Selecionar a região (Norte, Central ou Sul)</label>
+      <item>
+        <label>Norte</label>
+        <value>RN</value>
+      </item>
+      <item>
+        <label>Central</label>
+        <value>RC</value>
+      </item>
+      <item>
+        <label>Sul</label>
+        <value>RS</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/bloco_id">
+      <label>Selecionar o bloco</label>
+      <itemset nodeset="instance('blocos')/root/item[region_id= /Hluvukani_A_encontros_sensibilizacao/region_id ]">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <group appearance="field-list" ref="/Hluvukani_A_encontros_sensibilizacao/A_g1">
+      <label>Participantes</label>
+      <input ref="/Hluvukani_A_encontros_sensibilizacao/A_g1/num_m">
+        <label>Número de mulheres:</label>
+      </input>
+      <input ref="/Hluvukani_A_encontros_sensibilizacao/A_g1/num_h">
+        <label>Número de homens:</label>
+      </input>
+    </group>
+    <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/gov_p">
+      <label>Participaram representantes do governo?</label>
+      <item>
+        <label>Sim</label>
+        <value>sim</value>
+      </item>
+      <item>
+        <label>Não</label>
+        <value>nao</value>
+      </item>
+    </select1>
+    <select appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/gov_n">
+      <label>Instituição do governo representada:</label>
+      <item>
+        <label>Administração Distrital</label>
+        <value>Administração_Distrital</value>
+      </item>
+      <item>
+        <label>Autoridade Comunitária</label>
+        <value>Autoridade_Comunitária</value>
+      </item>
+      <item>
+        <label>Chefe do Posto</label>
+        <value>Chefe_do_Posto</value>
+      </item>
+      <item>
+        <label>Presidente da Localidade</label>
+        <value>Presidente_da_Localidade</value>
+      </item>
+      <item>
+        <label>SDAE</label>
+        <value>SDAE</value>
+      </item>
+      <item>
+        <label>SDPI</label>
+        <value>SDPI</value>
+      </item>
+      <item>
+        <label>Secretario do Bairro</label>
+        <value>Secretario_do_Bairro</value>
+      </item>
+      <item>
+        <label>SPFFB</label>
+        <value>SPFFB</value>
+      </item>
+      <item>
+        <label>SPGC</label>
+        <value>SPGC</value>
+      </item>
+      <item>
+        <label>Outra</label>
+        <value>Outra</value>
+      </item>
+    </select>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/gov_o">
+      <label>Qual é a outra instituição do governo?</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/encont">
+      <label>Que tipo de encontro?</label>
+      <item>
+        <label>Encontro ao nível Comunitário/Região</label>
+        <value>Encontro_ao_nível_Comunitário/Região</value>
+      </item>
+      <item>
+        <label>Encontro ao nível de Bloco</label>
+        <value>Encontro_ao_nível_de_Bloco</value>
+      </item>
+      <item>
+        <label>Encontro com Liderança Tradicional</label>
+        <value>Encontro_com_Liderança_Tradicional</value>
+      </item>
+      <item>
+        <label>Encontro no Posto Administrativo</label>
+        <value>Encontro_no_Posto_Administrativo</value>
+      </item>
+      <item>
+        <label>Encontro com Administração do Distrito</label>
+        <value>Encontro_com_Administração_do_Distrito</value>
+      </item>
+      <item>
+        <label>Encontro com Associações</label>
+        <value>Encontro_com_Associações</value>
+      </item>
+      <item>
+        <label>Encontro com Município</label>
+        <value>Encontro_com_Município</value>
+      </item>
+      <item>
+        <label>Encontro com Indivíduos</label>
+        <value>Encontro_com_Indivíduos</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/encont_alt">
+      <label>Outro tipo de encontro?</label>
+    </input>
+    <select appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/tema">
+      <label>Tema(s) ou assunto(s) abordado(s)?</label>
+      <item>
+        <label>Apresentação do Projecto da Hluvukani e programa das actividades</label>
+        <value>Apresentação_do_Projecto</value>
+      </item>
+      <item>
+        <label>Género e vulnerabilidade</label>
+        <value>Género_e_vulnerabilidade</value>
+      </item>
+      <item>
+        <label>Quadro legal de Terras</label>
+        <value>Quadro_legal_de_Terras</value>
+      </item>
+      <item>
+        <label>Illovo e investimentos</label>
+        <value>Illovo_e_investimentos</value>
+      </item>
+      <item>
+        <label>Recolha ou confirmação de dados da comunidade/povoado/beneficiários</label>
+        <value>Recolha_de_dados</value>
+      </item>
+      <item>
+        <label>Informação sobre o registo de pessoas e identificação de ocupação (RDUATs)</label>
+        <value>Informação_sobre_RDUATs</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/tema_alt">
+      <label>Outro(s) tema(s) ou assunto(s) abordados?</label>
+    </input>
+    <group appearance="field-list" ref="/Hluvukani_A_encontros_sensibilizacao/A_g2">
+      <label>Participação</label>
+      <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_h">
+        <label>Como caracteriza o nível da participação pelos homens?</label>
+        <item>
+          <label>Muito alto</label>
+          <value>Muito_alto</value>
+        </item>
+        <item>
+          <label>Alto</label>
+          <value>Alto</value>
+        </item>
+        <item>
+          <label>Medio</label>
+          <value>Medio</value>
+        </item>
+        <item>
+          <label>Fraco</label>
+          <value>Fraco</value>
+        </item>
+        <item>
+          <label>Muito fraco</label>
+          <value>Muito_fraco</value>
+        </item>
+      </select1>
+      <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_m">
+        <label>Como caracteriza o nível da participação pelas mulheres?</label>
+        <item>
+          <label>Muito alto</label>
+          <value>Muito_alto</value>
+        </item>
+        <item>
+          <label>Alto</label>
+          <value>Alto</value>
+        </item>
+        <item>
+          <label>Medio</label>
+          <value>Medio</value>
+        </item>
+        <item>
+          <label>Fraco</label>
+          <value>Fraco</value>
+        </item>
+        <item>
+          <label>Muito fraco</label>
+          <value>Muito_fraco</value>
+        </item>
+      </select1>
+      <select1 appearance="minimal" ref="/Hluvukani_A_encontros_sensibilizacao/A_g2/part_j">
+        <label>Como caracteriza o nível da participação pelos jovens?</label>
+        <item>
+          <label>Muito alto</label>
+          <value>Muito_alto</value>
+        </item>
+        <item>
+          <label>Alto</label>
+          <value>Alto</value>
+        </item>
+        <item>
+          <label>Medio</label>
+          <value>Medio</value>
+        </item>
+        <item>
+          <label>Fraco</label>
+          <value>Fraco</value>
+        </item>
+        <item>
+          <label>Muito fraco</label>
+          <value>Muito_fraco</value>
+        </item>
+      </select1>
+    </group>
+    <upload mediatype="image/*" ref="/Hluvukani_A_encontros_sensibilizacao/encont_foto">
+      <label>Tire uma fotografia do encontro</label>
+    </upload>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/auto_gps">
+      <label>Captura das coordenadas GPS do encontro</label>
+      <hint>Lembrete: se a 'gravar localização' está levando algum tempo, por favor, verifique se a luz azul do seu Glo está ligada</hint>
+    </input>
+    <input ref="/Hluvukani_A_encontros_sensibilizacao/obs">
+      <label>Observações sobre o encontro:</label>
+    </input>
+  </h:body>
+</h:html>
