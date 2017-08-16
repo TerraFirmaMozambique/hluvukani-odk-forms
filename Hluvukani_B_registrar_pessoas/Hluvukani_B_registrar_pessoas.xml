@@ -209,7 +209,7 @@
         </translation>
       </itext>
       <instance>
-        <Hluvukani_B_registrar_pessoas id="Hluvukani_B_V1" version="201705141">
+        <Hluvukani_B_registrar_pessoas id="Hluvukani_B_V1" version="201708161">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -329,7 +329,7 @@
           <item>
             <itextId>static_instance-blocos-5</itextId>
             <region_id>Central</region_id>
-            <name>F_Manhiça_Municipality</name>
+            <name>F_Manhica_Municipality</name>
           </item>
           <item>
             <itextId>static_instance-blocos-6</itextId>
@@ -604,6 +604,8 @@
       <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_B_registrar_pessoas/my_form_name "/>&lt;/span&gt; &lt;br/&gt; 
 
 Este formulário é utilizado para gravar informação sobre as pessoas que querem fazer registo da suas terras familiares ou individuais.
+
+Os nomes das pessoas serão introduzidos no formulário que vai ser utilizado mais tarde para identificar as parcelas. Por isso será importante dizer às pessoas que devem registrar os seus nomes e detalhes antes que este processo de identificação de parcelas comece.
 
 O técnico pode usar o formulário para capturar informação sobre cada pessoa, incluindo a foto e assinatura digital.
 
