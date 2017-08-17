@@ -446,7 +446,7 @@
         </translation>
       </itext>
       <instance>
-        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201708153">
+        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201708171">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -1221,7 +1221,7 @@
       <bind nodeset="/Hluvukani_C_registrar_parcelas/data" required="true()" type="date"/>
       <bind nodeset="/Hluvukani_C_registrar_parcelas/region_id" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_C_registrar_parcelas/bloco_id" required="true()" type="select1"/>
-      <bind nodeset="/Hluvukani_C_registrar_parcelas/parcel_id" required="true()" type="string"/>
+      <bind constraint="regex(.,'[0-9]{6}')" nodeset="/Hluvukani_C_registrar_parcelas/parcel_id" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_C_registrar_parcelas/ocup" required="true()" type="select1"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,255}$&quot;)" nodeset="/Hluvukani_C_registrar_parcelas/ocup_outro" relevant=" /Hluvukani_C_registrar_parcelas/ocup ='outro'" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_C_registrar_parcelas/z_excl" required="true()" type="select1"/>
