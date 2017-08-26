@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hluvukani E Perguntas Frequentes</h:title>
+    <model>
+      <instance>
+        <Hluvukani_E_perguntas_frequentes id="Hluvukani_Peguntas_Frequentes_V1" version="201708261">
+          <start/>
+          <my_form_name/>
+          <intronote/>
+          <tec_nome/>
+          <data/>
+          <capitulo/>
+          <pergunta/>
+          <end/>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Hluvukani_E_perguntas_frequentes>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_E_perguntas_frequentes/start" type="dateTime"/>
+      <bind calculate="&quot;Proposta para Perguntas Frequentes&quot;" nodeset="/Hluvukani_E_perguntas_frequentes/my_form_name" type="string"/>
+      <bind nodeset="/Hluvukani_E_perguntas_frequentes/intronote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_E_perguntas_frequentes/tec_nome" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_E_perguntas_frequentes/data" required="true()" type="date"/>
+      <bind nodeset="/Hluvukani_E_perguntas_frequentes/capitulo" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâêô]{1,1000}$&quot;)" nodeset="/Hluvukani_E_perguntas_frequentes/pergunta" required="true()" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_E_perguntas_frequentes/end" type="dateTime"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_E_perguntas_frequentes/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat('peguntas_freq','_', /Hluvukani_E_perguntas_frequentes/data ,'_', /Hluvukani_E_perguntas_frequentes/tec_nome )" nodeset="/Hluvukani_E_perguntas_frequentes/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Hluvukani_E_perguntas_frequentes/intronote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_E_perguntas_frequentes/my_form_name "/>&lt;/span&gt; &lt;br/&gt; 
+
+Este formulário é utilizado para propor uma pergunta que deve ser incluída no Manual Operacional.
+
+A equipa responsável para o Manual vai analisar, incluir a pergunta no manual e juntar uma resposta/clarificação.
+
+Por favor deslizar para a frente para continuar.</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_E_perguntas_frequentes/tec_nome">
+      <label>Nome do(s) técnico(s):</label>
+      <item>
+        <label>Armando Junior Zuana</label>
+        <value>AJZ</value>
+      </item>
+      <item>
+        <label>Cacilda Mothasse Jocicaze Xerinda</label>
+        <value>CMJX</value>
+      </item>
+      <item>
+        <label>Carlos Eduardo Mujovo</label>
+        <value>CEM</value>
+      </item>
+      <item>
+        <label>Coronel Gelsio Timana</label>
+        <value>CGT</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavondza</label>
+        <value>EAM</value>
+      </item>
+      <item>
+        <label>Elton Salomao Munguambe</label>
+        <value>ESM</value>
+      </item>
+      <item>
+        <label>Helena Benjamim Mondlane</label>
+        <value>HBM</value>
+      </item>
+      <item>
+        <label>Julio Fernando Manheia</label>
+        <value>JFM</value>
+      </item>
+      <item>
+        <label>Nomisse Eugenio Sitoe</label>
+        <value>NES</value>
+      </item>
+      <item>
+        <label>Noniua Paudelina Luis</label>
+        <value>NPL</value>
+      </item>
+      <item>
+        <label>Raquel Xavier Ambasse</label>
+        <value>RXA</value>
+      </item>
+      <item>
+        <label>Valdemiro Luis Mondlane</label>
+        <value>VLM</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_E_perguntas_frequentes/data">
+      <label>Data:</label>
+    </input>
+    <select1 ref="/Hluvukani_E_perguntas_frequentes/capitulo">
+      <label>Para qual modúlo é a pergunta?</label>
+      <item>
+        <label>Sensibilização</label>
+        <value>sens</value>
+      </item>
+      <item>
+        <label>Associação</label>
+        <value>assoc</value>
+      </item>
+      <item>
+        <label>Plano de Uso</label>
+        <value>plano</value>
+      </item>
+      <item>
+        <label>Delimitação Comunitário</label>
+        <value>delim_com</value>
+      </item>
+      <item>
+        <label>Delimitação Familiar</label>
+        <value>delim_fam</value>
+      </item>
+    </select1>
+    <input ref="/Hluvukani_E_perguntas_frequentes/pergunta">
+      <label>Qual é a pergunta?</label>
+    </input>
+  </h:body>
+</h:html>
