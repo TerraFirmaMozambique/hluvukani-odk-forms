@@ -1,8 +1,8 @@
--- this query uses a select query to add names to the form_b_pessoas table from the form_c_parcelas - form_c_novas_pessoas relationship
+-- this query creates an update table "update_novas_pessoas" which allows data validation and correction from adding new people who are collected during the completion of the ODK form_c_parcelas.
 
-
--- 1st we add new people collected during the completion of the ODK from form_c_parcelas
 -- After the VBA code has been run form C, we build a primary table "public.update_novas_pessoas" which allows a check of the data through VFront for "proof of life"
+
+-- this table is always current so we drop it first then build new then populate from csv
 
 DROP TABLE public.update_novas_pessoas;
 
@@ -41,18 +41,19 @@ WITH (
 
 ALTER TABLE public.update_novas_pessoas  OWNER to postgres;
 
--- upload the ODK output
-COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/working_folder/Hluvukani_C_novas_pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
+-- upload the ODK output of novas_pessoas these will all have a party_id of '1' whilst being collected.
 
--- delete any data already in table_b
+COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_novas_pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
+
+-- delete any data already in table_b from previous itterations
 
 DELETE FROM public.update_novas_pessoas
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
 WHERE key = public.update_novas_pessoas.parent_uid );
 
-UPDATE public.update_novas_pessoas 
---set the display propertieds of the photos
+--set the display propertieds of the photos to display in vfront
 
+UPDATE public.update_novas_pessoas 
 SET pessoa_foto = '<img src="'||pessoa_foto||'" style="width:256px;height:256px;">',
 id_foto = '<img src="'||id_foto||'" style="width:256px;height:256px;">',
 pessoa_assin = '<img src="'||pessoa_assin||'" style="width:256px;height:256px;">';

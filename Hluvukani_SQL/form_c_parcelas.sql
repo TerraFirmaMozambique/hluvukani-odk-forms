@@ -55,7 +55,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.update_form_c_parcelas  OWNER to postgres;
 
 
-COPY public.update_form_c_pontos FROM '/var/lib/share/projects/illovo/working_folder/Hluvukani_C_parcelas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER;
+COPY public.update_form_c_pontos FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_parcelas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';;
 
 
 
@@ -68,6 +68,9 @@ WHERE a.ctid <> (SELECT min(b.ctid)
 DELETE from public.update_form_c_parcelas
 WHERE EXISTS (SELECT 1 FROM public.form_c_parcelas
 WHERE key = public.update_form_c_parcelas.key );
+
+UPDATE public.update_form_c_parcelas 
+SET reciboimage = '<img src="'||reciboimage||'" style="width:256px;height:256px;">';
 
 
 SELECT UpdateGeometrySRID('form_c_parcelas','geom',0);
