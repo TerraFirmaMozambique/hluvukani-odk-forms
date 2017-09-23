@@ -138,62 +138,21 @@ WHERE a.ctid <> (SELECT min(b.ctid)
 				 
 DROP TABLE public.update_form_c_titulares;
 
--- stage 1 update novas pessoas for v-front
+-- stage 1 update novas pessoas for v-front remove rejeitado people first, 
 
-DROP TABLE public.update_novas_pessoas;
+/* stage 1 store rejected people from the vfront which have had their state changed from the 'não confirmado' to rejeitado or sim */
 
-CREATE TABLE public.update_novas_pessoas
-(
-id serial,
-parent_uid character varying,
-pessoa_app character varying,
-pessoa_nom character varying,
-pessoa_gen character varying,
-pessoa_civil character varying,
-pessoa_prof character varying,
-pessoa_prof_other character varying,
-pessoa_nacion character varying,
-pessoa_natural character varying,
-nasc_y_n character varying,
-pessoa_nasc date,
-pessoa_ida character varying,
-pessoa_doc character varying,
-pessoa_id character varying,
-doc_local character varying,
-doc_emi date,
-doc_val date,
-doc_vital character varying,
-pessoa_foto character varying,
-id_foto character varying,
-pessoa_assin character varying,
-contacto integer,
-party_name character varying,
-confirmado character varying(3) NOT NULL DEFAULT 'não'::character varying, 
-CONSTRAINT pkey_update_novas_pessoas PRIMARY KEY (id)
-)
-WITH (
-    OIDS = FALSE
-);
+ 
 
-ALTER TABLE public.update_novas_pessoas  OWNER to postgres;
+INSERT INTO public.form_c_pessoas_rejeitado (parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado)
+SELECT parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado 
+FROM update_novas_pessoas
+WHERE confirmado = 'rejeitado';
 
--- upload the ODK output
-COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_novas_pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
+UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
--- delete any data already in table_b
+-- stage 2 create  update_pessoas_nova  from form C and update_novas_pessoas,  
 
-DELETE FROM public.update_novas_pessoas
-WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
-WHERE key = public.update_novas_pessoas.parent_uid );
-
---set the display propertieds of the photos
-
-UPDATE public.update_novas_pessoas 
-SET pessoa_foto = '<img src="'||pessoa_foto||'" style="width:256px;height:256px;">',
-id_foto = '<img src="'||id_foto||'" style="width:256px;height:256px;">',
-pessoa_assin = '<img src="'||pessoa_assin||'" style="width:256px;height:256px;">';
-
--- update table b from the vfront edits
 
 CREATE TABLE public.update_pessoas_nova AS SELECT 
   form_c_parcelas.subdate, 
@@ -238,20 +197,22 @@ WHERE
   update_novas_pessoas.confirmado = 'sim';
   
   ALTER TABLE public.update_novas_pessoas OWNER TO postgres;
+  
 
+  
 -- delete duplicates
 
 DELETE FROM public.update_pessoas_nova a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.update_pessoas_nova b
-                 WHERE  a.parent_uid = b.parent_uid);
+                 WHERE  a.party_name = b.party_name);
 				 
 
 -- delete occurances we already have
 
 DELETE from public.update_pessoas_nova
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas
-WHERE key = public.update_pessoas_nova.parent_uid );
+WHERE party_name_key = public.update_pessoas_nova.party_name);
 
 -- insert new validated pessoas into form b 
 
@@ -262,7 +223,7 @@ INSERT INTO public.form_b_pessoas(
             pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, 
             pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, 
             id_foto, pessoa_assin, contacto, finish, meta_id, meta_name, 
-            key, party_name)
+            key, party_name_key)
 SELECT subdate, start, myformname, intronote, tecnome, 
 data, regionid, blocoid, pessoa_app, pessoa_nom, pessoa_gen, 
 pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, 
@@ -274,7 +235,28 @@ FROM public.update_pessoas_nova;
   
 UPDATE public.form_b_pessoas SET id_party = 'party'||id;
 
+--- this is for the csv outputs
+
+UPDATE public.form_b_pessoas SET party_name = concat(pessoa_nom)||' '||(pessoa_app)||' '||(pessoa_doc)||' '||(pessoa_id);
+
 --- Insert into form_c_titulares the new person with the new associated id_party
+
+/* this was meant to create link between the titulars and it does (SELECT 
+  form_c_parcelas.parcelid, 
+  form_c_titulares.foundparty, 
+  form_b_pessoas.pessoa_nom, 
+  form_b_pessoas.pessoa_app
+FROM 
+  public.form_b_pessoas, 
+  public.form_c_parcelas, 
+  public.form_c_titulares
+WHERE 
+  form_c_titulares.foundparty = form_b_pessoas.id_party AND
+  form_c_titulares.parentuid = form_c_parcelas.key
+ORDER BY
+  form_c_parcelas.parcelid ASC;) 
+  
+and the form_b enforced also through sql code in oobase for the OCC... I'll leave it in here as it works so no repeates and eventually all the found parties will be associated in the titulars*/
 
 INSERT INTO public.form_c_titulares(parentuid, foundparty)
 SELECT 
@@ -287,27 +269,11 @@ WHERE
   form_b_pessoas.key = update_pessoas_nova.parent_uid;
 
 
--- delete from update_novas_pessoas those validated and added to form_b_pessoas
-
-DELETE from public.update_novas_pessoas
-WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas
-WHERE key = public.update_novas_pessoas.parent_uid );
-
-
--- produce updated regional lists for form_C which would update the lists produced from form_b  
-
-Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Central') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Central.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
-
-Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Norte') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Norte.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
-
-Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Sul') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Sul.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
-
--- the association with parcels is through the parent_uid from form_c_(parcelas) oobase query joins parcels_hluvukani to form_c_parcelas through upn-parcelid and joins form_c_parcelas to form_c_titulars via parentuid-parentuid which links the part 
-DROP TABLE public.update_pessoas_nova;
-
--- after we have updated the table we rebuild the update_novas_pessoas table taking out the authenticated pessoas..
-
+-- once the update to the rejects and sim has happened then we build the Vfront table again first we drop it
+ 
 DROP TABLE public.update_novas_pessoas;
+
+-- stage 3 update_novas_pessoasfor v-front remove rejeitado people first,
 
 CREATE TABLE public.update_novas_pessoas
 (
@@ -335,7 +301,7 @@ id_foto character varying,
 pessoa_assin character varying,
 contacto integer,
 party_name character varying,
-confirmado character varying(3) NOT NULL DEFAULT 'não'::character varying,
+confirmado character varying NOT NULL DEFAULT 'não confirmado'::character varying, 
 CONSTRAINT pkey_update_novas_pessoas PRIMARY KEY (id)
 )
 WITH (
@@ -347,17 +313,44 @@ ALTER TABLE public.update_novas_pessoas  OWNER to postgres;
 -- upload the ODK output
 COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_novas_pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
 
--- delete any data already in table_b
+UPDATE public.update_novas_pessoas SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
+
+-- delete any data already in table_b based on unique parent_uid||person details ()
 
 DELETE FROM public.update_novas_pessoas
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
-WHERE key = public.update_novas_pessoas.parent_uid );
+WHERE party_name_key = public.update_novas_pessoas.party_name );
+
+
+-- delete any data moved to form_c_pessoas_rejeitado
+
+DELETE FROM public.update_novas_pessoas
+WHERE EXISTS (SELECT 1 FROM public.form_c_pessoas_rejeitado 
+WHERE party_name = public.update_novas_pessoas.party_name );
+
 --set the display propertieds of the photos
 
 UPDATE public.update_novas_pessoas 
 SET pessoa_foto = '<img src="'||pessoa_foto||'" style="width:256px;height:256px;">',
 id_foto = '<img src="'||id_foto||'" style="width:256px;height:256px;">',
 pessoa_assin = '<img src="'||pessoa_assin||'" style="width:256px;height:256px;">';
+
+
+-- produce updated regional lists for form_C which would update the lists produced from form_b  
+
+Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Central') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Central.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
+
+Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Norte') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Norte.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
+
+Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Sul') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Sul.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
+
+/* the association with parcels is through the parent_uid from form_c_(parcelas) oobase query joins parcels_hluvukani to form_c_parcelas through upn-parcelid and joins form_c_parcelas to form_c_titulars via parentuid-parentuid which links the part */
+
+DROP TABLE public.update_pessoas_nova;
+
+-- after we have updated the table we rebuild the update_novas_pessoas table taking out the authenticated pessoas..
+
+
 
 CREATE TABLE public.update_form_c_tetsemunhas
 (
