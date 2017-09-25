@@ -67,7 +67,13 @@ UPDATE public.form_b_pessoas SET id_party = 'party';
 
 UPDATE public.form_b_pessoas SET id_party = id_party||id;
 
+--- this is for the csv outputs
+
 UPDATE public.form_b_pessoas SET party_name = pessoa_nom||' '||pessoa_app||' '||pessoa_doc||' '|| pessoa_id;
+
+--- this is for the form c additions link.
+
+UPDATE public.form_b_pessoas SET party_name_key = concat(key)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
 
 Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Central') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Central.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';
