@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hluvukani C1 Prova da Vida</h:title>
+    <model>
+      <instance>
+        <Hluvukani_C1_prova_vida id="Hluvukani_C1_V1" version="201710181">
+          <start/>
+          <my_form_name/>
+          <intronote/>
+          <tec_nome/>
+          <data/>
+          <parcel_id/>
+          <parcel_id_check/>
+          <party_id/>
+          <pessoa_foto/>
+          <recibo_image/>
+          <end/>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Hluvukani_C1_prova_vida>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_C1_prova_vida/start" type="dateTime"/>
+      <bind calculate="&quot;Prova da Vida - Novas Pessoas&quot;" nodeset="/Hluvukani_C1_prova_vida/my_form_name" type="string"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/intronote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/tec_nome" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/data" required="true()" type="date"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/parcel_id" required="true()" type="string"/>
+      <bind constraint=".= /Hluvukani_C1_prova_vida/parcel_id " jr:constraintMsg="O número da parcela/registo que reentrou não corresponde à sua primeira entrada. Faça a favor de verificar de novo." nodeset="/Hluvukani_C1_prova_vida/parcel_id_check" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/party_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/pessoa_foto" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_C1_prova_vida/recibo_image" required="true()" type="binary"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_C1_prova_vida/end" type="dateTime"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_C1_prova_vida/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat('fotos','_', /Hluvukani_C1_prova_vida/parcel_id ,'_', /Hluvukani_C1_prova_vida/party_id )" nodeset="/Hluvukani_C1_prova_vida/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Hluvukani_C1_prova_vida/intronote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_C1_prova_vida/my_form_name "/>&lt;/span&gt; &lt;br/&gt; 
+
+Este formulário é utilizado para tirar as fotografias das pessoas que foram registadas inicialmente apenas com um documento de identificação.
+
+O registo inicial devia ter sido presencial, mas alguns registos foram efectuados através de apresentação de documentos por representantes dos requerentes. Para continuar com o processo de certificacao, é necessario que a pessoa faça a 'prova da vida' a que capturamos a imagem. 
+
+Este formulário também requer uma imagem do recibo que foi emitido no momento do registo de parcela.
+
+Por favor deslizar para a frente para continuar.</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_C1_prova_vida/tec_nome">
+      <label>Nome do(a) técnico(a):</label>
+      <item>
+        <label>Armando Junior Zuana</label>
+        <value>Armando_Zuana</value>
+      </item>
+      <item>
+        <label>Cacilda Mothasse Jocicaze Xerinda</label>
+        <value>Cacilda_Xerinda</value>
+      </item>
+      <item>
+        <label>Carlos Eduardo Mujovo</label>
+        <value>Carlos_Mujovo</value>
+      </item>
+      <item>
+        <label>Coronel Gelsio Timana</label>
+        <value>Coronel_Timana</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavondza</label>
+        <value>Efigencia_Mavondza</value>
+      </item>
+      <item>
+        <label>Elton Salomao Munguambe</label>
+        <value>Elton_Munguambe</value>
+      </item>
+      <item>
+        <label>Helena Benjamim Mondlane</label>
+        <value>Helena_Mondlane</value>
+      </item>
+      <item>
+        <label>Julio Fernando Manheia</label>
+        <value>Julio_Manheia</value>
+      </item>
+      <item>
+        <label>Nomisse Eugenio Sitoe</label>
+        <value>Nomisse_Sitoe</value>
+      </item>
+      <item>
+        <label>Noniua Paudelina Luis</label>
+        <value>Noniua_Luis</value>
+      </item>
+      <item>
+        <label>Raquel Xavier Ambasse</label>
+        <value>Raquel_Ambasse</value>
+      </item>
+      <item>
+        <label>Valdemiro Luis Mondlane</label>
+        <value>Valdemiro_Mondlane</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_C1_prova_vida/data">
+      <label>Data do registo:</label>
+    </input>
+    <input appearance="numbers" ref="/Hluvukani_C1_prova_vida/parcel_id">
+      <label>Qual é o numero do recibo?</label>
+    </input>
+    <input appearance="numbers" ref="/Hluvukani_C1_prova_vida/parcel_id_check">
+      <label>Por favor, re-digite o número do recibo como confirmação:</label>
+    </input>
+    <select1 ref="/Hluvukani_C1_prova_vida/party_id">
+      <label>Selecionar o nome da pessoa</label>
+      <item>
+        <label>Chiconela Ezequiel fenias c_impost 5610</label>
+        <value>9989</value>
+      </item>
+      <item>
+        <label>Chiconela Isaque Fenias Chiconela c_impost 5610</label>
+        <value>9940</value>
+      </item>
+      <item>
+        <label>Chicuamba Ismael Alfredo bi 100404696751Q</label>
+        <value>9745</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias bi 1004026800497N</label>
+        <value>9209</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias ced 668046</label>
+        <value>9310</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias ced 668046</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias ced 668046</label>
+        <value>9756</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias ced 668046</label>
+        <value>9759</value>
+      </item>
+      <item>
+        <label>Chilaule Maria Azarias ced 668046</label>
+        <value>9766</value>
+      </item>
+      <item>
+        <label>Chivure Celeste Gabriel Novela bi 110201649569Q</label>
+        <value>9236</value>
+      </item>
+      <item>
+        <label>Dolhana Maria João bi 100404559519P</label>
+        <value>9580</value>
+      </item>
+      <item>
+        <label>Hunguana Sérgio Gonçalves bi 110101036908C</label>
+        <value>9231</value>
+      </item>
+      <item>
+        <label>Komaio Albertina Kei c_eleit 12071563</label>
+        <value>9876</value>
+      </item>
+      <item>
+        <label>Livisse Agostinho João bi 110104642611N</label>
+        <value>9815</value>
+      </item>
+      <item>
+        <label>Lumbela Elias Machelagodine bi 110100295545A</label>
+        <value>9223</value>
+      </item>
+      <item>
+        <label>Macamo Angelo Luis c_eleit 12071794</label>
+        <value>9695</value>
+      </item>
+      <item>
+        <label>Machaeie Benedito Diniz ced 65146</label>
+        <value>9310</value>
+      </item>
+      <item>
+        <label>Machaeie Benedito Diniz ced 65146</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>Machaeie José Diniz ced 857421</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>Machaieie Benedito Dinis ced 65146</label>
+        <value>9756</value>
+      </item>
+      <item>
+        <label>Machaieie Benedito Dinis ced 65146</label>
+        <value>9759</value>
+      </item>
+      <item>
+        <label>Machaieie Benedito Dinis ced 65146</label>
+        <value>9766</value>
+      </item>
+      <item>
+        <label>Machaieie Benedito Dinis ced 65146</label>
+        <value>9786</value>
+      </item>
+      <item>
+        <label>Machaieie Benedito Dinis ced 65146</label>
+        <value>9209</value>
+      </item>
+      <item>
+        <label>Machaieie Maria Azarias Chilaule bi 100402680497N</label>
+        <value>9786</value>
+      </item>
+      <item>
+        <label>Machiana Carla Isabel p_port 15AJ41963</label>
+        <value>9733</value>
+      </item>
+      <item>
+        <label>Macuacua Flora Silvestre c_eleit 1004A860810839</label>
+        <value>9744</value>
+      </item>
+      <item>
+        <label>Macuacua Marta Causolada c_eleit 13082829</label>
+        <value>9265</value>
+      </item>
+      <item>
+        <label>MANHIÇA Isabel Joaquim bi 10006696B</label>
+        <value>9234</value>
+      </item>
+      <item>
+        <label>MANHIÇA LAURINDA JOAQUIM c_eleit 367707</label>
+        <value>9235</value>
+      </item>
+      <item>
+        <label>MANHIÇA Violeta Cotassana bi 100400613064B</label>
+        <value>9741</value>
+      </item>
+      <item>
+        <label>Mapanga Lúcia Clarmina bi 100400667510Q</label>
+        <value>9720</value>
+      </item>
+      <item>
+        <label>Massango Mónica Amone bi 110101302568F</label>
+        <value>9735</value>
+      </item>
+      <item>
+        <label>Mawelele Leonardo Fabião c_eleit 12598423</label>
+        <value>9691</value>
+      </item>
+      <item>
+        <label>Mbeve Ana Maria Antónia bi 100005272F</label>
+        <value>9247</value>
+      </item>
+      <item>
+        <label>Mbeve Regina dos Santos talao 11566942</label>
+        <value>9712</value>
+      </item>
+      <item>
+        <label>Muchanga Salvador Baptista bi 110202091364N</label>
+        <value>9686</value>
+      </item>
+      <item>
+        <label>Muiambo Atalia Michaque c_eleit 1834033</label>
+        <value>9511</value>
+      </item>
+      <item>
+        <label>Nhacale Aurora Dinis c_eleit 1550804</label>
+        <value>9704</value>
+      </item>
+      <item>
+        <label>Roma Higino Francisco Carlos bi 110202136654P</label>
+        <value>9225</value>
+      </item>
+      <item>
+        <label>Sitoe Avelina Azarias Sitoe c_nasc Xxxxxxxx</label>
+        <value>9006</value>
+      </item>
+      <item>
+        <label>Sitoe Avelina Azarias Sitoe c_nasc xxxxxxxxx</label>
+        <value>9896</value>
+      </item>
+      <item>
+        <label>Timana Fernando Manuel bi 3706723</label>
+        <value>9585</value>
+      </item>
+      <item>
+        <label>Timbe Hercílio Timbe ced 45472</label>
+        <value>9853</value>
+      </item>
+      <item>
+        <label>Tiua Regina Pedro bi 100402879917B</label>
+        <value>9722</value>
+      </item>
+      <item>
+        <label>Uelane Saugina João c_eleit 2609439</label>
+        <value>9263</value>
+      </item>
+      <item>
+        <label>Xerinda Filomena Marta bi 100390103W</label>
+        <value>9273</value>
+      </item>
+      <item>
+        <label>Xerinda Julieta Augusto ced 69202</label>
+        <value>9770</value>
+      </item>
+      <item>
+        <label>Xerinda Lizete Aurelio bi 110104918215I</label>
+        <value>9327</value>
+      </item>
+      <item>
+        <label>Zimia Salmina Francisco bi 100405126306P</label>
+        <value>9703</value>
+      </item>
+      <item>
+        <label>Zunguene Alberto c_eleit Xxxxx&quot;</label>
+        <value>9104</value>
+      </item>
+    </select1>
+    <upload mediatype="image/*" ref="/Hluvukani_C1_prova_vida/pessoa_foto">
+      <label>Tire uma fotografia da pessoa</label>
+    </upload>
+    <upload mediatype="image/*" ref="/Hluvukani_C1_prova_vida/recibo_image">
+      <label>Tire uma fotografia do recibo</label>
+    </upload>
+  </h:body>
+</h:html>
