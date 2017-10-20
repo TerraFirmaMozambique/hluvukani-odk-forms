@@ -44,7 +44,7 @@ GRANT ALL ON TABLE public.update_form_b_pessoas TO public;
 GRANT ALL ON TABLE public.update_form_b_pessoas TO postgres;
 
 
-COPY public.update_form_b_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_B_Registrar_Pessoas'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
+COPY public.update_form_b_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_B_Registrar_Pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
 
 DELETE FROM public.update_form_b_pessoas a
 WHERE a.ctid <> (SELECT min(b.ctid)
@@ -67,7 +67,9 @@ UPDATE public.form_b_pessoas SET id_party = 'party';
 
 UPDATE public.form_b_pessoas SET id_party = id_party||id;
 
-UPDATE public.form_b_pessoas SET party_name = pessoa_nom||' '||pessoa_app||' '||pessoa_doc||' '|| pessoa_id;
+UPDATE public.form_b_pessoas SET party_name = concat(pessoa_nom)||' '||(pessoa_app)||' '||(pessoa_doc)||' '||(pessoa_id);
+
+UPDATE public.form_b_pessoas SET party_name_key = concat(key)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
 
 Copy (select bloco_id AS bloco_id_key, id_party AS party_id_key, party_name FROM public.form_b_pessoas where region_id = 'Central') TO '/var/lib/share/projects/illovo/ODK Forms/hluvukani-odk-forms/Hluvukani_C_registrar_parcelas/Hluvukani_C_registrar_parcelas-media/Central.csv' DELIMITER ',' NULL AS '' CSV HEADER ENCODING 'latin1';

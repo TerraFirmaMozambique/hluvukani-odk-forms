@@ -1,3 +1,17 @@
+/* this SQL handels all of the routines for the data collected by Form Hluvukani C Registrar Parcelas which is consolidated in the excel sheet Hluvukani_C_V1 
+	an embeded VBA code produces five CSV files 
+	Hluvukani_C_parcelas
+	Hluvukani_C_titulars
+	Hluvukani_C_novas_pessoas
+	Hluvukani_C_testemunhas
+	Hluvukani_C_pontos
+	for uploading to the database host=tfmoz.ddns.net dbname=hluvukani port=5432
+	*/ 
+
+
+
+/* This < SECTION > updates Hluvukani_C_parcelas */ 
+
 CREATE TABLE public.update_form_c_parcelas
 (
     geom geometry(Point,0),
@@ -58,40 +72,49 @@ ALTER TABLE public.update_form_c_parcelas  OWNER to postgres;
 COPY public.update_form_c_parcelas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_parcelas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';;
 
 
--- remove duplicates in the table update_form_c_parcelas
 
 DELETE FROM public.update_form_c_parcelas a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.update_form_c_parcelas b
                  WHERE  a.key = b.key);
 				 
--- remove tupuls we already have from the ODK source update_form_c_parcelas in the table form_c_parcelas key as unique id
 
 DELETE from public.update_form_c_parcelas
 WHERE EXISTS (SELECT 1 FROM public.form_c_parcelas
 WHERE key = public.update_form_c_parcelas.key );
 
--- update image reference in the update_form_c_parcelas table absolute ref
 
 UPDATE public.update_form_c_parcelas 
 SET reciboimage = '<img src="'||reciboimage||'" style="width:256px;height:256px;">';
 
--- change the geom to '0'
 
 SELECT UpdateGeometrySRID('form_c_parcelas','geom',0);
 
--- ** lazy update here use absolute references **
+INSERT INTO public.form_c_parcelas(
+            geom, subdate, start, myformname, intronote, tecnome, data, regionid, 
+            blocoid, parcelid, ocup, ocupoutro, zexcl, partexcl, tipoexcl, 
+            conf, tipoconf, descconf, usecat, usetipo, useprin, useother, 
+            partytype, repmenor, addpartynumber, titularescount, titulares, 
+            regpartyyn, regnewpartynumber, novaspessoascount, novaspessoas, 
+            testemnum, testemunhas_count, testemunhas, latitude, longitude, 
+            altitude, accuracy, limitesyn, pontos, endnote, reciboimage, 
+            finish, inst_id, inst_name, key)
+SELECT geom, subdate, start, myformname, intronote, tecnome, data, regionid, 
+       blocoid, parcelid, ocup, ocupoutro, zexcl, partexcl, tipoexcl, 
+       conf, tipoconf, descconf, usecat, usetipo, useprin, useother, 
+       partytype, repmenor, addpartynumber, titularescount, titulares, 
+       regpartyyn, regnewpartynumber, novaspessoascount, novaspessoas, 
+       testemnum, testemunhas_count, testemunhas, latitude, longitude, 
+       altitude, accuracy, limitesyn, pontos, endnote, reciboimage, 
+       finish, inst_id, inst_name, key
+FROM public.update_form_c_parcelas;
 
-INSERT INTO public.form_c_parcelas
-SELECT * FROM public.update_form_c_parcelas;
-
--- change back the geom to WGS84 
 SELECT UpdateGeometrySRID('form_c_parcelas','geom',4326);
 
--- remove the update table
+
 DROP TABLE public.update_form_c_parcelas;
 
--- Titulars
+/* This < SECTION > updates Hluvukani_C_titulars */  
 
 CREATE TABLE public.update_form_c_titulares
 (
@@ -100,7 +123,6 @@ CREATE TABLE public.update_form_c_titulares
   foundparty character varying
   
 )
--- oids true gives an id for editing
 WITH (
   OIDS=TRUE
 );
@@ -109,65 +131,82 @@ GRANT ALL ON TABLE public.update_form_c_titulares TO postgres;
 
 COPY public.update_form_c_titulares FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_titulars.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
 
--- this removes all new parties and ensures only those parties already in the database are added to the database table.
+-- this removes all new parties and ensures only those parties already in the database are added to the database table and removes those added through late claims.
 
 DELETE FROM public.update_form_c_titulares 
 WHERE foundparty = '1';
 
--- add a new column to the table update_form_c_titulares and populate it
-
+-- Create a unique reference colum 
 ALTER TABLE public.update_form_c_titulares ADD COLUMN titulares character varying;
 
+-- populate the column 
 UPDATE public.update_form_c_titulares 
 SET titulares = concat ("parentuid","searchtext","foundparty");
 
--- delete duplicates in update_form_c_titulares ( there shouldn't be any but hey ho)
-
+-- delete duplicates in update_form_c_titulares this reduces duplicate to one occurance
 DELETE FROM public.update_form_c_titulares a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.update_form_c_titulares b
                  WHERE  a.titulares = b.titulares);
 
--- delete from update_form_c_titulares data already parsed into dbase update principle table first.
-
-UPDATE form_c_titulares SET COLUMN titulares = concat ("parentuid","searchtext","foundparty");
-  
+-- delete from update_form_c_titulares data already parsed into dbase
 DELETE FROM public.update_form_c_titulares
 WHERE EXISTS (SELECT 1 FROM public.form_c_titulares 
 WHERE titulares = public.update_form_c_titulares.titulares);
 
-
+-- cleaned data entered into the main table
 INSERT INTO public.form_c_titulares(parentuid, searchtext, foundparty, titulares)
 SELECT parentuid, searchtext, foundparty, titulares
 FROM public.update_form_c_titulares;
-	
-/* DELETE FROM public.form_c_titulares a
+
+/* ensure there is only one occurance for each person to party_id (need to be aware of multiple registrations of a person at this. The phase proof of life form will be used to add a party to titulares parsing out duplicate entries however those that haven't gone through the POL phase has slipped through  )*/
+DELETE FROM public.form_c_titulares a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.form_c_titulares b
                  WHERE  a.titulares = b.titulares);
 				 
 
-				 shouldn't need this  */
 				 
 DROP TABLE public.update_form_c_titulares;
 
--- stage 1 update novas pessoas for v-front remove rejeitado people first, 
+-- this works for those that have been identified
 
-/* stage 1 store rejected people from the vfront which have had their state changed from the 'não confirmado' to rejeitado or sim */
+/*  updating update_novas_pessoas for v-front, update_novas_pessoas is the table that feeds the vfront.
+	first remove rejeitado people from the vfront which have had their state changed from the 'não confirmado' to 'rejeitado' or 'sim'. 
+	store these rejected people for later validation. from the vfront which have had their state changed from the 'não confirmado' to rejeitado or sim */
 
  
--- the table in the dbase was not excepting new inputs think it was the ID serial **
 
-  
-INSERT INTO public.form_c_pessoas_rejeitado (parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado)
-SELECT parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado 
-FROM update_novas_pessoas
+INSERT INTO public.form_c_pessoas_rejeitado(
+            parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, 
+            pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, 
+            nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, 
+            doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, 
+            contacto, party_name, confirmado)
+			
+SELECT parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, 
+       pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, 
+       nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, 
+       doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, 
+       contacto, party_name, confirmado
+  FROM public.update_novas_pessoas
 WHERE confirmado = 'rejeitado';
--- this updates a key between used between form_c_pessoas_rejeitado and *****   
 
-UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
--- stage 2 create  update_pessoas_nova from form C and update_novas_pessoas,  
+
+DELETE FROM public.form_c_pessoas_rejeitado a
+WHERE a.ctid <> (SELECT min(b.ctid)
+                 FROM   public.form_c_pessoas_rejeitado b
+                 WHERE  a.party_name = b.party_name);
+
+DELETE FROM public.update_novas_pessoas
+WHERE EXISTS (SELECT 1 FROM public.form_c_pessoas_rejeitado 
+WHERE party_name = public.update_novas_pessoas.party_name);
+
+--- UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
+
+-- stage 2 create  update_pessoas_nova  from form C and update_novas_pessoas,  
+
 
 CREATE TABLE public.update_pessoas_nova AS SELECT 
   form_c_parcelas.subdate, 
@@ -213,8 +252,6 @@ WHERE
   
   ALTER TABLE public.update_novas_pessoas OWNER TO postgres;
   
-
-  
 -- delete duplicates
 
 DELETE FROM public.update_pessoas_nova a
@@ -228,6 +265,7 @@ WHERE a.ctid <> (SELECT min(b.ctid)
 DELETE from public.update_pessoas_nova
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas
 WHERE party_name_key = public.update_pessoas_nova.party_name);
+
 
 -- insert new validated pessoas into form b 
 
@@ -251,12 +289,16 @@ FROM public.update_pessoas_nova;
 UPDATE public.form_b_pessoas SET id_party = 'party'||id;
 
 --- this is for the csv outputs
+--> this makes the form_b_pessoas.party_name the same as update_novas_pessoas.party_name for deleting those we already have in form b from the downloads
 
 UPDATE public.form_b_pessoas SET party_name = concat(pessoa_nom)||' '||(pessoa_app)||' '||(pessoa_doc)||' '||(pessoa_id);
 
+
 --- Insert into form_c_titulares the new person with the new associated id_party
 
-/* this was meant to create link between the titulars and it does (SELECT 
+/* this was meant to create link between the titulars and it does 
+(
+SELECT 
   form_c_parcelas.parcelid, 
   form_c_titulares.foundparty, 
   form_b_pessoas.pessoa_nom, 
@@ -273,7 +315,20 @@ ORDER BY
   
 and the form_b enforced also through sql code in oobase for the OCC... I'll leave it in here as it works so no repeates and eventually all the found parties will be associated in the titulars*/
 
-INSERT INTO public.form_c_titulares(parentuid, foundparty)
+CREATE TABLE public.update_form_c_titulares
+(
+  parentuid character varying NOT NULL,
+  searchtext character varying,
+  foundparty character varying
+  
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE public.update_form_c_titulares OWNER TO postgres;
+GRANT ALL ON TABLE public.update_form_c_titulares TO postgres;
+
+INSERT INTO public.update_form_c_titulares(parentuid, foundparty)
 SELECT 
   update_pessoas_nova.parent_uid,
   form_b_pessoas.id_party
@@ -283,10 +338,41 @@ FROM
 WHERE 
   form_b_pessoas.key = update_pessoas_nova.parent_uid;
 
+ALTER TABLE public.update_form_c_titulares ADD COLUMN titulares character varying;
+
+UPDATE public.update_form_c_titulares 
+SET titulares = concat ("parentuid","searchtext","foundparty");
+
+DELETE FROM public.update_form_c_titulares 
+WHERE foundparty = '1';
+
+DELETE FROM public.update_form_c_titulares a
+WHERE a.ctid <> (SELECT min(b.ctid)
+                 FROM   public.update_form_c_titulares b
+                 WHERE  a.titulares = b.titulares);
+
+DELETE FROM public.update_form_c_titulares
+WHERE EXISTS (SELECT 1 FROM public.form_c_titulares 
+WHERE titulares = public.update_form_c_titulares.titulares);
+
+INSERT INTO public.form_c_titulares(parentuid, searchtext, foundparty, titulares)
+SELECT parentuid, searchtext, foundparty, titulares
+FROM public.update_form_c_titulares;
+
+DELETE FROM public.form_c_titulares a
+WHERE a.ctid <> (SELECT min(b.ctid)
+                 FROM   public.form_c_titulares b
+                 WHERE  a.titulares = b.titulares);
+				 
+
+				 
+DROP TABLE public.update_form_c_titulares;
 
 -- once the update to the rejects and sim has happened then we build the Vfront table again first we drop it
  
 DROP TABLE public.update_novas_pessoas;
+
+-- OK works 
 
 -- stage 3 update_novas_pessoasfor v-front remove rejeitado people first,
 
@@ -338,13 +424,12 @@ WHERE party_name_key = public.update_novas_pessoas.party_name );
 
 
 -- delete any data moved to form_c_pessoas_rejeitado
-
 DELETE FROM public.update_novas_pessoas
 WHERE EXISTS (SELECT 1 FROM public.form_c_pessoas_rejeitado 
 WHERE party_name = public.update_novas_pessoas.party_name );
 
---set the display propertieds of the photos
 
+--set the display propertieds of the photos
 UPDATE public.update_novas_pessoas 
 SET pessoa_foto = '<img src="'||pessoa_foto||'" style="width:256px;height:256px;">',
 id_foto = '<img src="'||id_foto||'" style="width:256px;height:256px;">',
