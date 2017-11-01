@@ -1,4 +1,4 @@
--- this query uses the data from the ODK produced by form b to add people to the table_form_b_pessoas these are all uniquie the id number is the primary key and the key (uuid)is a unique number 
+﻿-- this query uses the data from the ODK produced by form b to add people to the table_form_b_pessoas these are all uniquie the id number is the primary key and the key (uuid)is a unique number 
 -- on update this query produce list of parties by region
 CREATE TABLE public.update_form_b_pessoas
 (

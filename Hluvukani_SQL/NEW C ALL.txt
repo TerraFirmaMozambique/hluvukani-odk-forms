@@ -399,11 +399,7 @@ WHERE party_name = public.update_pol_vfront.party_name);
 
 DELETE from public.update_pol_vfront
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas
-WHERE party_name = public.update_pol_vfront.party_name);	
-
-DELETE from public.update_pol_vfront
-WHERE EXISTS (SELECT 1 FROM public.form_c_pessoas_rejeitado
-WHERE party_name = public.update_pol_vfront.party_name); 
+WHERE party_name = public.update_pol_vfront.party_name);	 
 
 ALTER TABLE public.update_pol_vfront ADD CONSTRAINT update_pkey_pol_vfront PRIMARY KEY (party_name);
 
@@ -419,17 +415,6 @@ SELECT confirmado, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil,
             doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, 
             contacto, party_name
 FROM public.update_pol_vfront;
-
-DELETE FROM pol_vfront 
-WHERE party_name IN (SELECT  pol_vfront.party_name 
-FROM pol_vfront,form_c_pessoas_rejeitado
-WHERE public.pol_vfront.party_name = public.form_c_pessoas_rejeitado.party_name);
-
-DELETE FROM pol_vfront 
-WHERE party_name IN (SELECT pol_vfront.party_name 
-FROM pol_vfront,
-form_b_pessoas
-WHERE public.pol_vfront.party_name = public.form_b_pessoas.party_name);
 
 DROP TABLE public.update_pol_vfront;
 
