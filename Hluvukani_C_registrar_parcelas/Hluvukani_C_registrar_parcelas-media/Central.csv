@@ -1,5 +1,9 @@
 bloco_id_key,party_id_key,party_name
-G_Martins,party510,Filomena Cossa bi 2868605
+H_Cambeve,party2082,Katissa Gulamo Abdul CAlgybi110697792B
+H_Cambeve,party2084,Alda AlfredoBazimac_eleit586497
+G_Martins,party503,Maria Mbondia Timana c_eleit 1.00E+18
+G_Martins,party1647,Timóteo Bernardo Mambone bi 111082460G
+G_Martins,party1609,Angelina Mundau Bila c_eleit 2404243
 H_Cambeve,party2075,Graça Maria Manhique bi 100406059624S
 H_Cambeve,party1884,Amélia Júlio Mujovo bi 100405897158M
 H_Cambeve,party1885,ANA MANHIÇA bi 100404295998F
@@ -285,10 +289,8 @@ G_Martins,party1608,Virgínia fassitel Chavango c_eleit 1175438
 G_Martins,party155,Fátima carlos Quenchana talao 1.00E+11
 G_Martins,party1658,Jossias Elias Bié bi 100406381560N
 F_Manhiça_Municipality,party1571,Florência António Zucula bi 100405660255Q
-F_Manhiça_Municipality,party98,Sábado Paulino Chavana bi 110100950165N
 G_Martins,party156,Laura Simiao Tsucane c_eleit 4273561
 G_Martins,party203,Penino Augusto Timana bi 6861124
-G_Martins,party1609,Angelina Mundau Bila c_eleit 2404243
 F_Manhiça_Municipality,party1552,Olivia Paulo Mandlate Chauque bi 110101403805N
 F_Manhiça_Municipality,party1553,Celeste Armando Malate bi 100405660057M
 F_Manhiça_Municipality,party11,Antonieta David Mulhovo c_eleit 4274323
@@ -997,7 +999,6 @@ G_Martins,party483,Azalina Augusto Chemane p_port 8700
 G_Martins,party551,Race Julio Nhassengo c_eleit 14281552
 G_Martins,party519,Cecília Valente Navingo c_eleit 14281970
 H_Cambeve,party1917,Lina canhacudana Dimande bi 110204298487I
-G_Martins,party503,Maria Mbondia Timana c_eleit 1.00E+18
 F_Manhica_Municipality,party1786,Sonia Fernando Goven bi 110200984715I
 H_Cambeve,party1864,Gilda António Mazanalo bi 110101747673S
 H_Cambeve,party1865,Caldina Frederico Melembe c_eleit 4274739
@@ -1026,6 +1027,7 @@ G_Martins,party2050,Augusto Antonio Timana talao 6866238
 G_Martins,party586,Zinaida Valente Mathe ced 443
 G_Martins,party2052,Samaria Fernando Tsandzana bi 100406629496D
 G_Martins,party2056,Joaquim José Timana bi 100404559594A
+G_Martins,party510,Filomena Cossa bi 2868605
 G_Martins,party2057,Inês Salvador Manhique bi 100402113563A
 G_Martins,party2058,Celeste Ernesto Mahique Oguane p_port 13AE43142
 G_Martins,party2059,Inês Fernando Mauelele bi 100402255506S
@@ -1060,4 +1062,4 @@ F_Manhiça_Municipality,party1588,Helena Alberto Mathe c_eleit 3633807
 G_Martins,party484,Veronica Ziraida Eduardo Cossa ced 382822
 G_Martins,party532,Angelina Matsimbe bi 100124218
 H_Cambeve,party2077,Luísa Valente Malamule bi 100401766592C
-G_Martins,party1647,Timóteo Bernardo Mambone bi 111082460G
+F_Manhiça_Municipality,party98,Sábado Paulino Chavana bi 110100950165N
