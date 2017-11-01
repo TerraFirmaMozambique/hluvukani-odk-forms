@@ -1,26 +1,24 @@
 bloco_id_key,party_id_key,party_name
-B_Taninga_South,party1861,Felizarda Fernando Timana Timana bi 10040494341Q
-A_Taninga_North,party850,Lidia Mimita c_eleit 13040719
+A_Taninga_North,party2074,Marta Fernando Sitoe bi 110204643196J
+B_Taninga_South,party2078,Maria Amélia Manheia bi 110506607043Q
+B_Taninga_South,party2079,Hortência Fernando Melembe talao 6651120
 B_Taninga_South,party1886,Fátima Fernando Sitoe c_eleit 12598191
+A_Taninga_North,party707,Bernardo Timana bi 751349
 A_Taninga_North,party1889,Falcina Mbezane Mbezane bi 100102085961A
 A_Taninga_North,party1890,Anastacia Manjante bi 100406529706A
 B_Taninga_South,party1891,Isabel Vasco Nbate bi 100405746028I
-B_Taninga_South,party1892,Suzete Recado Manhiça Manhiça c_impost 5643
 B_Taninga_South,party1893,Célio Joaquim Malamule Malamule bi 100402113536F
 A_Taninga_North,party823,Cacilda Cossa bi 1.00E+11
 C_Palmeira_1,party1317,Graça Vicente Mucavele bi 100404075755Q
 B_Taninga_South,party1899,Rosa Júlio Cossa decl 0
-B_Taninga_South,party1900,Rosa Júlio Cossa decl 0
 A_Taninga_North,party1902,Alda António Bila ced 30548
-A_Taninga_North,party932,Angelina Júlio Sitoe c_eleit 13040609
-B_Taninga_South,party1099,Regina Machava bi 100406028877B
 A_Taninga_North,party1006,Florinda Machaieie bi 1.00E+11
+B_Taninga_South,party1123,Ana Timana c_eleit 12525743
 B_Taninga_South,party1103,Lúcia Xavier Timana bi 100402879657Q
 B_Taninga_South,party1104,Maria Helena Carlos Cossa c_eleit 10023101687
 B_Taninga_South,party1113,Bernardo Massingue bi 100405436414S
 A_Taninga_North,party1007,Felismina Melembe bi 110205897950N
 B_Taninga_South,party1305,Alexandre Fernando Simbine ced 1522
-B_Taninga_South,party1123,Ana Timana c_eleit 12525743
 A_Taninga_North,party794,Cacilda Fernando Guambe bi 100402553545C
 A_Taninga_North,party834,Adrieta Albino Mbazima bi 100402113657Q
 B_Taninga_South,party1300,Alberto Xerindza bi 1.00E+11
@@ -42,7 +40,6 @@ A_Taninga_North,party726,Mário António Mabasso c_eleit 13092084
 A_Taninga_North,party700,Julieta Azarias Xirindza ced 171808
 A_Taninga_North,party702,Salmina Sumbana bi 100405660336C
 A_Taninga_North,party738,Filda Chicongue bi 100302751858I
-A_Taninga_North,party707,Bernardo Timana bi 751349
 A_Taninga_North,party987,Rafael chivangane Cumbana bi 110304234881B
 A_Taninga_North,party853,Arlete Nhabetse bi 110601745171C
 A_Taninga_North,party1030,Joaquim Sitoe bi 100404559595P
@@ -148,9 +145,7 @@ A_Taninga_North,party1033,Laurinda Sitoe c_eleit 12525671
 A_Taninga_North,party720,Lúcia David Zucula bi 110504165669M
 B_Taninga_South,party1264,José Fernando Timana c_impost 5611
 B_Taninga_South,party1266,João Francisco Tsandzana ced 19792
-B_Taninga_South,party1267,Matilde Arlindo Sitoe c_eleit 12525816
 A_Taninga_North,party722,Henriques Elias Chongo bi 100404559692B
-B_Taninga_South,party1820,Lúcia Xavier Timana bi 100402879657Q
 B_Taninga_South,party1118,Antonieta Tivane bi 100237541E
 A_Taninga_North,party747,Vicente Timana Cristesa ced 720722
 A_Taninga_North,party748,Rodrigues Ricotso bi 100305500322N
@@ -239,9 +234,7 @@ B_Taninga_South,party1188,Luís Valério Munetua c_eleit 9120796
 A_Taninga_North,party974,Xavier Magule ced 171957
 A_Taninga_North,party906,Obete Fernando Simango bi 110200789559P
 A_Taninga_North,party703,Florinda Chauque bi 100402113579Q
-A_Taninga_North,party836,Climintina Mussuel c_eleit 12053821
 A_Taninga_North,party1835,Marta Fernando Sitoe bi 110204643196J
-B_Taninga_South,party1813,Jonas Maguiguana Bila bi 100404807057B
 A_Taninga_North,party706,Gilda António Bila ced 30448
 A_Taninga_North,party1833,Lurdes Carlos Cossa bi 100401281924l
 A_Taninga_North,party983,Graça Timana bi 100401714383M
@@ -309,7 +302,6 @@ B_Taninga_South,party1313,Isabel Manuel Siwine c_eleit 10023101507
 A_Taninga_North,party1053,Flora Armando Ndove bi 110100693778C
 A_Taninga_North,party758,Maria Biata Cossa bi 100406643117C
 B_Taninga_South,party1200,Lastina Feliciano Macamo bi 100402216326M
-B_Taninga_South,party1228,Vicente Valoi bi 100405436554M
 B_Taninga_South,party1315,Paulo Mafumo c_eleit 8306799
 B_Taninga_South,party1804,Rosalina Vicente Dzombene c_eleit 08B070990901
 A_Taninga_North,party972,Elias Silvestre Hunguana bi 100401766953N
@@ -337,16 +329,13 @@ B_Taninga_South,party1209,Adozinda Manuel Nguenha bi 100400612105N
 A_Taninga_North,party998,Tristeza Augusto Massingue ced 21213
 B_Taninga_South,party1842,Célio Joaquim  Malamule bi 100402113536F
 B_Taninga_South,party1212,Pinto marcos Mussana ced 36866
-B_Taninga_South,party1537,Maria Amélia Manheia bi 110506607043Q
 B_Taninga_South,party1680,Cecília Sebastião Valoi Valoi c_eleit 12071963
 B_Taninga_South,party1312,Tâmara João Moiane bi 6864552
 B_Taninga_South,party1681,Joaquim Artur Malate Malate bi 110204844923B
 A_Taninga_North,party1682,Leonardo Fabiao Mauelele c_eleit 12598422
 B_Taninga_South,party1231,Isaque Timana c_nasc 340111503
 B_Taninga_South,party1302,Afonso Joaquim Malamule bi 100405126013B
-A_Taninga_North,party971,Salomão David Hobjana bi 100404236132N
 A_Taninga_North,party1683,Baltazar Sebastião Munguambe bi 11050429792A
-B_Taninga_South,party1684,Hortência Fernando Melembe talao 6651120
 A_Taninga_North,party996,Guilhermina Pedro Timana bi 100405897114M
 A_Taninga_North,party776,Raquelina Hobjana talao 6654030
 A_Taninga_North,party928,Notícias Eduardo Matsinhe bi 100305913818B
@@ -523,8 +512,6 @@ A_Taninga_North,party963,Albertina Joaquina Machaila bi 110400458332B
 A_Taninga_North,party966,Celeste Timana bi 100404235936J
 A_Taninga_North,party967,Helena Lourenço Manheia bi 100402005571A
 A_Taninga_North,party969,Cacilda Dimande bi 100400838822S
-A_Taninga_North,party975,Domingos Marindze c_eleit 13092052
-A_Taninga_North,party976,Marta Fernando Sitoe bi 110204643196J
 A_Taninga_North,party977,Amélia Timana bi 100400612150J
 A_Taninga_North,party979,Laurinda Alfredo Bembele c_eleit 13040737
 A_Taninga_North,party980,Paulo flor Chibuto Timana bi 100400592817Q
@@ -693,7 +680,6 @@ B_Taninga_South,party1138,Ana António Govene bi 110104389794B
 B_Taninga_South,party1805,Hélia José Muzuana bi 100406059576C
 A_Taninga_North,party683,Joana Azarias Mucavel ced 539035
 B_Taninga_South,party1270,Argentina Macuiana bi DG 006620
-B_Taninga_South,party1150,Anastacia Govene bi 090602541875P
 B_Taninga_South,party1153,Joana Monassana Sitoe bi 10040468106A
 A_Taninga_North,party945,Marta Timana bi 10030195994I
 B_Taninga_South,party1859,Saquina Sares Timbe Timbe c_eleit 13599643
@@ -704,3 +690,27 @@ A_Taninga_North,party1888,Flávio Pedro Sitoe Sitoe bi 110101419258M
 A_Taninga_North,party1901,Filda Fernando Sitoe bi 100400592805J
 A_Taninga_North,party1066,Celeste Mabui bi 751332
 B_Taninga_South,party1860,Suzete Recado Manhiça Manhica c_impost 5643
+B_Taninga_South,party1861,Felizarda Fernando Timana Timana bi 10040494341Q
+A_Taninga_North,party932,Angelina Júlio Sitoe c_eleit 13040609
+B_Taninga_South,party1099,Regina Machava bi 100406028877B
+B_Taninga_South,party2037,Jonas Maguiguana Bila bi 100404807057B
+A_Taninga_North,party975,Domingos Marindze c_eleit 13092052
+B_Taninga_South,party1228,Vicente Valoi bi 100405436554M
+B_Taninga_South,party2049,João Antonio Timana bi 100100289458F
+B_Taninga_South,party2051,Francisco Chico Ernesto Simango ced 186655
+B_Taninga_South,party1267,Matilde Arlindo Sitoe c_eleit 12525816
+A_Taninga_North,party2053,Dinosia João Sindana bi 100402722380A
+A_Taninga_North,party2063,Ester Júlio Nwavele Nwavele bi 100405351927S
+A_Taninga_North,party2064,Alda Seventine Timana c_eleit 11177823
+A_Taninga_North,party2068,Celina Alfredo Mandjate Mandjate c_eleit 12598290
+A_Taninga_North,party2069,António fifteen Sitoe c_eleit 565
+A_Taninga_North,party2070,Celina Alfredo Mandlhate c_eleit 12598290
+A_Taninga_North,party2072,Mário João Chongo bi 09101629626M
+A_Taninga_North,party2073,Regimina Paulino Melembe bi 10040675998M
+B_Taninga_South,party1892,Suzete Recado Manhiça Manhiça c_impost 5643
+A_Taninga_North,party836,Climintina Mussuel c_eleit 12053821
+A_Taninga_North,party971,Salomão David Hobjana bi 100404236132N
+A_Taninga_North,party850,Lidia Mimita c_eleit 13040719
+B_Taninga_South,party1150,Anastacia Govene bi 090602541875P
+A_Taninga_North,party2054,Humberto Obed Tembe bi 110105189310F
+A_Taninga_North,party2055,Carolina Jonas Mulhovo bi 100406717700M

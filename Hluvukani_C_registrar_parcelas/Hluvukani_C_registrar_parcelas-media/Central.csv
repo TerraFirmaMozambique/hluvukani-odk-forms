@@ -1,34 +1,15 @@
 bloco_id_key,party_id_key,party_name
-H_Cambeve,party590,Marcelina Maria Cossa c_eleit 3631838
-H_Cambeve,party1864,Gilda António Mazanalo bi 110101747673S
-H_Cambeve,party1865,Caldina Frederico Melembe c_eleit 4274739
-H_Cambeve,party1867,Laurinda Nhancuave Muianga bi 100405450468A
-G_Martins,party550,Filimone Muchanga bi 100402215920S
-H_Cambeve,party1868,Otília Florinda Elisa Miguel bi 1101012445982S
-H_Cambeve,party1871,Artur José Uache bi 110104852281N
-H_Cambeve,party605,Manuel David Massango c_nasc 8773
-H_Cambeve,party1872,Luísa Gaspar Dzimba ced 288775
-H_Cambeve,party1873,Rosalina Manuel Cossa c_eleit 1186036
-H_Cambeve,party1875,ISAURA LUCAS MANHIÇA c_eleit 3174330
-H_Cambeve,party1876,Flecha Zacarias Massango talao 6865144
-H_Cambeve,party1877,Pinto Jonasse Dimande bi 100125658B
-H_Cambeve,party1880,Joana Abdul Massinga bi 110779726L
-H_Cambeve,party1881,Francisco Felismina Malhanguana bi 110104993736A
-H_Cambeve,party1882,Elisa Eduardo Mbebe bi 100402879791M
-G_Martins,party506,Etelvina julio Chilaule c_eleit 12694681
+G_Martins,party510,Filomena Cossa bi 2868605
+H_Cambeve,party2075,Graça Maria Manhique bi 100406059624S
 H_Cambeve,party1884,Amélia Júlio Mujovo bi 100405897158M
 H_Cambeve,party1885,ANA MANHIÇA bi 100404295998F
-H_Cambeve,party1894,Joana France Mate c_eleit 3579053
 H_Cambeve,party1895,Filomena Fernando Dimande c_eleit 3620540
 H_Cambeve,party1896,Gilda Santos Matsinhe c_eleit 659120
-H_Cambeve,party1897,Alice Amadeu Nhamposse bi 100405376557C
 H_Cambeve,party1898,Júlia Erminia Xerinda bi 110100892030N
 H_Cambeve,party1903,Rosalina Armando Tina bi 100404295940I
 G_Martins,party496,Matilde Orlando Cumbe bi 13454939
 H_Cambeve,party1906,Carolina José Huvo bi 100251840S
 H_Cambeve,party1908,Júlia Zacarias Massango bi 119102586614P
-H_Cambeve,party1909,Inocência Alfredo Cumbana c_nasc 3579164
-H_Cambeve,party1910,Laura Francisco Machele bi 110202819230B
 H_Cambeve,party1911,Catarina Regina Mbeve bi 6639646
 G_Martins,party518,Molina bundzucana Tlemo c_eleit 14281852
 H_Cambeve,party1912,Rebeca Francisco Maluvele bi 110101130075J
@@ -36,21 +17,14 @@ H_Cambeve,party1913,Ezequiel Absalão Manhique bi 110202786264S
 H_Cambeve,party1914,Maria Cotassana Dzimba bi 100406059297M
 H_Cambeve,party1915,Ezelina Mario Mbebe c_eleit 3174460
 H_Cambeve,party1916,Noémia Sebastião Ndimande bi 110204935060J
-H_Cambeve,party1918,Katissa Gulamo Abdul C Algy bi 110697792B
 H_Cambeve,party1919,Lúcia Mabjaia bi 11010436159P
 F_Manhica_Municipality,party1920,Januário Sozinho Sitoe ced 34170
-F_Manhica_Municipality,party1921,Januário Sozinho Sitoe ced 34170
 G_Martins,party520,Domings João Timana bi 100402080164N
-H_Cambeve,party1922,Manuel Dabo Macuacua bi 100150543X
 H_Cambeve,party1923,Alda Alfredo Bazima c_eleit 586497
-F_Manhica_Municipality,party1924,Januário Sozinho Sitoe ced 34170
 H_Cambeve,party1925,Maria Chuma c_eleit 13151724
 G_Martins,party1646,Antonio joaquim Macamo c_eleit 1175486
 H_Cambeve,party626,Graça Maria Manhique bi 100406059624S
 F_Manhiça_Municipality,party1540,Albertina Canhissana Mabuie bi 100406197693D
-G_Martins,party1647,Timóteo Bernardo Mambone bi 111082460G
-F_Manhiça_Municipality,party1588,Helena Alberto Mathe c_eleit 3633807
-G_Martins,party297,Elisa João Macaringue bi 110200110961B
 F_Manhiça_Municipality,party1589,Amélia Carlota Dimande ced 963904
 G_Martins,party298,Manuel Luís Fernando Zandamela bi 110200186237M
 F_Manhiça_Municipality,party1541,Isalina Agostinho Mabuie c_eleit 2404160
@@ -118,8 +92,6 @@ G_Martins,party585,Sandra Alfredo Mabote talao 6653883
 G_Martins,party1622,Teresa Alexandre Machava bi 100357930y
 G_Martins,party398,Celeste José Ndzeco talao 100404075927b
 G_Martins,party508,Alberto Fernando Chauque bi 100101089773J
-G_Martins,party586,Zinaida Valente Mathe ced 443
-H_Cambeve,party643,Graça Maria Manhique bi 100406059624S
 G_Martins,party1623,Flávia Alberto Chume talao 6863152
 F_Manhiça_Municipality,party1493,Elisabete Pacheco Dimande bi 110504838334C
 F_Manhiça_Municipality,party1494,Madalena Valério Matavel bi 100404764886A
@@ -133,7 +105,6 @@ G_Martins,party157,Argentina comessario Mandlate talao 6654261
 G_Martins,party509,Amélia Carlos Massingue c_eleit 14273971
 F_Manhiça_Municipality,party1496,Rute Francisco Nhambi bi 100304123602M
 F_Manhiça_Municipality,party1497,Angelina Ernesto Mutombene bi 100490612897M
-G_Martins,party510,Filomena Cossa bi 2868605
 G_Martins,party1625,Auneta Mazive bi 100402267587l
 H_Cambeve,party651,Afonso junior Ndimande bi 110106738352C
 G_Martins,party399,Mercio jeremias Timana bi 100406013223F
@@ -318,8 +289,6 @@ F_Manhiça_Municipality,party98,Sábado Paulino Chavana bi 110100950165N
 G_Martins,party156,Laura Simiao Tsucane c_eleit 4273561
 G_Martins,party203,Penino Augusto Timana bi 6861124
 G_Martins,party1609,Angelina Mundau Bila c_eleit 2404243
-G_Martins,party484,Veronica Ziraida Eduardo Cossa ced 382822
-F_Manhica_Municipality,party1819,Joaquim Alexandre Moiana bi 110100950895S
 F_Manhiça_Municipality,party1552,Olivia Paulo Mandlate Chauque bi 110101403805N
 F_Manhiça_Municipality,party1553,Celeste Armando Malate bi 100405660057M
 F_Manhiça_Municipality,party11,Antonieta David Mulhovo c_eleit 4274323
@@ -355,12 +324,10 @@ F_Manhiça_Municipality,party1471,Helena Patricio Nhamposse c_eleit 1004724
 G_Martins,party435,Glória filimao Mandlate bi 110106740884B
 G_Martins,party312,Miséria Gabriel Machele bi 100100289936F
 G_Martins,party322,Florência victorino Mondlane c_eleit 13454842
-F_Manhiça_Municipality,party1576,Joana Armando Mave bi 100402553329N
 F_Manhiça_Municipality,party1577,Felismina Francisco Mucavele bi 100402553348S
 G_Martins,party323,Artetilha francisco Bila decl 12
 F_Manhiça_Municipality,party31,Beatriz Paulo Chavana bi 100404296060I
 F_Manhiça_Municipality,party19,Samara Cotassana Muculo c_eleit 1175335
-F_Manhica_Municipality,party1831,Januário Sozinho Sitoe ced 34170
 F_Manhiça_Municipality,party1578,Lúcia Silvestre Chemane bi 110104266475B
 G_Martins,party206,Cacilda Augusto Timana ced 116274
 G_Martins,party1612,Albertina julio Cossa bi 100404135814B
@@ -609,7 +576,6 @@ F_Manhiça_Municipality,party1565,Isabel Fernando Chirindza bi 100402387938Q
 G_Martins,party310,Albino Lourenço Madjendje bi 110501063776N
 F_Manhiça_Municipality,party1536,Paulo João Busse bi 080100980375Q
 G_Martins,party295,Eunizio fanuel Timbe bi 217361
-H_Cambeve,party625,Isabel Jose Coio bi 100404075961A
 F_Manhiça_Municipality,party135,Fernando Ernesto Mboene bi 110100960732B
 F_Manhiça_Municipality,party1491,Dacalina Jose Batsana bi 100404136353M
 F_Manhiça_Municipality,party137,Rosa Alfredo Simango bi 110101402123C
@@ -620,7 +586,6 @@ F_Manhiça_Municipality,party87,Eugénio Carlos Massimbe bi 110500974689N
 F_Manhiça_Municipality,party140,Joana Fernando Matlombe c_eleit 3624735
 F_Manhiça_Municipality,party141,Emílio Nelson Venâncio Mucumbe c_cond 104706931
 G_Martins,party217,Azevedo Alberto Sitoe bi 100405436360N
-F_Manhiça_Municipality,party147,Azarias Francisco Timana bi 100401395447P
 G_Martins,party1687,Gina Mario Chavana c_eleit 1545263
 G_Martins,party1688,Angelina nhacuavana Xerinda c_eleit 3624636
 G_Martins,party1644,Baltazar Alfredo Pondja c_eleit 1175209
@@ -978,8 +943,6 @@ H_Cambeve,party644,Rosita Ubisse bi 100501197470B
 H_Cambeve,party645,Fernanda Filipe Muianga bi 100405877515F
 H_Cambeve,party646,Carolina Tafula Conwana talao 6863709
 H_Cambeve,party647,Elisa Abilio Cossa bi 100400667484N
-H_Cambeve,party648,Luísa Valente Malamule bi 100401766592C
-H_Cambeve,party650,Elisa Jose Chichava c_eleit 4275882
 H_Cambeve,party655,Rita Jose Lhiambo bi 110100115031M
 H_Cambeve,party656,Celina Mbebe bi 100398803P
 H_Cambeve,party657,Laurinda Elisa Mulhovo bi 100402879854N
@@ -994,18 +957,15 @@ F_Manhiça_Municipality,party1597,Dulce Carlos Mulungo p_port DB 006703
 G_Martins,party507,Amélia Fernando Machai Matlombe bi 100402553553Q
 G_Martins,party317,Regina simeao Cossa bi 100405877578I
 F_Manhiça_Municipality,party45,Joana Jorge Chivite bi 100405450103P
-H_Cambeve,party640,Celeste Mabui bi 100405266043J
 G_Martins,party290,Fátima joaquim Chavane bi 100402216124Q
 G_Martins,party382,Juvita João Mata bi 110100422373A
 G_Martins,party251,Ana fernando Mauelele c_eleit 12738009
 F_Manhiça_Municipality,party1511,Claudina Ricardo Nhalicale talao 100804738324I
 G_Martins,party389,Maria Valente Mathe c_eleit 14996058
 G_Martins,party370,Carlota Julioa Hunguana c_eleit 14281860
-H_Cambeve,party1845,Joana France Mate c_eleit 3579053
 H_Cambeve,party1846,Ana Jaoquim Matusse bi 2869991
 F_Manhiça_Municipality,party1518,Matilde José Pelembe ced 630092
 G_Martins,party403,Américo Salomão Sitoe ced 113622
-H_Cambeve,party638,Neli Lima Mbebe bi 204569
 H_Cambeve,party1847,Lídia Vicente Chongo c_eleit 2603372
 H_Cambeve,party1848,Manuel Benjamim Xerinda talao 6866377
 H_Cambeve,party629,REGINA MÁRIO COSSA bi 100402005893A
@@ -1013,7 +973,6 @@ H_Cambeve,party639,Helena Honwana talao 6653494
 H_Cambeve,party631,Lucia Mulhanga Mabui bi 110943128Y
 H_Cambeve,party633,Maria Joaquim Sitoe c_eleit 0902A570783013
 H_Cambeve,party636,Adelia Aurélio Muchanga bi 100404648700N
-H_Cambeve,party1862,Ana Jaoquim Matusse bi 2869991
 H_Cambeve,party637,Rebeca Avelino Mabui bi 110100382076I
 G_Martins,party497,Maria de Fátima Timana bi 100274238B
 G_Martins,party502,Rosalina Tsucane bi 110102391951I
@@ -1027,8 +986,6 @@ G_Martins,party491,Pedro Gavumende Nhambe c_eleit 2404233
 H_Cambeve,party1856,Olinda Amiel Manhiça bi 110104020984J
 H_Cambeve,party1857,Gertrudes Orlando Chiau bi 100402792475M
 H_Cambeve,party1863,Raquelina Mahumane c_eleit 3174356
-G_Martins,party533,Carolina Machimbila bi 100405143622I
-H_Cambeve,party1866,Júlia Erminia Xerinda bi 110100892030N
 H_Cambeve,party591,Francisco Matias Mata bi 100087542Y
 H_Cambeve,party1878,Elisa António Macarrique bi 38378935
 H_Cambeve,party1879,Lurdes Fernando Mondlane c_eleit 64
@@ -1041,6 +998,66 @@ G_Martins,party551,Race Julio Nhassengo c_eleit 14281552
 G_Martins,party519,Cecília Valente Navingo c_eleit 14281970
 H_Cambeve,party1917,Lina canhacudana Dimande bi 110204298487I
 G_Martins,party503,Maria Mbondia Timana c_eleit 1.00E+18
-G_Martins,party532,Angelina Matsimbe bi 100124218
-H_Cambeve,party1874,Amerquina José Uache bi 100100289857Q
 F_Manhica_Municipality,party1786,Sonia Fernando Goven bi 110200984715I
+H_Cambeve,party1864,Gilda António Mazanalo bi 110101747673S
+H_Cambeve,party1865,Caldina Frederico Melembe c_eleit 4274739
+H_Cambeve,party1867,Laurinda Nhancuave Muianga bi 100405450468A
+G_Martins,party550,Filimone Muchanga bi 100402215920S
+H_Cambeve,party1874,Amerquina José Uache bi 100100289857Q
+H_Cambeve,party1873,Rosalina Manuel Cossa c_eleit 1186036
+H_Cambeve,party590,Marcelina Maria Cossa c_eleit 3631838
+H_Cambeve,party1876,Flecha Zacarias Massango talao 6865144
+H_Cambeve,party1910,Laura Francisco Machele bi 110202819230B
+G_Martins,party2038,AGueda fernando Massingue bi 110105804403B
+H_Cambeve,party2039,Vasco Amiel Manhiça bi 100406512751Q
+H_Cambeve,party2040,António Munguambe Mauelele bi 100404135547B
+H_Cambeve,party2041,Matias Enoque Matusse bi 110200110758Q
+H_Cambeve,party2042,Atália Almeida Mbatsana c_eleit 586500
+H_Cambeve,party2043,Elisa Armando Xerinda c_eleit 3579207
+H_Cambeve,party2044,Artur Raul Tsandzana bi 110206608867A
+H_Cambeve,party2045,Albertina Augusto Mawelele c_eleit 3174331
+H_Cambeve,party2046,Amélia Carlos Soto bi 100401147337M
+H_Cambeve,party1922,Manuel Dabo Macuacua bi 100150543X
+H_Cambeve,party1877,Pinto Jonasse Dimande bi 100125658B
+H_Cambeve,party2047,Francisco Feliciano Mapsanganhe bi 110100098827B
+H_Cambeve,party2048,Manuel Eduardo Chopalo bi 100401146955P
+H_Cambeve,party2076,Neli Lima Mbebe bi 204569
+G_Martins,party2050,Augusto Antonio Timana talao 6866238
+G_Martins,party586,Zinaida Valente Mathe ced 443
+G_Martins,party2052,Samaria Fernando Tsandzana bi 100406629496D
+G_Martins,party2056,Joaquim José Timana bi 100404559594A
+G_Martins,party2057,Inês Salvador Manhique bi 100402113563A
+G_Martins,party2058,Celeste Ernesto Mahique Oguane p_port 13AE43142
+G_Martins,party2059,Inês Fernando Mauelele bi 100402255506S
+G_Martins,party2060,Rosa Cuna Macuacua bi 110301278633N
+H_Cambeve,party605,Manuel David Massango c_nasc 8773
+G_Martins,party2061,Cecília fernando Xingue c_eleit 14281738
+G_Martins,party2062,Célia Da conceicao Nhalusse bi 110106763504N
+H_Cambeve,party650,Elisa Jose Chichava c_eleit 4275882
+G_Martins,party2065,Cecília Izaque Timana c_eleit 12740129
+G_Martins,party2066,Julieta Justino Nguenha c_eleit 12694926
+H_Cambeve,party625,Isabel Jose Coio bi 100404075961A
+G_Martins,party2067,Luciano Rojasse Mauelele bi 11025214958c
+G_Martins,party2071,Felismina Valoi bi 110201258777B
+F_Manhiça_Municipality,party1576,Joana Armando Mave bi 100402553329N
+H_Cambeve,party1897,Alice Amadeu Nhamposse bi 100405376557C
+H_Cambeve,party1918,Katissa Gulamo Abdul C Algy bi 110697792B
+F_Manhiça_Municipality,party147,Azarias Francisco Timana bi 100401395447P
+H_Cambeve,party640,Celeste Mabui bi 100405266043J
+H_Cambeve,party1845,Joana France Mate c_eleit 3579053
+G_Martins,party533,Carolina Machimbila bi 100405143622I
+H_Cambeve,party1875,ISAURA LUCAS MANHIÇA c_eleit 3174330
+H_Cambeve,party1909,Inocência Alfredo Cumbana c_nasc 3579164
+H_Cambeve,party1868,Otília Florinda Elisa Miguel bi 1101012445982S
+H_Cambeve,party1880,Joana Abdul Massinga bi 110779726L
+H_Cambeve,party1872,Luísa Gaspar Dzimba ced 288775
+H_Cambeve,party1871,Artur José Uache bi 110104852281N
+H_Cambeve,party1881,Francisco Felismina Malhanguana bi 110104993736A
+G_Martins,party297,Elisa João Macaringue bi 110200110961B
+H_Cambeve,party1882,Elisa Eduardo Mbebe bi 100402879791M
+G_Martins,party506,Etelvina julio Chilaule c_eleit 12694681
+F_Manhiça_Municipality,party1588,Helena Alberto Mathe c_eleit 3633807
+G_Martins,party484,Veronica Ziraida Eduardo Cossa ced 382822
+G_Martins,party532,Angelina Matsimbe bi 100124218
+H_Cambeve,party2077,Luísa Valente Malamule bi 100401766592C
+G_Martins,party1647,Timóteo Bernardo Mambone bi 111082460G
