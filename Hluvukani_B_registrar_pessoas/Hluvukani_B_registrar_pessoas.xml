@@ -209,7 +209,7 @@
         </translation>
       </itext>
       <instance>
-        <Hluvukani_B_registrar_pessoas id="Hluvukani_B_V1" version="201708161">
+        <Hluvukani_B_registrar_pessoas id="Hluvukani_B_V1" version="201709251">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -573,20 +573,20 @@
       <bind nodeset="/Hluvukani_B_registrar_pessoas/data" required="true()" type="date"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/region_id" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/bloco_id" required="true()" type="select1"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_app" required="true()" type="string"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_nom" required="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_app" required="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_nom" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_gen" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg1/pessoa_civil" required="true()" type="select1"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/pessoa_prof" type="select1"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/pessoa_prof" type="select1"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/pessoa_prof_other" relevant=" /Hluvukani_B_registrar_pessoas/pessoa_prof  = 'outro'" type="string"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg2/pessoa_nacion" type="string"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg2/pessoa_natural" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg2/pessoa_nacion" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de nacionalidade ou naturalidade não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg2/pessoa_natural" type="string"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/nasc_y_n" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/pessoa_nasc" relevant=" /Hluvukani_B_registrar_pessoas/nasc_y_n  = 'sim'" type="date"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/pessoa_ida" relevant=" /Hluvukani_B_registrar_pessoas/nasc_y_n  = 'nao'" type="select1"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg3/pessoa_doc" required="true()" type="select1"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de numero ou local de emissão do documento não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg3/pessoa_id" required="true()" type="string"/>
-      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâê]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de numero ou local de emissão do documento não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg3/doc_local" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de numero ou local de emissão do documento não podia incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_B_registrar_pessoas/Bg3/doc_local" type="string"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg3/doc_emi" type="date"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg3/doc_val" type="date"/>
       <bind nodeset="/Hluvukani_B_registrar_pessoas/Bg3/doc_vital" type="select1"/>

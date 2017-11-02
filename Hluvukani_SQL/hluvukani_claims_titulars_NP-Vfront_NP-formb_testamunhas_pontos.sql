@@ -154,6 +154,7 @@ DROP TABLE public.update_form_c_titulares;
 -- stage 1 update novas pessoas for v-front remove rejeitado people first, 
 
 /* stage 1 store rejected people from the vfront which have had their state changed from the 'não confirmado' to rejeitado or sim */
+<<<<<<< HEAD
 
  
 -- the table in the dbase was not excepting new inputs think it was the ID serial **
@@ -168,6 +169,20 @@ WHERE confirmado = 'rejeitado';
 UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
 -- stage 2 create  update_pessoas_nova from form C and update_novas_pessoas,  
+=======
+
+ 
+
+INSERT INTO public.form_c_pessoas_rejeitado (parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado)
+SELECT parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado 
+FROM update_novas_pessoas
+WHERE confirmado = 'rejeitado';
+
+UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
+
+-- stage 2 create  update_pessoas_nova  from form C and update_novas_pessoas,  
+
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 
 CREATE TABLE public.update_pessoas_nova AS SELECT 
   form_c_parcelas.subdate, 
@@ -331,12 +346,22 @@ COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/H
 UPDATE public.update_novas_pessoas SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
 -- delete any data already in table_b based on unique parent_uid||person details ()
+<<<<<<< HEAD
+=======
+
+DELETE FROM public.update_novas_pessoas
+WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
+WHERE party_name_key = public.update_novas_pessoas.party_name );
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 
 DELETE FROM public.update_novas_pessoas
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
 WHERE party_name_key = public.update_novas_pessoas.party_name );
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 -- delete any data moved to form_c_pessoas_rejeitado
 
 DELETE FROM public.update_novas_pessoas

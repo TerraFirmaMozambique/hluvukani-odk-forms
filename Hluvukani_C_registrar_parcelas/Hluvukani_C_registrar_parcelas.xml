@@ -446,7 +446,7 @@
         </translation>
       </itext>
       <instance>
-        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201708171">
+        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201711011">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -2009,7 +2009,6 @@ Por favor deslizar para a frente para continuar.</label>
     </group>
     <input ref="/Hluvukani_C_registrar_parcelas/auto_gps">
       <label>É obrigatorio gravar um ponto dentro da parcela, no centro.</label>
-      <hint>GPS coordinates can only be collected when outside.</hint>
     </input>
     <select1 ref="/Hluvukani_C_registrar_parcelas/limites_yn">
       <label>Será que é necessário gravar pontos de limites da parcela (porque não estão claros no mapa)?</label>
