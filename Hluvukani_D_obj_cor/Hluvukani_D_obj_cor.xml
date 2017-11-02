@@ -3,22 +3,192 @@
   <h:head>
     <h:title>Hluvukani D Objeccoes e Correcoes</h:title>
     <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="static_instance-documents-9">
+            <value>Cartão de pagamento de imposto</value>
+          </text>
+          <text id="static_instance-documents-8">
+            <value>Carta de Condução</value>
+          </text>
+          <text id="static_instance-genders-1">
+            <value>Feminino</value>
+          </text>
+          <text id="static_instance-genders-0">
+            <value>Masculino</value>
+          </text>
+          <text id="static_instance-documents-1">
+            <value>Talão do BI</value>
+          </text>
+          <text id="static_instance-documents-0">
+            <value>Bilhete de Identidade</value>
+          </text>
+          <text id="static_instance-documents-3">
+            <value>Certidão de Nascimento</value>
+          </text>
+          <text id="static_instance-documents-2">
+            <value>Cartão de Eleitor</value>
+          </text>
+          <text id="static_instance-documents-5">
+            <value>Declaração</value>
+          </text>
+          <text id="static_instance-documents-4">
+            <value>Cédula Pessoal</value>
+          </text>
+          <text id="static_instance-documents-7">
+            <value>Passaporte</value>
+          </text>
+          <text id="static_instance-documents-6">
+            <value>Cartão de Desmobilização</value>
+          </text>
+          <text id="static_instance-y_n-0">
+            <value>Sim</value>
+          </text>
+          <text id="static_instance-names-12">
+            <value>Outro</value>
+          </text>
+          <text id="static_instance-names-11">
+            <value>Valdemiro Luis Mondlane</value>
+          </text>
+          <text id="static_instance-names-10">
+            <value>Raquel Xavier Ambasse</value>
+          </text>
+          <text id="static_instance-issues-6">
+            <value>Mudar o data de nascimento</value>
+          </text>
+          <text id="static_instance-issues-7">
+            <value>Reconfigurar os limites da parcela</value>
+          </text>
+          <text id="static_instance-issues-4">
+            <value>Mudar o tipo de documento de identificação</value>
+          </text>
+          <text id="static_instance-issues-5">
+            <value>Mudar o numero de documento</value>
+          </text>
+          <text id="static_instance-issues-2">
+            <value>Mudar o nome da pessoa</value>
+          </text>
+          <text id="static_instance-issues-3">
+            <value>Mudar o género da pessoa:</value>
+          </text>
+          <text id="static_instance-issues-0">
+            <value>Mudar o numero da parcela</value>
+          </text>
+          <text id="static_instance-issues-1">
+            <value>Mudar o apelido da pessoa</value>
+          </text>
+          <text id="static_instance-blocos-10">
+            <value>Pateque Bobole</value>
+          </text>
+          <text id="static_instance-documents-10">
+            <value>NUIT</value>
+          </text>
+          <text id="static_instance-names-3">
+            <value>Coronel Gelsio Timana</value>
+          </text>
+          <text id="static_instance-names-0">
+            <value>Armando Junior Zuana</value>
+          </text>
+          <text id="static_instance-y_n-1">
+            <value>Não</value>
+          </text>
+          <text id="static_instance-names-2">
+            <value>Carlos Eduardo Mujovo</value>
+          </text>
+          <text id="static_instance-names-7">
+            <value>Julio Fernando Manheia</value>
+          </text>
+          <text id="static_instance-names-6">
+            <value>Helena Benjamim Mondlane</value>
+          </text>
+          <text id="static_instance-names-5">
+            <value>Elton Salomao Munguambe</value>
+          </text>
+          <text id="static_instance-names-4">
+            <value>Efigencia Alberto Mavondza</value>
+          </text>
+          <text id="static_instance-outcomes-3">
+            <value>O titular não confirmou os seus detalhes durante o período de O &amp; C</value>
+          </text>
+          <text id="static_instance-outcomes-2">
+            <value>Foi feita uma objecção que necessita uma resolução ainda</value>
+          </text>
+          <text id="static_instance-outcomes-1">
+            <value>Foi feita uma alteração aos detalhes do(s) (co-)titular(es) ou as limites da parcela</value>
+          </text>
+          <text id="static_instance-outcomes-0">
+            <value>Todos os detalhes estão corretos e confirmados</value>
+          </text>
+          <text id="static_instance-regions-2">
+            <value>Sul</value>
+          </text>
+          <text id="static_instance-regions-0">
+            <value>Norte</value>
+          </text>
+          <text id="static_instance-regions-1">
+            <value>Central</value>
+          </text>
+          <text id="static_instance-names-9">
+            <value>Noniua Paudelina Luis</value>
+          </text>
+          <text id="static_instance-names-8">
+            <value>Nomisse Eugenio Sitoe</value>
+          </text>
+          <text id="static_instance-blocos-8">
+            <value>Munguine</value>
+          </text>
+          <text id="static_instance-blocos-9">
+            <value>Munguine South</value>
+          </text>
+          <text id="static_instance-names-1">
+            <value>Cacilda Mothasse Jocicaze Xerinda</value>
+          </text>
+          <text id="static_instance-blocos-0">
+            <value>Taninga North</value>
+          </text>
+          <text id="static_instance-blocos-1">
+            <value>Taninga South</value>
+          </text>
+          <text id="static_instance-blocos-2">
+            <value>Palmeira 1</value>
+          </text>
+          <text id="static_instance-blocos-3">
+            <value>Palmeira 2</value>
+          </text>
+          <text id="static_instance-blocos-4">
+            <value>Palmeira 3</value>
+          </text>
+          <text id="static_instance-blocos-5">
+            <value>Manhiça Municipality</value>
+          </text>
+          <text id="static_instance-blocos-6">
+            <value>Martins</value>
+          </text>
+          <text id="static_instance-blocos-7">
+            <value>Cambeve</value>
+          </text>
+        </translation>
+      </itext>
       <instance>
-        <Hluvukani_D_obj_cor id="Hluvukani_D_V2" version="201709261">
+        <Hluvukani_D_obj_cor id="Hluvukani_D_V3" version="201711011">
           <start/>
           <my_form_name/>
           <intronote/>
           <tec_nome/>
           <add_nome/>
+          <region_id/>
+          <bloco_id/>
           <parcel_id/>
           <parcel_id_check/>
           <outcome/>
           <party_id/>
           <party_id_check/>
           <issues/>
+          <parcel_id_new/>
           <pessoa_app_new/>
           <pessoa_nom_new/>
           <pessoa_gen_new/>
+          <data_new/>
           <pessoa_doc_new/>
           <pessoa_id_new/>
           <limites_new/>
@@ -30,20 +200,283 @@
           </meta>
         </Hluvukani_D_obj_cor>
       </instance>
+      <instance id="documents">
+        <root>
+          <item>
+            <itextId>static_instance-documents-0</itextId>
+            <name>bi</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-1</itextId>
+            <name>talao</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-2</itextId>
+            <name>c_eleit</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-3</itextId>
+            <name>c_nasc</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-4</itextId>
+            <name>ced</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-5</itextId>
+            <name>decl</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-6</itextId>
+            <name>c_desmob</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-7</itextId>
+            <name>p_port</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-8</itextId>
+            <name>c_cond</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-9</itextId>
+            <name>c_impost</name>
+          </item>
+          <item>
+            <itextId>static_instance-documents-10</itextId>
+            <name>nuit</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="blocos">
+        <root>
+          <item>
+            <itextId>static_instance-blocos-0</itextId>
+            <region_id>RN</region_id>
+            <name>A</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-1</itextId>
+            <region_id>RN</region_id>
+            <name>B</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-2</itextId>
+            <region_id>RN</region_id>
+            <name>C</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-3</itextId>
+            <region_id>RN</region_id>
+            <name>D</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-4</itextId>
+            <region_id>RN</region_id>
+            <name>E</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-5</itextId>
+            <region_id>RC</region_id>
+            <name>F</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-6</itextId>
+            <region_id>RC</region_id>
+            <name>G</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-7</itextId>
+            <region_id>RC</region_id>
+            <name>H</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-8</itextId>
+            <region_id>RS</region_id>
+            <name>I</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-9</itextId>
+            <region_id>RS</region_id>
+            <name>J</name>
+          </item>
+          <item>
+            <itextId>static_instance-blocos-10</itextId>
+            <region_id>RS</region_id>
+            <name>K</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="outcomes">
+        <root>
+          <item>
+            <itextId>static_instance-outcomes-0</itextId>
+            <name>certify</name>
+          </item>
+          <item>
+            <itextId>static_instance-outcomes-1</itextId>
+            <name>change</name>
+          </item>
+          <item>
+            <itextId>static_instance-outcomes-2</itextId>
+            <name>disputed</name>
+          </item>
+          <item>
+            <itextId>static_instance-outcomes-3</itextId>
+            <name>unconfirmed</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="regions">
+        <root>
+          <item>
+            <itextId>static_instance-regions-0</itextId>
+            <name>RN</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-1</itextId>
+            <name>RC</name>
+          </item>
+          <item>
+            <itextId>static_instance-regions-2</itextId>
+            <name>RS</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="y_n">
+        <root>
+          <item>
+            <itextId>static_instance-y_n-0</itextId>
+            <name>sim</name>
+          </item>
+          <item>
+            <itextId>static_instance-y_n-1</itextId>
+            <name>nao</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="names">
+        <root>
+          <item>
+            <itextId>static_instance-names-0</itextId>
+            <name>AJZ</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-1</itextId>
+            <name>CMJX</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-2</itextId>
+            <name>CEM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-3</itextId>
+            <name>CGT</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-4</itextId>
+            <name>EAM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-5</itextId>
+            <name>ESM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-6</itextId>
+            <name>HBM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-7</itextId>
+            <name>JFM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-8</itextId>
+            <name>NES</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-9</itextId>
+            <name>NPL</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-10</itextId>
+            <name>RXA</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-11</itextId>
+            <name>VLM</name>
+          </item>
+          <item>
+            <itextId>static_instance-names-12</itextId>
+            <name>Outro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="genders">
+        <root>
+          <item>
+            <itextId>static_instance-genders-0</itextId>
+            <name>mas</name>
+          </item>
+          <item>
+            <itextId>static_instance-genders-1</itextId>
+            <name>fem</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="issues">
+        <root>
+          <item>
+            <itextId>static_instance-issues-0</itextId>
+            <name>parcela</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-1</itextId>
+            <name>apelido</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-2</itextId>
+            <name>nome</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-3</itextId>
+            <name>genero</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-4</itextId>
+            <name>doc_tipo</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-5</itextId>
+            <name>doc_num</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-6</itextId>
+            <name>nasc</name>
+          </item>
+          <item>
+            <itextId>static_instance-issues-7</itextId>
+            <name>reconfig</name>
+          </item>
+        </root>
+      </instance>
       <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_D_obj_cor/start" type="dateTime"/>
       <bind calculate="&quot;Registo de Objecções e Correções&quot;" nodeset="/Hluvukani_D_obj_cor/my_form_name" type="string"/>
       <bind nodeset="/Hluvukani_D_obj_cor/intronote" readonly="true()" type="string"/>
       <bind nodeset="/Hluvukani_D_obj_cor/tec_nome" required="true()" type="select1"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - O campo do nome não pode incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_D_obj_cor/add_nome" relevant=" /Hluvukani_D_obj_cor/tec_nome ='Outro'" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_D_obj_cor/region_id" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_D_obj_cor/bloco_id" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_D_obj_cor/parcel_id" required="true()" type="string"/>
       <bind constraint=".= /Hluvukani_D_obj_cor/parcel_id " jr:constraintMsg="O número da parcela/registo que reentrou não corresponde à sua primeira entrada. Faça a favor de verificar de novo." nodeset="/Hluvukani_D_obj_cor/parcel_id_check" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_D_obj_cor/outcome" required="true()" type="select1"/>
       <bind nodeset="/Hluvukani_D_obj_cor/party_id" required="true()" type="string"/>
       <bind constraint=".= /Hluvukani_D_obj_cor/party_id " jr:constraintMsg="O número do titular que reentrou não corresponde à sua primeira entrada. Faça a favor de verificar de novo." nodeset="/Hluvukani_D_obj_cor/party_id_check" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_D_obj_cor/issues" relevant=" /Hluvukani_D_obj_cor/outcome ='change'" required="true()" type="select"/>
+      <bind nodeset="/Hluvukani_D_obj_cor/parcel_id_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'parcela')" required="true()" type="string"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - O campo do nome não pode incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_D_obj_cor/pessoa_app_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'apelido')" required="true()" type="string"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - O campo do nome não pode incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_D_obj_cor/pessoa_nom_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'nome')" required="true()" type="string"/>
       <bind nodeset="/Hluvukani_D_obj_cor/pessoa_gen_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'genero')" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_D_obj_cor/data_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'nasc')" required="true()" type="date"/>
       <bind nodeset="/Hluvukani_D_obj_cor/pessoa_doc_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'doc_tipo')" required="true()" type="select1"/>
       <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-]{1,25}$&quot;)" jr:constraintMsg="Resposta invalida - O campo de numero do documento não pode incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_D_obj_cor/pessoa_id_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'doc_num')" required="true()" type="string"/>
       <bind calculate=" /Hluvukani_D_obj_cor/parcel_id " nodeset="/Hluvukani_D_obj_cor/limites_new" relevant="selected( /Hluvukani_D_obj_cor/issues , 'reconfig')" required="true()" type="string"/>
@@ -133,6 +566,28 @@ Por favor deslizar para a frente para continuar.</label>
     <input ref="/Hluvukani_D_obj_cor/add_nome">
       <label>Escreve o nome se não apareceu na lista</label>
     </input>
+    <select1 appearance="minimal" ref="/Hluvukani_D_obj_cor/region_id">
+      <label>Selecionar a região (Norte, Central ou Sul)</label>
+      <item>
+        <label>Norte</label>
+        <value>RN</value>
+      </item>
+      <item>
+        <label>Central</label>
+        <value>RC</value>
+      </item>
+      <item>
+        <label>Sul</label>
+        <value>RS</value>
+      </item>
+    </select1>
+    <select1 appearance="minimal" ref="/Hluvukani_D_obj_cor/bloco_id">
+      <label>Selecionar o bloco</label>
+      <itemset nodeset="instance('blocos')/root/item[region_id= /Hluvukani_D_obj_cor/region_id ]">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
     <input appearance="numbers" ref="/Hluvukani_D_obj_cor/parcel_id">
       <label>Qual é o numero da parcela/registo?</label>
     </input>
@@ -167,6 +622,10 @@ Por favor deslizar para a frente para continuar.</label>
     <select ref="/Hluvukani_D_obj_cor/issues">
       <label>Indique toda a informação que precisa ser alterada</label>
       <item>
+        <label>Mudar o numero da parcela</label>
+        <value>parcela</value>
+      </item>
+      <item>
         <label>Mudar o apelido da pessoa</label>
         <value>apelido</value>
       </item>
@@ -187,18 +646,25 @@ Por favor deslizar para a frente para continuar.</label>
         <value>doc_num</value>
       </item>
       <item>
+        <label>Mudar o data de nascimento</label>
+        <value>nasc</value>
+      </item>
+      <item>
         <label>Reconfigurar os limites da parcela</label>
         <value>reconfig</value>
       </item>
     </select>
+    <input appearance="numbers" ref="/Hluvukani_D_obj_cor/parcel_id_new">
+      <label>Mudar numero da parcela/registo para:</label>
+    </input>
     <input ref="/Hluvukani_D_obj_cor/pessoa_app_new">
-      <label>Novo apelido da pessoa</label>
+      <label>Mudar apelido da pessoa para:</label>
     </input>
     <input ref="/Hluvukani_D_obj_cor/pessoa_nom_new">
-      <label>Novo nome da pessoa</label>
+      <label>Mudar nome da pessoa para:</label>
     </input>
     <select1 appearance="minimal" ref="/Hluvukani_D_obj_cor/pessoa_gen_new">
-      <label>Novo género da pessoa:</label>
+      <label>Mudar género da pessoa para:</label>
       <item>
         <label>Masculino</label>
         <value>mas</value>
@@ -208,8 +674,11 @@ Por favor deslizar para a frente para continuar.</label>
         <value>fem</value>
       </item>
     </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_D_obj_cor/data_new">
+      <label>Mudar data de nascimento da pessoa para:</label>
+    </input>
     <select1 appearance="minimal" ref="/Hluvukani_D_obj_cor/pessoa_doc_new">
-      <label>Mudar o tipo de documento de identificação</label>
+      <label>Mudar o tipo de documento de identificação:</label>
       <item>
         <label>Bilhete de Identidade</label>
         <value>bi</value>
@@ -256,7 +725,7 @@ Por favor deslizar para a frente para continuar.</label>
       </item>
     </select1>
     <input ref="/Hluvukani_D_obj_cor/pessoa_id_new">
-      <label>Novo numero de documento</label>
+      <label>Mudar o numero de documento para:</label>
     </input>
     <upload mediatype="image/*" ref="/Hluvukani_D_obj_cor/limites_new_image">
       <label>Tire uma fotografia da parcela no mapa, mostrando claramente a mudança nas limites</label>
