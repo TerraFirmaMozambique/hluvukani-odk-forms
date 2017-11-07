@@ -1,4 +1,4 @@
--- this query uses the data from the ODK produced by form b to add people to the table_form_b_pessoas these are all uniquie the id number is the primary key and the key (uuid)is a unique number 
+﻿-- this query uses the data from the ODK produced by form b to add people to the table_form_b_pessoas these are all uniquie the id number is the primary key and the key (uuid)is a unique number 
 -- on update this query produce list of parties by region
 CREATE TABLE public.update_form_b_pessoas
 (
@@ -44,7 +44,7 @@ GRANT ALL ON TABLE public.update_form_b_pessoas TO public;
 GRANT ALL ON TABLE public.update_form_b_pessoas TO postgres;
 
 
-COPY public.update_form_b_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_B_Registrar_Pessoas'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
+COPY public.update_form_b_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_B_Registrar_Pessoas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';
 
 DELETE FROM public.update_form_b_pessoas a
 WHERE a.ctid <> (SELECT min(b.ctid)
@@ -67,9 +67,15 @@ UPDATE public.form_b_pessoas SET id_party = 'party';
 
 UPDATE public.form_b_pessoas SET id_party = id_party||id;
 
+<<<<<<< HEAD
+UPDATE public.form_b_pessoas SET party_name = concat(pessoa_nom)||' '||(pessoa_app)||' '||(pessoa_doc)||' '||(pessoa_id);
+
+UPDATE public.form_b_pessoas SET party_name_key = concat(key)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
+=======
 --- this is for the csv outputs
 
 UPDATE public.form_b_pessoas SET party_name = pessoa_nom||' '||pessoa_app||' '||pessoa_doc||' '|| pessoa_id;
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 
 --- this is for the form c additions link.
 

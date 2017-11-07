@@ -58,29 +58,37 @@ ALTER TABLE public.update_form_c_parcelas  OWNER to postgres;
 COPY public.update_form_c_parcelas FROM '/var/lib/share/projects/illovo/dbupdate/Hluvukani_C_parcelas.csv'  USING DELIMITERS ',' WITH NULL AS '' CSV HEADER ENCODING 'latin1';;
 
 
+-- remove duplicates in the table update_form_c_parcelas
 
 DELETE FROM public.update_form_c_parcelas a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.update_form_c_parcelas b
                  WHERE  a.key = b.key);
 				 
+-- remove tupuls we already have from the ODK source update_form_c_parcelas in the table form_c_parcelas key as unique id
 
 DELETE from public.update_form_c_parcelas
 WHERE EXISTS (SELECT 1 FROM public.form_c_parcelas
 WHERE key = public.update_form_c_parcelas.key );
 
+-- update image reference in the update_form_c_parcelas table absolute ref
+
 UPDATE public.update_form_c_parcelas 
 SET reciboimage = '<img src="'||reciboimage||'" style="width:256px;height:256px;">';
 
+-- change the geom to '0'
 
 SELECT UpdateGeometrySRID('form_c_parcelas','geom',0);
+
+-- ** lazy update here use absolute references **
 
 INSERT INTO public.form_c_parcelas
 SELECT * FROM public.update_form_c_parcelas;
 
-SELECT UpdateGeometrySRID('form_c_parcelas','geom',0);
+-- change back the geom to WGS84 
+SELECT UpdateGeometrySRID('form_c_parcelas','geom',4326);
 
-
+-- remove the update table
 DROP TABLE public.update_form_c_parcelas;
 
 -- Titulars
@@ -92,6 +100,7 @@ CREATE TABLE public.update_form_c_titulares
   foundparty character varying
   
 )
+-- oids true gives an id for editing
 WITH (
   OIDS=TRUE
 );
@@ -102,23 +111,26 @@ COPY public.update_form_c_titulares FROM '/var/lib/share/projects/illovo/dbupdat
 
 -- this removes all new parties and ensures only those parties already in the database are added to the database table.
 
--- this removes all new parties and ensures only those parties already in the database are added to the database table.
-
 DELETE FROM public.update_form_c_titulares 
 WHERE foundparty = '1';
+
+-- add a new column to the table update_form_c_titulares and populate it
 
 ALTER TABLE public.update_form_c_titulares ADD COLUMN titulares character varying;
 
 UPDATE public.update_form_c_titulares 
 SET titulares = concat ("parentuid","searchtext","foundparty");
 
--- delete duplicates in update_form_c_titulares
+-- delete duplicates in update_form_c_titulares ( there shouldn't be any but hey ho)
+
 DELETE FROM public.update_form_c_titulares a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.update_form_c_titulares b
                  WHERE  a.titulares = b.titulares);
 
--- delete from update_form_c_titulares data already parsed into dbase
+-- delete from update_form_c_titulares data already parsed into dbase update principle table first.
+
+UPDATE form_c_titulares SET COLUMN titulares = concat ("parentuid","searchtext","foundparty");
   
 DELETE FROM public.update_form_c_titulares
 WHERE EXISTS (SELECT 1 FROM public.form_c_titulares 
@@ -129,18 +141,35 @@ INSERT INTO public.form_c_titulares(parentuid, searchtext, foundparty, titulares
 SELECT parentuid, searchtext, foundparty, titulares
 FROM public.update_form_c_titulares;
 	
-DELETE FROM public.form_c_titulares a
+/* DELETE FROM public.form_c_titulares a
 WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.form_c_titulares b
                  WHERE  a.titulares = b.titulares);
 				 
 
+				 shouldn't need this  */
 				 
 DROP TABLE public.update_form_c_titulares;
 
 -- stage 1 update novas pessoas for v-front remove rejeitado people first, 
 
 /* stage 1 store rejected people from the vfront which have had their state changed from the 'não confirmado' to rejeitado or sim */
+<<<<<<< HEAD
+
+ 
+-- the table in the dbase was not excepting new inputs think it was the ID serial **
+
+  
+INSERT INTO public.form_c_pessoas_rejeitado (parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado)
+SELECT parent_uid, pessoa_app, pessoa_nom, pessoa_gen, pessoa_civil, pessoa_prof, pessoa_prof_other, pessoa_nacion, pessoa_natural, nasc_y_n, pessoa_nasc, pessoa_ida, pessoa_doc, pessoa_id, doc_local, doc_emi, doc_val, doc_vital, pessoa_foto, id_foto, pessoa_assin, contacto, party_name, confirmado 
+FROM update_novas_pessoas
+WHERE confirmado = 'rejeitado';
+-- this updates a key between used between form_c_pessoas_rejeitado and *****   
+
+UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
+
+-- stage 2 create  update_pessoas_nova from form C and update_novas_pessoas,  
+=======
 
  
 
@@ -153,6 +182,7 @@ UPDATE public.form_c_pessoas_rejeitado SET party_name = concat(parent_uid)||(pes
 
 -- stage 2 create  update_pessoas_nova  from form C and update_novas_pessoas,  
 
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 
 CREATE TABLE public.update_pessoas_nova AS SELECT 
   form_c_parcelas.subdate, 
@@ -316,15 +346,22 @@ COPY public.update_novas_pessoas FROM '/var/lib/share/projects/illovo/dbupdate/H
 UPDATE public.update_novas_pessoas SET party_name = concat(parent_uid)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
 
 -- delete any data already in table_b based on unique parent_uid||person details ()
+<<<<<<< HEAD
+=======
+
+DELETE FROM public.update_novas_pessoas
+WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
+WHERE party_name_key = public.update_novas_pessoas.party_name );
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 
 DELETE FROM public.update_novas_pessoas
 WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
 WHERE party_name_key = public.update_novas_pessoas.party_name );
 
-DELETE FROM public.update_novas_pessoas
-WHERE EXISTS (SELECT 1 FROM public.form_b_pessoas 
-WHERE party_name_key = public.update_novas_pessoas.party_name );
+<<<<<<< HEAD
 
+=======
+>>>>>>> f21529722f62745e49270748e2c79771d778418e
 -- delete any data moved to form_c_pessoas_rejeitado
 
 DELETE FROM public.update_novas_pessoas
