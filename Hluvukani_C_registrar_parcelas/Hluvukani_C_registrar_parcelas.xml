@@ -446,7 +446,7 @@
         </translation>
       </itext>
       <instance>
-        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201711131">
+        <Hluvukani_C_registrar_parcelas id="Hluvukani_C_V1" version="201801081">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -2007,7 +2007,7 @@ Por favor deslizar para a frente para continuar.</label>
         </upload>
       </repeat>
     </group>
-    <input ref="/Hluvukani_C_registrar_parcelas/auto_gps">
+    <input appearance="maps" ref="/Hluvukani_C_registrar_parcelas/auto_gps">
       <label>É obrigatorio gravar um ponto dentro da parcela, no centro.</label>
     </input>
     <select1 ref="/Hluvukani_C_registrar_parcelas/limites_yn">
@@ -2024,7 +2024,7 @@ Por favor deslizar para a frente para continuar.</label>
     <group ref="/Hluvukani_C_registrar_parcelas/Pontos">
       <label>Pontos de limites</label>
       <repeat nodeset="/Hluvukani_C_registrar_parcelas/Pontos">
-        <input ref="/Hluvukani_C_registrar_parcelas/Pontos/auto_gps_limit">
+        <input appearance="maps" ref="/Hluvukani_C_registrar_parcelas/Pontos/auto_gps_limit">
           <label>Gravar um ponto</label>
           <hint>Gravar um ponto a qualquer mudança de direcção, e pelo menos uma vez a cada dez metros. Lembrete: se a 'localização record' está levando algum tempo, por favor, verifique se a luz azul do seu Glo</hint>
         </input>
