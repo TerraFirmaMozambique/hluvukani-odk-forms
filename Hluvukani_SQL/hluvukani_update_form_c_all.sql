@@ -1,4 +1,4 @@
-/* this SQL handels all of the routines for the data collected by Form Hluvukani C Registrar Parcelas which is consolidated in the excel sheet Hluvukani_C_V1 
+﻿/* this SQL handels all of the routines for the data collected by Form Hluvukani C Registrar Parcelas which is consolidated in the excel sheet Hluvukani_C_V1 
 	an embeded VBA code produces five CSV files 
 	Hluvukani_C_parcelas
 	Hluvukani_C_titulars
@@ -584,7 +584,7 @@ CREATE TABLE public.update_form_c_pontos
     altitude double precision,
     accuracy double precision,
     upngpslimit character varying COLLATE pg_catalog."default",
-	parentuid character varying COLLATE pg_catalog."default" NOT NULL,
+    parentuid character varying COLLATE pg_catalog."default" NOT NULL,
     key character varying COLLATE pg_catalog."default"
     )
     WITH ( OIDS=FALSE );

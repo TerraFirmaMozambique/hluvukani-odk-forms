@@ -67,15 +67,15 @@ UPDATE public.form_b_pessoas SET id_party = 'party';
 
 UPDATE public.form_b_pessoas SET id_party = id_party||id;
 
-<<<<<<< HEAD
+
 UPDATE public.form_b_pessoas SET party_name = concat(pessoa_nom)||' '||(pessoa_app)||' '||(pessoa_doc)||' '||(pessoa_id);
 
 UPDATE public.form_b_pessoas SET party_name_key = concat(key)||(pessoa_nom)||(pessoa_app)||(pessoa_doc)||(pessoa_id);
-=======
+
 --- this is for the csv outputs
 
 UPDATE public.form_b_pessoas SET party_name = pessoa_nom||' '||pessoa_app||' '||pessoa_doc||' '|| pessoa_id;
->>>>>>> f21529722f62745e49270748e2c79771d778418e
+
 
 --- this is for the form c additions link.
 
