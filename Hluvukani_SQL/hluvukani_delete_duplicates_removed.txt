@@ -1,0 +1,31 @@
+/* this SQL removes the duplicate entries resident in the ODK forms and was only run once, the updating procedure in hluvukani_update_form_c_all removes the duplicates before updating the database table*/
+
+
+
+DELETE from public.form_c_parcelas
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.form_c_parcelas.key);
+
+
+DELETE from public.form_c_titulares
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.form_c_titulares.parentuid);
+
+
+DELETE from public.form_c_novas_pessoas
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.form_c_novas_pessoas.key);
+
+DELETE from public.form_c_testemunhas
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.form_c_testemunhas.parentuid);
+
+DELETE from public.form_c_pontos
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.form_c_pontos.parentuid);
+
+---------------------- 
+
+DELETE from public.table_occ_master
+WHERE EXISTS (SELECT 1 FROM public.table_c_duplicates 
+WHERE key = public.table_occ_master.uuid);

@@ -4,7 +4,7 @@
     <h:title>Hluvukani C1 Prova da Vida</h:title>
     <model>
       <instance>
-        <Hluvukani_C1_prova_vida id="Hluvukani_C1_V1" version="201710181">
+        <Hluvukani_C1_prova_vida id="Hluvukani_C1_V1" version="201802011">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -116,208 +116,416 @@ Por favor deslizar para a frente para continuar.</label>
     <select1 ref="/Hluvukani_C1_prova_vida/party_id">
       <label>Selecionar o nome da pessoa</label>
       <item>
-        <label>Chiconela Ezequiel fenias c_impost 5610</label>
-        <value>9989</value>
+        <label>Admiro Vicente Massingue bi 100402879475P</label>
+        <value>4502</value>
       </item>
       <item>
-        <label>Chiconela Isaque Fenias Chiconela c_impost 5610</label>
-        <value>9940</value>
-      </item>
-      <item>
-        <label>Chicuamba Ismael Alfredo bi 100404696751Q</label>
-        <value>9745</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias bi 1004026800497N</label>
-        <value>9209</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias ced 668046</label>
-        <value>9310</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias ced 668046</label>
-        <value>9311</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias ced 668046</label>
-        <value>9756</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias ced 668046</label>
-        <value>9759</value>
-      </item>
-      <item>
-        <label>Chilaule Maria Azarias ced 668046</label>
-        <value>9766</value>
-      </item>
-      <item>
-        <label>Chivure Celeste Gabriel Novela bi 110201649569Q</label>
-        <value>9236</value>
-      </item>
-      <item>
-        <label>Dolhana Maria João bi 100404559519P</label>
-        <value>9580</value>
-      </item>
-      <item>
-        <label>Hunguana Sérgio Gonçalves bi 110101036908C</label>
-        <value>9231</value>
-      </item>
-      <item>
-        <label>Komaio Albertina Kei c_eleit 12071563</label>
-        <value>9876</value>
-      </item>
-      <item>
-        <label>Livisse Agostinho João bi 110104642611N</label>
+        <label>Agostinho João Livisse bi 110104642611N</label>
         <value>9815</value>
       </item>
       <item>
-        <label>Lumbela Elias Machelagodine bi 110100295545A</label>
-        <value>9223</value>
+        <label>Albertina Kei Komaio c_eleit 12071563</label>
+        <value>9580</value>
       </item>
       <item>
-        <label>Macamo Angelo Luis c_eleit 12071794</label>
-        <value>9695</value>
+        <label>Alberto Júlio Manganhe c_eleit 4807456</label>
+        <value>4436</value>
       </item>
       <item>
-        <label>Machaeie Benedito Diniz ced 65146</label>
-        <value>9310</value>
+        <label>Alberto Magare Dava bi 100402255471S</label>
+        <value>4398</value>
       </item>
       <item>
-        <label>Machaeie Benedito Diniz ced 65146</label>
-        <value>9311</value>
+        <label>Alberto Zunguene c_eleit Xxxxx</label>
+        <value>9103</value>
       </item>
       <item>
-        <label>Machaeie José Diniz ced 857421</label>
-        <value>9311</value>
+        <label>Alexandre Manuensa Melembe bi 100301713467C</label>
+        <value>4003</value>
       </item>
       <item>
-        <label>Machaieie Benedito Dinis ced 65146</label>
-        <value>9756</value>
+        <label>Alexandre Manuensa Melembe bi 100301713467C</label>
+        <value>4515</value>
       </item>
       <item>
-        <label>Machaieie Benedito Dinis ced 65146</label>
-        <value>9759</value>
+        <label>Amélia Nhantsumbo bi 110202873403B</label>
+        <value>9732</value>
       </item>
       <item>
-        <label>Machaieie Benedito Dinis ced 65146</label>
-        <value>9766</value>
-      </item>
-      <item>
-        <label>Machaieie Benedito Dinis ced 65146</label>
-        <value>9786</value>
-      </item>
-      <item>
-        <label>Machaieie Benedito Dinis ced 65146</label>
-        <value>9209</value>
-      </item>
-      <item>
-        <label>Machaieie Maria Azarias Chilaule bi 100402680497N</label>
-        <value>9786</value>
-      </item>
-      <item>
-        <label>Machiana Carla Isabel p_port 15AJ41963</label>
-        <value>9733</value>
-      </item>
-      <item>
-        <label>Macuacua Flora Silvestre c_eleit 1004A860810839</label>
-        <value>9744</value>
-      </item>
-      <item>
-        <label>Macuacua Marta Causolada c_eleit 13082829</label>
-        <value>9265</value>
-      </item>
-      <item>
-        <label>MANHIÇA Isabel Joaquim bi 10006696B</label>
-        <value>9234</value>
-      </item>
-      <item>
-        <label>MANHIÇA LAURINDA JOAQUIM c_eleit 367707</label>
-        <value>9235</value>
-      </item>
-      <item>
-        <label>MANHIÇA Violeta Cotassana bi 100400613064B</label>
-        <value>9741</value>
-      </item>
-      <item>
-        <label>Mapanga Lúcia Clarmina bi 100400667510Q</label>
-        <value>9720</value>
-      </item>
-      <item>
-        <label>Massango Mónica Amone bi 110101302568F</label>
-        <value>9735</value>
-      </item>
-      <item>
-        <label>Mawelele Leonardo Fabião c_eleit 12598423</label>
-        <value>9691</value>
-      </item>
-      <item>
-        <label>Mbeve Ana Maria Antónia bi 100005272F</label>
+        <label>Ana Maria Antónia Mbeve bi 100005272F</label>
         <value>9247</value>
       </item>
       <item>
-        <label>Mbeve Regina dos Santos talao 11566942</label>
-        <value>9712</value>
+        <label>Angela Carlos Xavier c_eleit 13747607</label>
+        <value>4947</value>
       </item>
       <item>
-        <label>Muchanga Salvador Baptista bi 110202091364N</label>
-        <value>9686</value>
+        <label>Angelina Iotassana Balate c_eleit 1004A580840212</label>
+        <value>4897</value>
       </item>
       <item>
-        <label>Muiambo Atalia Michaque c_eleit 1834033</label>
+        <label>Angelo Luis Macamo c_eleit 12071794</label>
+        <value>9695</value>
+      </item>
+      <item>
+        <label>Antonio Mavulu Melembe Melembe bi 100098977X</label>
+        <value>4002</value>
+      </item>
+      <item>
+        <label>Antonio muvulo Melembe bi 100098977x</label>
+        <value>4004</value>
+      </item>
+      <item>
+        <label>Argentina Fernando Machai bi 110100290981F</label>
+        <value>4170</value>
+      </item>
+      <item>
+        <label>Ariel Quingue Nhacolo bi 100402813194J</label>
+        <value>4758</value>
+      </item>
+      <item>
+        <label>Arlindo Francisco Matsinhe talao 6654220</label>
+        <value>4407</value>
+      </item>
+      <item>
+        <label>Artimiza Armando Chombela bi 110502813139I</label>
+        <value>4927</value>
+      </item>
+      <item>
+        <label>Atalia Michaque Muiambo c_eleit 1834033</label>
         <value>9511</value>
       </item>
       <item>
-        <label>Nhacale Aurora Dinis c_eleit 1550804</label>
+        <label>Aurora Dinis Nhacale c_eleit 1550804</label>
         <value>9704</value>
       </item>
       <item>
-        <label>Roma Higino Francisco Carlos bi 110202136654P</label>
-        <value>9225</value>
-      </item>
-      <item>
-        <label>Sitoe Avelina Azarias Sitoe c_nasc Xxxxxxxx</label>
+        <label>Avelina Azarias Sitoe Sitoe c_nasc Xxxxxxxx</label>
         <value>9006</value>
       </item>
       <item>
-        <label>Sitoe Avelina Azarias Sitoe c_nasc xxxxxxxxx</label>
+        <label>Avelina Azarias Sitoe Sitoe c_nasc xxxxxxxxx</label>
         <value>9896</value>
       </item>
       <item>
-        <label>Timana Fernando Manuel bi 3706723</label>
+        <label>Benedito Arlindo Chauque bi 110104370009B</label>
+        <value>4802</value>
+      </item>
+      <item>
+        <label>Benedito Dinis Machaieie ced 65146</label>
+        <value>9209</value>
+      </item>
+      <item>
+        <label>Benedito Dinis Machaieie ced 65146</label>
+        <value>9756</value>
+      </item>
+      <item>
+        <label>Benedito Dinis Machaieie ced 65146</label>
+        <value>9759</value>
+      </item>
+      <item>
+        <label>Benedito Dinis Machaieie ced 65146</label>
+        <value>9766</value>
+      </item>
+      <item>
+        <label>Benedito Dinis Machaieie ced 65146</label>
+        <value>9786</value>
+      </item>
+      <item>
+        <label>Benedito Diniz Machaeie ced 65146</label>
+        <value>9303</value>
+      </item>
+      <item>
+        <label>Benedito Diniz Machaeie ced 65146</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>Cacilda Armando Dimande c_eleit 576863</label>
+        <value>9282</value>
+      </item>
+      <item>
+        <label>Carla Isabel Machiana p_port 15AJ41963</label>
+        <value>9733</value>
+      </item>
+      <item>
+        <label>Carolina Alberto Nambal c_eleit 13454787</label>
+        <value>4903</value>
+      </item>
+      <item>
+        <label>Cecília Rodrigues Cossa bi 100405892495N</label>
+        <value>4862</value>
+      </item>
+      <item>
+        <label>Celeste Alfredo Homo bi 100405422384P</label>
+        <value>9746</value>
+      </item>
+      <item>
+        <label>Celeste Gabriel Novela Chivure bi 110201649569Q</label>
+        <value>9236</value>
+      </item>
+      <item>
+        <label>David Fernando Machaieie bi 100405710268N</label>
+        <value>4363</value>
+      </item>
+      <item>
+        <label>Eduardo Alberto Zimia bi 100406013023F</label>
+        <value>4419</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavundza bi 110102047742A</label>
+        <value>4753</value>
+      </item>
+      <item>
+        <label>Elias Machelagodine Lumbela bi 110100295545A</label>
+        <value>9223</value>
+      </item>
+      <item>
+        <label>Elias Raul Seth Langa bi 110200628536B</label>
+        <value>9229</value>
+      </item>
+      <item>
+        <label>Erasmo Alberto Chambale Chambale bi 100406029175B</label>
+        <value>8436</value>
+      </item>
+      <item>
+        <label>Ernesto Fernando Melembe ced 187227</label>
+        <value>4543</value>
+      </item>
+      <item>
+        <label>Eugénio Alberto Chavana ced 46078</label>
+        <value>4763</value>
+      </item>
+      <item>
+        <label>Ezequiel fenias Chiconela c_impost 5610</label>
+        <value>9989</value>
+      </item>
+      <item>
+        <label>Fernando Ernesto Mulhanga bi 09020524751D</label>
+        <value>4583</value>
+      </item>
+      <item>
+        <label>Fernando Manuel Timana bi 3706723</label>
         <value>9585</value>
       </item>
       <item>
-        <label>Timbe Hercílio Timbe ced 45472</label>
-        <value>9853</value>
+        <label>Fernando Paulino Xirinda c_cond 10731522</label>
+        <value>4755</value>
       </item>
       <item>
-        <label>Tiua Regina Pedro bi 100402879917B</label>
-        <value>9722</value>
+        <label>Filomena Cossa bi 2868605</label>
+        <value>9198</value>
       </item>
       <item>
-        <label>Uelane Saugina João c_eleit 2609439</label>
-        <value>9263</value>
-      </item>
-      <item>
-        <label>Xerinda Filomena Marta bi 100390103W</label>
+        <label>Filomena Marta Xerinda bi 100390103W</label>
         <value>9273</value>
       </item>
       <item>
-        <label>Xerinda Julieta Augusto ced 69202</label>
+        <label>Flora Silvestre Macuacua c_eleit 1004A860810839</label>
+        <value>9744</value>
+      </item>
+      <item>
+        <label>Francisco Mucoi Pelembe bi 110100298852N</label>
+        <value>9284</value>
+      </item>
+      <item>
+        <label>Franice Ernesto Mimbire bi 100401094341S</label>
+        <value>4554</value>
+      </item>
+      <item>
+        <label>Gilda Alfredo Cossa bi 3293818</label>
+        <value>4362</value>
+      </item>
+      <item>
+        <label>Hercílio Timbe Timbe ced 45472</label>
+        <value>9853</value>
+      </item>
+      <item>
+        <label>Hermínio Ruben Mathombe bi 100406382003P</label>
+        <value>4229</value>
+      </item>
+      <item>
+        <label>Higino Francisco Carlos Roma bi 110202136654P</label>
+        <value>9225</value>
+      </item>
+      <item>
+        <label>Horácio Alberto Chauque bi 100404784848C</label>
+        <value>4314</value>
+      </item>
+      <item>
+        <label>Idalina Macucule bi 100402553340I</label>
+        <value>9749</value>
+      </item>
+      <item>
+        <label>Isabel Joaquim MANHIÇA bi 10006696B</label>
+        <value>9234</value>
+      </item>
+      <item>
+        <label>Isaque Fenias Chiconela Chiconela c_impost 5610</label>
+        <value>9940</value>
+      </item>
+      <item>
+        <label>Ismael Alfredo Chicuamba bi 100404696751Q</label>
+        <value>9745</value>
+      </item>
+      <item>
+        <label>Januário Sozinho Sitoe ced 34170</label>
+        <value>9028</value>
+      </item>
+      <item>
+        <label>Januário Sozinho Sitoe ced 34170</label>
+        <value>9029</value>
+      </item>
+      <item>
+        <label>Januário Sozinho Sitoe ced 34170</label>
+        <value>9032</value>
+      </item>
+      <item>
+        <label>Januário Sozinho Sitoe ced 34170</label>
+        <value>9082</value>
+      </item>
+      <item>
+        <label>Joana Afonso Cuna bi 100402079747F</label>
+        <value>4754</value>
+      </item>
+      <item>
+        <label>José Diniz Machaeie ced 857421</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>José Paulo Timana Timana bi 110200350149S</label>
+        <value>4356</value>
+      </item>
+      <item>
+        <label>Julieta Augusto Xerinda ced 69202</label>
         <value>9770</value>
       </item>
       <item>
-        <label>Xerinda Lizete Aurelio bi 110104918215I</label>
+        <label>Laque Feliciano Timana bi 100405660468M</label>
+        <value>4913</value>
+      </item>
+      <item>
+        <label>Latia fabiao Tivane bi 100405376506A</label>
+        <value>4233</value>
+      </item>
+      <item>
+        <label>LAURINDA JOAQUIM MANHIÇA c_eleit 367707</label>
+        <value>9235</value>
+      </item>
+      <item>
+        <label>Leonardo Fabião Mawelele c_eleit 12598423</label>
+        <value>9691</value>
+      </item>
+      <item>
+        <label>Lizete Aurelio Xerinda bi 110104918215I</label>
         <value>9327</value>
       </item>
       <item>
-        <label>Zimia Salmina Francisco bi 100405126306P</label>
+        <label>Lopes Alberto Zimia talao 6866173</label>
+        <value>4420</value>
+      </item>
+      <item>
+        <label>Lopes Manuessa Melembe bi 1100101510857</label>
+        <value>4001</value>
+      </item>
+      <item>
+        <label>Lúcia Clarmina Mapanga bi 100400667510Q</label>
+        <value>9720</value>
+      </item>
+      <item>
+        <label>Luís Filipe Timana bi 100405892378M</label>
+        <value>4378</value>
+      </item>
+      <item>
+        <label>Manuel Feniasse Matsinhe bi 110105100629A</label>
+        <value>4406</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule bi 1004026800497N</label>
+        <value>9209</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule ced 668046</label>
+        <value>9303</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule ced 668046</label>
+        <value>9311</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule ced 668046</label>
+        <value>9756</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule ced 668046</label>
+        <value>9759</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule ced 668046</label>
+        <value>9766</value>
+      </item>
+      <item>
+        <label>Maria Azarias Chilaule Machaieie bi 100402680497N</label>
+        <value>9786</value>
+      </item>
+      <item>
+        <label>Maria João Dolhana bi 100404559519P</label>
+        <value>9580</value>
+      </item>
+      <item>
+        <label>Marta Alexandre Nhabinde Mbebe bi 110100338532J</label>
+        <value>9748</value>
+      </item>
+      <item>
+        <label>Marta Causolada Macuacua c_eleit 13082829</label>
+        <value>9265</value>
+      </item>
+      <item>
+        <label>Mónica Amone Massango bi 110101302568F</label>
+        <value>9735</value>
+      </item>
+      <item>
+        <label>Moseis Antonio Matosse bi 100402005836B</label>
+        <value>4007</value>
+      </item>
+      <item>
+        <label>Regina dos Santos Mbeve talao 11566942</label>
+        <value>9712</value>
+      </item>
+      <item>
+        <label>Regina Pedro Tiua bi 100402879917B</label>
+        <value>9722</value>
+      </item>
+      <item>
+        <label>Salmina Francisco Zimia bi 100405126306P</label>
         <value>9703</value>
       </item>
       <item>
-        <label>Zunguene Alberto c_eleit Xxxxx&quot;</label>
-        <value>9104</value>
+        <label>Salvador Baptista Muchanga bi 110202091364N</label>
+        <value>9686</value>
+      </item>
+      <item>
+        <label>Saugina João Uelane c_eleit 2609439</label>
+        <value>9263</value>
+      </item>
+      <item>
+        <label>Sebastião Lopes Timane bi 100402813277B</label>
+        <value>4313</value>
+      </item>
+      <item>
+        <label>Sérgio Augusto Massingue Massingue bi 100401395656S</label>
+        <value>4815</value>
+      </item>
+      <item>
+        <label>Sérgio Gonçalves Hunguana bi 110101036908C</label>
+        <value>9231</value>
+      </item>
+      <item>
+        <label>Talita Alfredo Ricotso bi 100401094250B</label>
+        <value>4559</value>
+      </item>
+      <item>
+        <label>Violeta Cotassana MANHIÇA bi 100400613064B</label>
+        <value>9741</value>
       </item>
     </select1>
     <upload mediatype="image/*" ref="/Hluvukani_C1_prova_vida/pessoa_foto">
