@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hluvukani F Registrar Assinante de Declaracoes</h:title>
+    <model>
+      <instance>
+        <Hluvukani_F_assin_declaracoes id="Hluvukani_F_V1" version="201802141">
+          <start/>
+          <my_form_name/>
+          <intronote/>
+          <tec_nome/>
+          <data/>
+          <Fg1>
+            <pessoa_app/>
+            <pessoa_nom/>
+            <pessoa_desig/>
+          </Fg1>
+          <pessoa_assin/>
+          <end/>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Hluvukani_F_assin_declaracoes>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/Hluvukani_F_assin_declaracoes/start" type="dateTime"/>
+      <bind calculate="&quot;Registo de Assinantes - Declarações&quot;" nodeset="/Hluvukani_F_assin_declaracoes/my_form_name" type="string"/>
+      <bind nodeset="/Hluvukani_F_assin_declaracoes/intronote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_F_assin_declaracoes/tec_nome" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_F_assin_declaracoes/data" required="true()" type="date"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_app" required="true()" type="string"/>
+      <bind constraint="regex(., &quot;^[a-zA-Z0-9. _-éáíóãõúçâôàèê]{1,75}$&quot;)" jr:constraintMsg="Resposta invalida - Os campos de apelido, nome e profissão não podiam incluir um novo paragrafo. Faça a favor de eliminar qualquer linha adicional." nodeset="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_nom" required="true()" type="string"/>
+      <bind nodeset="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_desig" type="string"/>
+      <bind nodeset="/Hluvukani_F_assin_declaracoes/pessoa_assin" required="true()" type="binary"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_F_assin_declaracoes/end" type="dateTime"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_F_assin_declaracoes/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat('Assinantes','_', /Hluvukani_F_assin_declaracoes/data )" nodeset="/Hluvukani_F_assin_declaracoes/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Hluvukani_F_assin_declaracoes/intronote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_F_assin_declaracoes/my_form_name "/>&lt;/span&gt; &lt;br/&gt; 
+
+Este formulário é utilizado para gravar informação sobre a pessoa que será o(a) assinante de Declarações que serão emitidas pela entidade emissora (neste caso, a Cooperativa).
+
+O técnico pode usar o formulário para capturar informação sobre a pessoa, incluindo a assinatura digital.
+
+Por favor deslizar para a frente para continuar.</label>
+    </input>
+    <select1 appearance="minimal" ref="/Hluvukani_F_assin_declaracoes/tec_nome">
+      <label>Nome do técnico(a):</label>
+      <item>
+        <label>Armando Junior Zuana</label>
+        <value>Armando_Zuana</value>
+      </item>
+      <item>
+        <label>Cacilda Mothasse Jocicaze Xerinda</label>
+        <value>Cacilda_Xerinda</value>
+      </item>
+      <item>
+        <label>Carlos Eduardo Mujovo</label>
+        <value>Carlos_Mujovo</value>
+      </item>
+      <item>
+        <label>Coronel Gelsio Timana</label>
+        <value>Coronel_Timana</value>
+      </item>
+      <item>
+        <label>Efigencia Alberto Mavondza</label>
+        <value>Efigencia_Mavondza</value>
+      </item>
+      <item>
+        <label>Elton Salomao Munguambe</label>
+        <value>Elton_Munguambe</value>
+      </item>
+      <item>
+        <label>Helena Benjamim Mondlane</label>
+        <value>Helena_Mondlane</value>
+      </item>
+      <item>
+        <label>Julio Fernando Manheia</label>
+        <value>Julio_Manheia</value>
+      </item>
+      <item>
+        <label>Nomisse Eugenio Sitoe</label>
+        <value>Nomisse_Sitoe</value>
+      </item>
+      <item>
+        <label>Noniua Paudelina Luis</label>
+        <value>Noniua_Luis</value>
+      </item>
+      <item>
+        <label>Raquel Xavier Ambasse</label>
+        <value>Raquel_Ambasse</value>
+      </item>
+      <item>
+        <label>Valdemiro Luis Mondlane</label>
+        <value>Valdemiro_Mondlane</value>
+      </item>
+      <item>
+        <label>Outro</label>
+        <value>Outro</value>
+      </item>
+    </select1>
+    <input appearance="no-calendar" ref="/Hluvukani_F_assin_declaracoes/data">
+      <label>Data do registo:</label>
+    </input>
+    <group appearance="field-list" ref="/Hluvukani_F_assin_declaracoes/Fg1">
+      <label>Detalhes de pessoa</label>
+      <input ref="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_app">
+        <label>Qual é o apelido da pessoa?</label>
+      </input>
+      <input ref="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_nom">
+        <label>Qual é o nome da pessoa?</label>
+      </input>
+      <input ref="/Hluvukani_F_assin_declaracoes/Fg1/pessoa_desig">
+        <label>Qual é a carga da pessoa?</label>
+      </input>
+    </group>
+    <upload appearance="signature" mediatype="image/*" ref="/Hluvukani_F_assin_declaracoes/pessoa_assin">
+      <label>Assinatura da pessoa</label>
+    </upload>
+  </h:body>
+</h:html>
