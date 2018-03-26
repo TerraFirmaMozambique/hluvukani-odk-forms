@@ -29,7 +29,7 @@
   key character varying NOT NULL
 )
 WITH (
-  OIDS=FALSE
+  OIDS=TRUE
 );
 ALTER TABLE public.update_form_d_occ
   OWNER TO postgres;

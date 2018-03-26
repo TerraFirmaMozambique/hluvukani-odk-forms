@@ -1,3 +1,5 @@
+DROP TABLE public.normalise_form_d_occ;
+
 CREATE TABLE public.normalise_form_d_occ
 (
 
@@ -18,23 +20,25 @@ GRANT ALL ON TABLE public.normalise_form_d_occ TO postgres;
 
 INSERT INTO public.normalise_form_d_occ( parcel_id, outcome, party_id, key)
 SELECT parcel_id, outcome, party_id, key
-  FROM public.update_form_d_occ;
+  FROM public.form_d_occ;
   
-  ----------------------------------------
+/*  ----------------------------------------
   add column 
   add column count_parcel
   add column count_outcome
+  ----------------------------------------*/
   
 ALTER TABLE normalise_form_d_occ ADD COLUMN id_outcome character varying;
 
 UPDATE normalise_form_d_occ set id_outcome = parcel_id ||'-'|| outcome;
+-----
 
 ALTER TABLE normalise_form_d_occ ADD COLUMN id_count integer;
 
 UPDATE normalise_form_d_occ set id_count = count From (Select parcel_id, count FROM (SELECT normalise_form_d_occ.parcel_id, count(parcel_id) OVER (PARTITION BY parcel_id) FROM normalise_form_d_occ) AS a) AS b
 where normalise_form_d_occ.parcel_id = b.parcel_id;
 
-ALTER TABLE normalise_form_d_occ ADD COLUMN id_outcome_count character varying;
+ALTER TABLE normalise_form_d_occ ADD COLUMN id_outcome_count integer;
 
 UPDATE normalise_form_d_occ set id_outcome_count = count From (Select id_outcome, count FROM (SELECT normalise_form_d_occ.id_outcome, count(id_outcome) OVER (PARTITION BY id_outcome) FROM normalise_form_d_occ) AS a) AS b
 where normalise_form_d_occ.id_outcome = b.id_outcome;
@@ -56,3 +60,4 @@ WHERE a.ctid <> (SELECT min(b.ctid)
                  FROM   public.normalise_form_d_occ b
                  WHERE  a.key = b.key);
 
+-------- drop and make new each time
