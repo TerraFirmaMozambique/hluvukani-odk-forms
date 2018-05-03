@@ -5,14 +5,14 @@
     <model>
       <itext>
         <translation default="true()" lang="default">
-          <text id="/Hluvukani_G_delivery/foto_example:label">
+          <text id="/Hluvukani_G_delivery/Gg1/foto_example:label">
             <value form="image">jr://images/example.jpg</value>
             <value>Faça a favor de tirar uma foto como mostrado no exemplo abaixo (deslizar para a frente para continuar)</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <Hluvukani_G_delivery id="Hluvukani_G_V1" version="201804103">
+        <Hluvukani_G_delivery id="Hluvukani_G_V1" version="201804262">
           <start/>
           <my_form_name/>
           <intronote/>
@@ -20,18 +20,19 @@
           <data/>
           <upn/>
           <upn_confirm/>
-          <id_tipo/>
-          <id_num/>
-          <nopreloadnote/>
-          <id_tipo_confirm/>
-          <id_titular_confirm/>
-          <noidnote/>
-          <foto_example/>
-          <pessoa_foto/>
-          <id_foto/>
-          <id_foto_verso/>
-          <pessoa_assin/>
-          <recibo_image/>
+          <resultado/>
+          <preloadfail/>
+          <preloadnote/>
+          <Gg1>
+            <id_titular_confirm/>
+            <noidnote/>
+            <foto_example/>
+            <pessoa_foto/>
+            <id_foto/>
+            <id_foto_verso/>
+            <pessoa_assin/>
+            <recibo_image/>
+          </Gg1>
           <end/>
           <meta>
             <instanceID/>
@@ -46,18 +47,18 @@
       <bind nodeset="/Hluvukani_G_delivery/data" required="true()" type="date"/>
       <bind nodeset="/Hluvukani_G_delivery/upn" required="true()" type="int"/>
       <bind constraint=".= /Hluvukani_G_delivery/upn " jr:constraintMsg="O numero que digitou novamente não corresponde à sua primeira entrada" nodeset="/Hluvukani_G_delivery/upn_confirm" required="true()" type="int"/>
-      <bind calculate="pulldata('source', 'doc', 'upn_key',  /Hluvukani_G_delivery/upn )" nodeset="/Hluvukani_G_delivery/id_tipo" type="string"/>
-      <bind calculate="pulldata('source', 'doc_id', 'upn_key',  /Hluvukani_G_delivery/upn )" nodeset="/Hluvukani_G_delivery/id_num" type="string"/>
-      <bind nodeset="/Hluvukani_G_delivery/nopreloadnote" readonly="true()" relevant="string-length( /Hluvukani_G_delivery/id_tipo ) &lt; 1" type="string"/>
-      <bind nodeset="/Hluvukani_G_delivery/id_tipo_confirm" relevant="string-length( /Hluvukani_G_delivery/id_tipo ) &gt; 0" required="true()" type="select1"/>
-      <bind nodeset="/Hluvukani_G_delivery/id_titular_confirm" relevant=" /Hluvukani_G_delivery/id_tipo_confirm ='nao'" required="true()" type="select1"/>
-      <bind nodeset="/Hluvukani_G_delivery/noidnote" readonly="true()" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='nao'" type="string"/>
-      <bind nodeset="/Hluvukani_G_delivery/foto_example" readonly="true()" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" type="string"/>
-      <bind nodeset="/Hluvukani_G_delivery/pessoa_foto" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" required="true()" type="binary"/>
-      <bind nodeset="/Hluvukani_G_delivery/id_foto" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" required="true()" type="binary"/>
-      <bind nodeset="/Hluvukani_G_delivery/id_foto_verso" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" required="true()" type="binary"/>
-      <bind nodeset="/Hluvukani_G_delivery/pessoa_assin" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" required="true()" type="binary"/>
-      <bind nodeset="/Hluvukani_G_delivery/recibo_image" relevant=" /Hluvukani_G_delivery/id_titular_confirm ='sim' or  /Hluvukani_G_delivery/id_tipo_confirm ='sim'" required="true()" type="binary"/>
+      <bind calculate="pulldata('source', 'resultado', 'upn_key',  /Hluvukani_G_delivery/upn )" nodeset="/Hluvukani_G_delivery/resultado" type="string"/>
+      <bind nodeset="/Hluvukani_G_delivery/preloadfail" readonly="true()" relevant="string-length( /Hluvukani_G_delivery/resultado ) &lt; 1" type="string"/>
+      <bind nodeset="/Hluvukani_G_delivery/preloadnote" readonly="true()" type="string"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1" relevant=" /Hluvukani_G_delivery/resultado ='Declaracao emitida'"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/id_titular_confirm" required="true()" type="select1"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/noidnote" readonly="true()" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='nao'" type="string"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/foto_example" readonly="true()" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" type="string"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/pessoa_foto" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/id_foto" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/id_foto_verso" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/pessoa_assin" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" required="true()" type="binary"/>
+      <bind nodeset="/Hluvukani_G_delivery/Gg1/recibo_image" relevant=" /Hluvukani_G_delivery/Gg1/id_titular_confirm ='sim'" required="true()" type="binary"/>
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/Hluvukani_G_delivery/end" type="dateTime"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/Hluvukani_G_delivery/meta/instanceID" readonly="true()" type="string"/>
       <bind calculate="concat('Declaracoes','_', /Hluvukani_G_delivery/upn )" nodeset="/Hluvukani_G_delivery/meta/instanceName" type="string"/>
@@ -69,9 +70,9 @@
 
 Este formulário é utilizado para fazer registo de entrega de Declarações aos titulares.
 
-As Declarações só podem ser entregues mediante a apresentação do recibo original e o documento de identificação de um dos titulares.
+As Declarações só podem ser entregues mediante a apresentação do &lt;span style=&quot;color:#E7002F&quot;&gt;recibo original e o documento de identificação de um dos titulares&lt;/span&gt;.
 
-Será possível selecçionar o numero de parcela/recibo duma lista, e depois
+No formulario, será possível selecionar o numero de parcela/recibo duma lista, e depois
 
 - confirmar as detalhes de identificação
 - capturar a informação sobre a data de entrega
@@ -80,7 +81,7 @@ O titular deve apresentar e entregar o original do recibo, que fica cancelado pe
 
 O técnico terá que tirar uma foto do recibo cancelado, e o titular terá que assinar no formulário para confirmar que recebeu a Declaração certa. 
 
-&lt;br/&gt; &lt;span style=&quot;color:#E7002F&quot;&gt;As declarações só podem ser entregues a alguém que apresentem o original do recibo que foi emitido no momento da demarcação da parcela.&lt;/span&gt; &lt;br/&gt; 
+&lt;br/&gt; &lt;span style=&quot;color:#E7002F&quot;&gt;As declarações só podem ser entregues a alguém que apresente o original do recibo que foi emitido no momento da demarcação da parcela.&lt;/span&gt; &lt;br/&gt; 
 
 Por favor deslizar para a frente para continuar.</label>
     </input>
@@ -112,55 +113,49 @@ Por favor deslizar para a frente para continuar.</label>
     <input ref="/Hluvukani_G_delivery/upn_confirm">
       <label>Digite de novo o numero de parcela/recibo:</label>
     </input>
-    <input ref="/Hluvukani_G_delivery/nopreloadnote">
-      <label>Nenhuma Declaração foi emitida para esta parcela</label>
+    <input ref="/Hluvukani_G_delivery/preloadfail">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:red&quot;&gt;Esta parcela nao existe. Por favor volte e reintroduza outro numero de recibo&lt;/span&gt; &lt;br/&gt;</label>
     </input>
-    <select1 ref="/Hluvukani_G_delivery/id_tipo_confirm">
-      <label>Faça a favor de confirmar que a ID apresentada é &lt;br/&gt; &lt;span style=&quot;color:#E7002F&quot;&gt;&quot;<output value=" /Hluvukani_G_delivery/id_tipo "/>&quot;&lt;br/&gt;&lt;/span&gt; &lt;br/&gt; com o numero &lt;br/&gt;&lt;br/&gt; &lt;span style=&quot;color:#E7002F&quot;&gt;&quot;<output value=" /Hluvukani_G_delivery/id_num "/>&quot;&lt;/span&gt; &lt;br/&gt;</label>
-      <item>
-        <label>Sim</label>
-        <value>sim</value>
-      </item>
-      <item>
-        <label>Não</label>
-        <value>nao</value>
-      </item>
-    </select1>
-    <select1 ref="/Hluvukani_G_delivery/id_titular_confirm">
-      <label>Faça a favor de confirmar que a ID apresentada está em nome de um dos titulares nomeados na Declaração</label>
-      <item>
-        <label>Sim</label>
-        <value>sim</value>
-      </item>
-      <item>
-        <label>Não</label>
-        <value>nao</value>
-      </item>
-    </select1>
-    <input ref="/Hluvukani_G_delivery/noidnote">
-      <label>A Declaração só pode ser entregue na apresentação de ID de pelo menos um dos titulares nomeados na Declaração.
+    <input ref="/Hluvukani_G_delivery/preloadnote">
+      <label>&lt;br/&gt; &lt;span style=&quot;color:#57b055&quot;&gt;<output value=" /Hluvukani_G_delivery/resultado "/>&lt;/span&gt; &lt;br/&gt;</label>
+    </input>
+    <group ref="/Hluvukani_G_delivery/Gg1">
+      <select1 ref="/Hluvukani_G_delivery/Gg1/id_titular_confirm">
+        <label>Faça a favor de confirmar que a ID apresentada está em nome de um dos titulares nomeados na Declaração.</label>
+        <item>
+          <label>Sim</label>
+          <value>sim</value>
+        </item>
+        <item>
+          <label>Não</label>
+          <value>nao</value>
+        </item>
+      </select1>
+      <input ref="/Hluvukani_G_delivery/Gg1/noidnote">
+        <label>A Declaração só pode ser entregue na apresentação de ID de pelo menos um dos titulares nomeados na Declaração.
 
-Faça a favor de fechar o formulario sem gravar mudanças.
+&lt;br/&gt;&lt;span style=&quot;color:red&quot;&gt;Faça a favor de fechar o formulario sem gravar mudanças.&lt;/span&gt; &lt;br/&gt; 
 
 O tecnico deve explicar que é obrigatorio a apresentação de ID de pelo menos um dos titulares nomeados na Declaração.</label>
-    </input>
-    <input ref="/Hluvukani_G_delivery/foto_example">
-      <label ref="jr:itext('/Hluvukani_G_delivery/foto_example:label')"/>
-    </input>
-    <upload mediatype="image/*" ref="/Hluvukani_G_delivery/pessoa_foto">
-      <label>Tire uma fotografia da pessoa</label>
-    </upload>
-    <upload mediatype="image/*" ref="/Hluvukani_G_delivery/id_foto">
-      <label>Tire uma fotografia do documento de identificação apresentado</label>
-    </upload>
-    <upload mediatype="image/*" ref="/Hluvukani_G_delivery/id_foto_verso">
-      <label>Tire uma fotografia do verso do documento de identificação apresentado</label>
-    </upload>
-    <upload appearance="signature" mediatype="image/*" ref="/Hluvukani_G_delivery/pessoa_assin">
-      <label>Assinatura da pessoa que recebeu a Declaração</label>
-    </upload>
-    <upload mediatype="image/*" ref="/Hluvukani_G_delivery/recibo_image">
-      <label>Tire uma fotografia do recibo devidamente cancelado</label>
-    </upload>
+      </input>
+      <input ref="/Hluvukani_G_delivery/Gg1/foto_example">
+        <label ref="jr:itext('/Hluvukani_G_delivery/Gg1/foto_example:label')"/>
+      </input>
+      <upload mediatype="image/*" ref="/Hluvukani_G_delivery/Gg1/pessoa_foto">
+        <label>Tire uma fotografia da pessoa</label>
+      </upload>
+      <upload mediatype="image/*" ref="/Hluvukani_G_delivery/Gg1/id_foto">
+        <label>Tire uma fotografia do documento de identificação apresentado</label>
+      </upload>
+      <upload mediatype="image/*" ref="/Hluvukani_G_delivery/Gg1/id_foto_verso">
+        <label>Tire uma fotografia do verso do documento de identificação apresentado</label>
+      </upload>
+      <upload appearance="signature" mediatype="image/*" ref="/Hluvukani_G_delivery/Gg1/pessoa_assin">
+        <label>Assinatura da pessoa que recebeu a Declaração</label>
+      </upload>
+      <upload mediatype="image/*" ref="/Hluvukani_G_delivery/Gg1/recibo_image">
+        <label>Tire uma fotografia do recibo devidamente cancelado</label>
+      </upload>
+    </group>
   </h:body>
 </h:html>
